@@ -1,0 +1,46 @@
+name: Continuous Deployment
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup .NET core 3.1
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1.x'
+      - name: Run build
+        run: dotnet build ./src/GeriRemenyi.OANDA.V20/GeriRemenyi.OANDA.V20.csproj --configuration Release
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup .NET core 3.1
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1.x'
+      - name: Run tests
+        run: dotnet test ./src/GeriRemenyi.OANDA.V20.Test/GeriRemenyi.OANDA.V20.Test.csproj --configuration Release
+  publish:
+    name: Publish to nuget.org
+    needs: [build, test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup .NET core 3.1
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1.x'
+      - name: Publish to nuget.org
+        uses: brandedoutcast/publish-nuget@v2.5.5
+        with:  
+          PROJECT_FILE_PATH: ./src/GeriRemenyi.OANDA.V20/GeriRemenyi.OANDA.V20.csproj
+          NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
