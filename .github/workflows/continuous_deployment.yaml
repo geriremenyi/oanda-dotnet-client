@@ -15,7 +15,7 @@ jobs:
         with:
           dotnet-version: '3.1.x'
       - name: Run build
-        run: dotnet build ./src/GeriRemenyi.Oanda.V20/GeriRemenyi.Oanda.V20.csproj --configuration Release
+        run: dotnet build ./src/GeriRemenyi.Oanda.V20.Client/GeriRemenyi.Oanda.V20.Client.csproj --configuration Release
   test:
     name: Test
     runs-on: ubuntu-latest
@@ -27,7 +27,7 @@ jobs:
         with:
           dotnet-version: '3.1.x'
       - name: Run tests
-        run: dotnet test ./src/GeriRemenyi.Oanda.V20.Test/GeriRemenyi.Oanda.V20.Test.csproj --configuration Release
+        run: dotnet test ./src/GeriRemenyi.Oanda.V20.Client.Test/GeriRemenyi.Oanda.V20.Client.Test.csproj --configuration Release
   publish:
     name: Publish to nuget.org
     needs: [build, test]
@@ -42,5 +42,5 @@ jobs:
       - name: Publish to nuget.org
         uses: brandedoutcast/publish-nuget@v2.5.5
         with:  
-          PROJECT_FILE_PATH: ./src/GeriRemenyi.Oanda.V20/GeriRemenyi.Oanda.V20.csproj
+          PROJECT_FILE_PATH: ./src/GeriRemenyi.Oanda.V20.Client/GeriRemenyi.Oanda.V20.Client.csproj
           NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
