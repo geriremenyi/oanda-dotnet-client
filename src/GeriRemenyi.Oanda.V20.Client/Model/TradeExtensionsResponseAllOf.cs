@@ -34,18 +34,17 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="TradeExtensionsResponseAllOf" /> class.
         /// </summary>
-        /// <param name="tradeClientExtensionsModifyTransaction">A TradeClientExtensionsModifyTransaction represents the modification of a Trade&#39;s Client Extensions..</param>
-        public TradeExtensionsResponseAllOf(Transaction tradeClientExtensionsModifyTransaction = default(Transaction))
+        /// <param name="tradeClientExtensionsModifyTransaction">tradeClientExtensionsModifyTransaction.</param>
+        public TradeExtensionsResponseAllOf(TradeClientExtensionsModifyTransaction tradeClientExtensionsModifyTransaction = default(TradeClientExtensionsModifyTransaction))
         {
             this.TradeClientExtensionsModifyTransaction = tradeClientExtensionsModifyTransaction;
         }
         
         /// <summary>
-        /// A TradeClientExtensionsModifyTransaction represents the modification of a Trade&#39;s Client Extensions.
+        /// Gets or Sets TradeClientExtensionsModifyTransaction
         /// </summary>
-        /// <value>A TradeClientExtensionsModifyTransaction represents the modification of a Trade&#39;s Client Extensions.</value>
         [DataMember(Name="tradeClientExtensionsModifyTransaction", EmitDefaultValue=false)]
-        public Transaction TradeClientExtensionsModifyTransaction { get; set; }
+        public TradeClientExtensionsModifyTransaction TradeClientExtensionsModifyTransaction { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

@@ -3,7 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**TradeClientExtensionsModifyTransaction** | [**Transaction**](Transaction.md) | A TradeClientExtensionsModifyTransaction represents the modification of a Trade&#39;s Client Extensions. | [optional] 
+**TradeClientExtensionsModifyTransaction** | [**TradeClientExtensionsModifyTransaction**](TradeClientExtensionsModifyTransaction.md) |  | [optional] 
 **LastTransactionID** | **int** | The ID of the most recent Transaction created for the Account | [optional] 
 **RelatedTransactionIDs** | **List&lt;int&gt;** | The IDs of all Transactions that were created while satisfying the request. | [optional] 
 

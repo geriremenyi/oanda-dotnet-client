@@ -34,10 +34,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="TradeExtensionsResponse" /> class.
         /// </summary>
-        /// <param name="tradeClientExtensionsModifyTransaction">A TradeClientExtensionsModifyTransaction represents the modification of a Trade&#39;s Client Extensions..</param>
+        /// <param name="tradeClientExtensionsModifyTransaction">tradeClientExtensionsModifyTransaction.</param>
         /// <param name="lastTransactionID">The ID of the most recent Transaction created for the Account.</param>
         /// <param name="relatedTransactionIDs">The IDs of all Transactions that were created while satisfying the request..</param>
-        public TradeExtensionsResponse(Transaction tradeClientExtensionsModifyTransaction = default(Transaction), int lastTransactionID = default(int), List<int> relatedTransactionIDs = default(List<int>))
+        public TradeExtensionsResponse(TradeClientExtensionsModifyTransaction tradeClientExtensionsModifyTransaction = default(TradeClientExtensionsModifyTransaction), int lastTransactionID = default(int), List<int> relatedTransactionIDs = default(List<int>))
         {
             this.TradeClientExtensionsModifyTransaction = tradeClientExtensionsModifyTransaction;
             this.LastTransactionID = lastTransactionID;
@@ -45,11 +45,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         }
         
         /// <summary>
-        /// A TradeClientExtensionsModifyTransaction represents the modification of a Trade&#39;s Client Extensions.
+        /// Gets or Sets TradeClientExtensionsModifyTransaction
         /// </summary>
-        /// <value>A TradeClientExtensionsModifyTransaction represents the modification of a Trade&#39;s Client Extensions.</value>
         [DataMember(Name="tradeClientExtensionsModifyTransaction", EmitDefaultValue=false)]
-        public Transaction TradeClientExtensionsModifyTransaction { get; set; }
+        public TradeClientExtensionsModifyTransaction TradeClientExtensionsModifyTransaction { get; set; }
 
         /// <summary>
         /// The ID of the most recent Transaction created for the Account

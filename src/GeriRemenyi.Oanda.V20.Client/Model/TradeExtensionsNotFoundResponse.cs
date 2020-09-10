@@ -34,12 +34,12 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="TradeExtensionsNotFoundResponse" /> class.
         /// </summary>
-        /// <param name="tradeClientExtensionsModifyRejectTransaction">A TradeClientExtensionsModifyRejectTransaction represents the rejection of the modification of a Trade&#39;s Client Extensions..</param>
+        /// <param name="tradeClientExtensionsModifyRejectTransaction">tradeClientExtensionsModifyRejectTransaction.</param>
         /// <param name="errorCode">The code of the error that has occurred. This field may not be returned for some errors..</param>
         /// <param name="errorMessage">The human-readable description of the error that has occurred..</param>
         /// <param name="lastTransactionID">The ID of the most recent Transaction created for the Account.</param>
         /// <param name="relatedTransactionIDs">The IDs of all Transactions that were created while satisfying the request..</param>
-        public TradeExtensionsNotFoundResponse(RejectTransaction tradeClientExtensionsModifyRejectTransaction = default(RejectTransaction), string errorCode = default(string), string errorMessage = default(string), int lastTransactionID = default(int), List<int> relatedTransactionIDs = default(List<int>))
+        public TradeExtensionsNotFoundResponse(TradeClientExtensionsModifyRejectTransaction tradeClientExtensionsModifyRejectTransaction = default(TradeClientExtensionsModifyRejectTransaction), string errorCode = default(string), string errorMessage = default(string), int lastTransactionID = default(int), List<int> relatedTransactionIDs = default(List<int>))
         {
             this.TradeClientExtensionsModifyRejectTransaction = tradeClientExtensionsModifyRejectTransaction;
             this.ErrorCode = errorCode;
@@ -49,11 +49,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         }
         
         /// <summary>
-        /// A TradeClientExtensionsModifyRejectTransaction represents the rejection of the modification of a Trade&#39;s Client Extensions.
+        /// Gets or Sets TradeClientExtensionsModifyRejectTransaction
         /// </summary>
-        /// <value>A TradeClientExtensionsModifyRejectTransaction represents the rejection of the modification of a Trade&#39;s Client Extensions.</value>
         [DataMember(Name="tradeClientExtensionsModifyRejectTransaction", EmitDefaultValue=false)]
-        public RejectTransaction TradeClientExtensionsModifyRejectTransaction { get; set; }
+        public TradeClientExtensionsModifyRejectTransaction TradeClientExtensionsModifyRejectTransaction { get; set; }
 
         /// <summary>
         /// The code of the error that has occurred. This field may not be returned for some errors.

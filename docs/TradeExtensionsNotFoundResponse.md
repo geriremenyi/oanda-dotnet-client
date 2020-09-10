@@ -3,7 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**TradeClientExtensionsModifyRejectTransaction** | [**RejectTransaction**](RejectTransaction.md) | A TradeClientExtensionsModifyRejectTransaction represents the rejection of the modification of a Trade&#39;s Client Extensions. | [optional] 
+**TradeClientExtensionsModifyRejectTransaction** | [**TradeClientExtensionsModifyRejectTransaction**](TradeClientExtensionsModifyRejectTransaction.md) |  | [optional] 
 **ErrorCode** | **string** | The code of the error that has occurred. This field may not be returned for some errors. | [optional] 
 **ErrorMessage** | **string** | The human-readable description of the error that has occurred. | [optional] 
 **LastTransactionID** | **int** | The ID of the most recent Transaction created for the Account | [optional] 
