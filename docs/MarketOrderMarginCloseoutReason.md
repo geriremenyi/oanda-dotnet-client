@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.MarketOrderMarginCloseoutReason
+# GeriRemenyi.Oanda.V20.Client.Model.MarketOrderMarginCloseoutReason
 The reason the Market Order was created to perform a margin closeout
 ## Properties
 

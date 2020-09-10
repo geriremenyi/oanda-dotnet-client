@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.MarketOrderTradeClose
+# GeriRemenyi.Oanda.V20.Client.Model.MarketOrderTradeClose
 A MarketOrderTradeClose specifies the extensions to a Market Order that has been created specifically to close a Trade.
 ## Properties
 

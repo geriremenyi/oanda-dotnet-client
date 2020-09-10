@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.PriceStatus
+# GeriRemenyi.Oanda.V20.Client.Model.PriceStatus
 Status of the price in terms of tradability
 ## Properties
 

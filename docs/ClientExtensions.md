@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.ClientExtensions
+# GeriRemenyi.Oanda.V20.Client.Model.ClientExtensions
 A ClientExtensions object allows a client to attach a clientID, tag and comment to Orders and Trades in their Account.  Do not set, modify, or delete this field if your account is associated with MT4.
 ## Properties
 

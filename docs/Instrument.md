@@ -1,11 +1,11 @@
-# GeriRemenyi.Oanda.V20.Model.Instrument
+# GeriRemenyi.Oanda.V20.Client.Model.Instrument
 Full specification of an Instrument.
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** | Instrument name identifier. Used by clients to refer to an Instrument. | [optional] 
-**Type** | **string** | The type of the Instrument | [optional] 
+**Name** | **InstrumentName** |  | [optional] 
+**Type** | **InstrumentType** |  | [optional] 
 **DisplayName** | **string** | The display name of the Instrument | [optional] 
 **PipLocation** | **int** | The location of the \&quot;pip\&quot; for this instrument. The decimal position of the pip in this Instrument&#39;s price can be found at 10 ^ pipLocation (e.g. -4 pipLocation results in a decimal pip position of 10 ^ -4 &#x3D; 0.0001). | [optional] 
 **DisplayPrecision** | **int** | The number of decimal places that should be used to display prices for this instrument. (e.g. a displayPrecision of 5 would result in a price of \&quot;1\&quot; being displayed as \&quot;1.00000\&quot;) | [optional] 
@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **MaximumPositionSize** | **double** | The maximum position size allowed for this instrument. Specified in units. | [optional] 
 **MaximumOrderUnits** | **double** | The maximum units allowed for an Order placed for this instrument. Specified in units. | [optional] 
 **MarginRate** | **double** | The margin rate for this instrument. | [optional] 
-**Commission** | [**InlineResponse2003Commission**](InlineResponse2003Commission.md) |  | [optional] 
+**Commission** | [**InstrumentComission**](InstrumentComission.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

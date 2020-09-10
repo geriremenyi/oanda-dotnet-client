@@ -1,10 +1,10 @@
-# GeriRemenyi.Oanda.V20.Model.CalculatedPositionState
+# GeriRemenyi.Oanda.V20.Client.Model.CalculatedPositionState
 The dynamic (calculated) state of a Position
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Instrument** | **string** | Instrument name identifier. Used by clients to refer to an Instrument. | [optional] 
+**Instrument** | **InstrumentName** |  | [optional] 
 **NetUnrealizedPL** | **double** | The Position&#39;s net unrealized profit/loss | [optional] 
 **LongUnrealizedPL** | **double** | The unrealized profit/loss of the Position&#39;s long open Trades | [optional] 
 **ShortUnrealizedPL** | **double** | The unrealized profit/loss of the Position&#39;s short open Trades | [optional] 

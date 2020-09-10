@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.ClientConfigureTransaction
+# GeriRemenyi.Oanda.V20.Client.Model.ClientConfigureTransaction
 A ClientConfigureTransaction represents the configuration of an Account by a client.
 ## Properties
 
@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **AccountID** | **string** | The Account&#39;s identifier | [optional] 
 **BatchID** | **int** | The ID of the \&quot;batch\&quot; that the Transaction belongs to. Transactions in the same batch are applied to the Account simultaneously. | [optional] 
 **RequestID** | **string** | The Request ID of the request which generated the transaction. | [optional] 
-**Type** | **string** | The Type of the Transaction. | [optional] 
+**Type** | **TransactionType** |  | [optional] 
 **Alias** | **string** | The client-provided alias for the Account. | [optional] 
 **MarginRate** | **double** | The margin rate override for the Account. | [optional] 
 

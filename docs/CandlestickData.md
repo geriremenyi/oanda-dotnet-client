@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.CandlestickData
+# GeriRemenyi.Oanda.V20.Client.Model.CandlestickData
 The price data (open, high, low, close) for the Candlestick representation.
 ## Properties
 

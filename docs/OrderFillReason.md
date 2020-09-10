@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.OrderFillReason
+# GeriRemenyi.Oanda.V20.Client.Model.OrderFillReason
 The reason that an Order was filled
 ## Properties
 

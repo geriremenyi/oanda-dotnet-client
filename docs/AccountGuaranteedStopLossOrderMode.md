@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.AccountGuaranteedStopLossOrderMode
+# GeriRemenyi.Oanda.V20.Client.Model.AccountGuaranteedStopLossOrderMode
 The current guaranteed Stop Loss Order mode of the Account.
 ## Properties
 

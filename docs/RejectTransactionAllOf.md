@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.RejectTransactionAllOf
+# GeriRemenyi.Oanda.V20.Client.Model.RejectTransactionAllOf
 ## Properties
 
 Name | Type | Description | Notes

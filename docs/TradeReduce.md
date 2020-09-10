@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.TradeReduce
+# GeriRemenyi.Oanda.V20.Client.Model.TradeReduce
 A TradeReduce object represents a Trade for an instrument that was reduced (either partially or fully) in an Account. It is found embedded in Transactions that affect the position of an instrument in the account, specifically the OrderFill Transaction.
 ## Properties
 

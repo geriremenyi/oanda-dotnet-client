@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.InstrumentName
+# GeriRemenyi.Oanda.V20.Client.Model.InstrumentName
 Instrument name identifier. Used by clients to refer to an Instrument.
 ## Properties
 

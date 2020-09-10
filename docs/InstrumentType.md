@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.InstrumentType
+# GeriRemenyi.Oanda.V20.Client.Model.InstrumentType
 The type of the Instrument
 ## Properties
 

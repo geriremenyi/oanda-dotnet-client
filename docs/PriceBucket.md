@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.PriceBucket
+# GeriRemenyi.Oanda.V20.Client.Model.PriceBucket
 A Price Bucket represents a price available for an amount of liquidity
 ## Properties
 

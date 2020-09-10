@@ -1,17 +1,17 @@
-# GeriRemenyi.Oanda.V20.Api.InstrumentApi
+# GeriRemenyi.Oanda.V20.Client.Api.InstrumentApi
 
 All URIs are relative to *https://api-fxpractice.oanda.com/v3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**InstrumentsInstrumentCandlesGet**](InstrumentApi.md#instrumentsinstrumentcandlesget) | **GET** /instruments/{instrument}/candles | Get Candlesticks
-[**InstrumentsInstrumentOrderBookGet**](InstrumentApi.md#instrumentsinstrumentorderbookget) | **GET** /instruments/{instrument}/orderBook | Get Order Book
-[**InstrumentsInstrumentPositionBookGet**](InstrumentApi.md#instrumentsinstrumentpositionbookget) | **GET** /instruments/{instrument}/positionBook | Get Position Book
+[**GetInstrumentCandles**](InstrumentApi.md#getinstrumentcandles) | **GET** /instruments/{instrument}/candles | Get Candlesticks
+[**GetInstrumentOrderBook**](InstrumentApi.md#getinstrumentorderbook) | **GET** /instruments/{instrument}/orderBook | Get Order Book
+[**GetInstrumentPositionBook**](InstrumentApi.md#getinstrumentpositionbook) | **GET** /instruments/{instrument}/positionBook | Get Position Book
 
 
-<a name="instrumentsinstrumentcandlesget"></a>
-# **InstrumentsInstrumentCandlesGet**
-> InlineResponse2006 InstrumentsInstrumentCandlesGet (string instrument, string acceptDatetimeFormat = null, string price = null, string granularity = null, int? count = null, string from = null, string to = null, bool? smooth = null, bool? includeFirst = null, int? dailyAlignment = null, string alignmentTimezone = null, string weeklyAlignment = null)
+<a name="getinstrumentcandles"></a>
+# **GetInstrumentCandles**
+> CandlesResponse GetInstrumentCandles (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = null, string price = null, string granularity = null, int? count = null, string from = null, string to = null, bool? smooth = null, bool? includeFirst = null, int? dailyAlignment = null, string alignmentTimezone = null, string weeklyAlignment = null)
 
 Get Candlesticks
 
@@ -21,13 +21,13 @@ Fetch candlestick data for an instrument.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using GeriRemenyi.Oanda.V20.Api;
-using GeriRemenyi.Oanda.V20.Client;
-using GeriRemenyi.Oanda.V20.Model;
+using GeriRemenyi.Oanda.V20.Client.Api;
+using GeriRemenyi.Oanda.V20.Client.Client;
+using GeriRemenyi.Oanda.V20.Client.Model;
 
 namespace Example
 {
-    public class InstrumentsInstrumentCandlesGetExample
+    public class GetInstrumentCandlesExample
     {
         public static void Main()
         {
@@ -37,8 +37,8 @@ namespace Example
             config.AccessToken = "YOUR_BEARER_TOKEN";
 
             var apiInstance = new InstrumentApi(config);
-            var instrument = instrument_example;  // string | Instrument name
-            var acceptDatetimeFormat = acceptDatetimeFormat_example;  // string | Format of DateTime fields in the request and response. (optional) 
+            var instrument = ;  // InstrumentName | Instrument name
+            var acceptDatetimeFormat = ;  // DateTimeFormat? | Format of DateTime fields in the request and response. (optional) 
             var price = price_example;  // string | The Price component(s) to get candlestick data for. Can contain any combination of the characters \"M\" (midpoint candles) \"B\" (bid candles) and \"A\" (ask candles). (optional) 
             var granularity = granularity_example;  // string | The granularity of the candlesticks to fetch (optional) 
             var count = 56;  // int? | The number of candlesticks to return in the reponse. Count should not be specified if both the start and end parameters are provided, as the time range combined with the graularity will determine the number of candlesticks to return. (optional) 
@@ -53,12 +53,12 @@ namespace Example
             try
             {
                 // Get Candlesticks
-                InlineResponse2006 result = apiInstance.InstrumentsInstrumentCandlesGet(instrument, acceptDatetimeFormat, price, granularity, count, from, to, smooth, includeFirst, dailyAlignment, alignmentTimezone, weeklyAlignment);
+                CandlesResponse result = apiInstance.GetInstrumentCandles(instrument, acceptDatetimeFormat, price, granularity, count, from, to, smooth, includeFirst, dailyAlignment, alignmentTimezone, weeklyAlignment);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling InstrumentApi.InstrumentsInstrumentCandlesGet: " + e.Message );
+                Debug.Print("Exception when calling InstrumentApi.GetInstrumentCandles: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -71,8 +71,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **instrument** | **string**| Instrument name | 
- **acceptDatetimeFormat** | **string**| Format of DateTime fields in the request and response. | [optional] 
+ **instrument** | **InstrumentName**| Instrument name | 
+ **acceptDatetimeFormat** | **DateTimeFormat?**| Format of DateTime fields in the request and response. | [optional] 
  **price** | **string**| The Price component(s) to get candlestick data for. Can contain any combination of the characters \&quot;M\&quot; (midpoint candles) \&quot;B\&quot; (bid candles) and \&quot;A\&quot; (ask candles). | [optional] 
  **granularity** | **string**| The granularity of the candlesticks to fetch | [optional] 
  **count** | **int?**| The number of candlesticks to return in the reponse. Count should not be specified if both the start and end parameters are provided, as the time range combined with the graularity will determine the number of candlesticks to return. | [optional] 
@@ -86,7 +86,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2006**](InlineResponse2006.md)
+[**CandlesResponse**](CandlesResponse.md)
 
 ### Authorization
 
@@ -100,17 +100,17 @@ Name | Type | Description  | Notes
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-| **200** | Pricing information has been successfully provided. |  * RequestID - The unique identifier generated for the request <br>  |
-| **400** | Bad Request. The client has provided invalid data to be processed by the server. |  * RequestID - The unique identifier generated for the request <br>  |
-| **401** | Unauthorized. The endpoint being access required the client to authenticated, however the the authentication token is invalid or has not been provided. |  * RequestID - The unique identifier generated for the request <br>  |
-| **404** | Not Found. The client has attempted to access an entity that does not exist. |  * RequestID - The unique identifier generated for the request <br>  |
-| **405** | Method Not Allowed. The client has attempted to access an endpoint using an HTTP method that is not supported. |  * RequestID - The unique identifier generated for the request <br>  |
+| **200** | Pricing information has been successfully provided. |  * RequestID -  <br>  |
+| **400** |  |  -  |
+| **401** |  |  -  |
+| **404** |  |  -  |
+| **405** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="instrumentsinstrumentorderbookget"></a>
-# **InstrumentsInstrumentOrderBookGet**
-> InlineResponse2007 InstrumentsInstrumentOrderBookGet (string instrument, string acceptDatetimeFormat = null, string time = null)
+<a name="getinstrumentorderbook"></a>
+# **GetInstrumentOrderBook**
+> InstrumentOrderBookResponse GetInstrumentOrderBook (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = null, string time = null)
 
 Get Order Book
 
@@ -120,13 +120,13 @@ Fetch an order book for an instrument.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using GeriRemenyi.Oanda.V20.Api;
-using GeriRemenyi.Oanda.V20.Client;
-using GeriRemenyi.Oanda.V20.Model;
+using GeriRemenyi.Oanda.V20.Client.Api;
+using GeriRemenyi.Oanda.V20.Client.Client;
+using GeriRemenyi.Oanda.V20.Client.Model;
 
 namespace Example
 {
-    public class InstrumentsInstrumentOrderBookGetExample
+    public class GetInstrumentOrderBookExample
     {
         public static void Main()
         {
@@ -136,19 +136,19 @@ namespace Example
             config.AccessToken = "YOUR_BEARER_TOKEN";
 
             var apiInstance = new InstrumentApi(config);
-            var instrument = instrument_example;  // string | Instrument name
-            var acceptDatetimeFormat = acceptDatetimeFormat_example;  // string | Format of DateTime fields in the request and response. (optional) 
+            var instrument = ;  // InstrumentName | Instrument name
+            var acceptDatetimeFormat = ;  // DateTimeFormat? | Format of DateTime fields in the request and response. (optional) 
             var time = time_example;  // string | The time of the snapshot to fetch. If not specified, then the most recent snapshot is fetched. (optional) 
 
             try
             {
                 // Get Order Book
-                InlineResponse2007 result = apiInstance.InstrumentsInstrumentOrderBookGet(instrument, acceptDatetimeFormat, time);
+                InstrumentOrderBookResponse result = apiInstance.GetInstrumentOrderBook(instrument, acceptDatetimeFormat, time);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling InstrumentApi.InstrumentsInstrumentOrderBookGet: " + e.Message );
+                Debug.Print("Exception when calling InstrumentApi.GetInstrumentOrderBook: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -161,13 +161,13 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **instrument** | **string**| Instrument name | 
- **acceptDatetimeFormat** | **string**| Format of DateTime fields in the request and response. | [optional] 
+ **instrument** | **InstrumentName**| Instrument name | 
+ **acceptDatetimeFormat** | **DateTimeFormat?**| Format of DateTime fields in the request and response. | [optional] 
  **time** | **string**| The time of the snapshot to fetch. If not specified, then the most recent snapshot is fetched. | [optional] 
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**InstrumentOrderBookResponse**](InstrumentOrderBookResponse.md)
 
 ### Authorization
 
@@ -181,17 +181,17 @@ Name | Type | Description  | Notes
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-| **200** | The order book has been successfully provided. |  * Content-Encoding - Value will be \&quot;gzip\&quot; regardless of provided Accept-Encoding header <br>  * Link - A link to the next/previous page. <br>  * RequestID - The unique identifier generated for the request <br>  |
-| **400** | Bad Request. The client has provided invalid data to be processed by the server. |  * RequestID - The unique identifier generated for the request <br>  |
-| **401** | Unauthorized. The endpoint being access required the client to authenticated, however the the authentication token is invalid or has not been provided. |  * RequestID - The unique identifier generated for the request <br>  |
-| **404** | Not Found. The client has attempted to access an entity that does not exist. |  * RequestID - The unique identifier generated for the request <br>  |
-| **405** | Method Not Allowed. The client has attempted to access an endpoint using an HTTP method that is not supported. |  * RequestID - The unique identifier generated for the request <br>  |
+| **200** | The order book has been successfully provided. |  * Content-Encoding -  <br>  * Link -  <br>  * RequestID -  <br>  |
+| **400** |  |  -  |
+| **401** |  |  -  |
+| **404** |  |  -  |
+| **405** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="instrumentsinstrumentpositionbookget"></a>
-# **InstrumentsInstrumentPositionBookGet**
-> InlineResponse2008 InstrumentsInstrumentPositionBookGet (string instrument, string acceptDatetimeFormat = null, string time = null)
+<a name="getinstrumentpositionbook"></a>
+# **GetInstrumentPositionBook**
+> InstrumentPositionBookResponse GetInstrumentPositionBook (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = null, string time = null)
 
 Get Position Book
 
@@ -201,13 +201,13 @@ Fetch a position book for an instrument.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using GeriRemenyi.Oanda.V20.Api;
-using GeriRemenyi.Oanda.V20.Client;
-using GeriRemenyi.Oanda.V20.Model;
+using GeriRemenyi.Oanda.V20.Client.Api;
+using GeriRemenyi.Oanda.V20.Client.Client;
+using GeriRemenyi.Oanda.V20.Client.Model;
 
 namespace Example
 {
-    public class InstrumentsInstrumentPositionBookGetExample
+    public class GetInstrumentPositionBookExample
     {
         public static void Main()
         {
@@ -217,19 +217,19 @@ namespace Example
             config.AccessToken = "YOUR_BEARER_TOKEN";
 
             var apiInstance = new InstrumentApi(config);
-            var instrument = instrument_example;  // string | Instrument name
-            var acceptDatetimeFormat = acceptDatetimeFormat_example;  // string | Format of DateTime fields in the request and response. (optional) 
+            var instrument = ;  // InstrumentName | Instrument name
+            var acceptDatetimeFormat = ;  // DateTimeFormat? | Format of DateTime fields in the request and response. (optional) 
             var time = time_example;  // string | The time of the snapshot to fetch. If not specified, then the most recent snapshot is fetched. (optional) 
 
             try
             {
                 // Get Position Book
-                InlineResponse2008 result = apiInstance.InstrumentsInstrumentPositionBookGet(instrument, acceptDatetimeFormat, time);
+                InstrumentPositionBookResponse result = apiInstance.GetInstrumentPositionBook(instrument, acceptDatetimeFormat, time);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling InstrumentApi.InstrumentsInstrumentPositionBookGet: " + e.Message );
+                Debug.Print("Exception when calling InstrumentApi.GetInstrumentPositionBook: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -242,13 +242,13 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **instrument** | **string**| Instrument name | 
- **acceptDatetimeFormat** | **string**| Format of DateTime fields in the request and response. | [optional] 
+ **instrument** | **InstrumentName**| Instrument name | 
+ **acceptDatetimeFormat** | **DateTimeFormat?**| Format of DateTime fields in the request and response. | [optional] 
  **time** | **string**| The time of the snapshot to fetch. If not specified, then the most recent snapshot is fetched. | [optional] 
 
 ### Return type
 
-[**InlineResponse2008**](InlineResponse2008.md)
+[**InstrumentPositionBookResponse**](InstrumentPositionBookResponse.md)
 
 ### Authorization
 
@@ -262,11 +262,11 @@ Name | Type | Description  | Notes
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-| **200** | The position book has been successfully provided. |  * Content-Encoding - Value will be \&quot;gzip\&quot; regardless of provided Accept-Encoding header <br>  * Link - A link to the next/previous page. <br>  * RequestID - The unique identifier generated for the request <br>  |
-| **400** | Bad Request. The client has provided invalid data to be processed by the server. |  * RequestID - The unique identifier generated for the request <br>  |
-| **401** | Unauthorized. The endpoint being access required the client to authenticated, however the the authentication token is invalid or has not been provided. |  * RequestID - The unique identifier generated for the request <br>  |
-| **404** | Not Found. The client has attempted to access an entity that does not exist. |  * RequestID - The unique identifier generated for the request <br>  |
-| **405** | Method Not Allowed. The client has attempted to access an endpoint using an HTTP method that is not supported. |  * RequestID - The unique identifier generated for the request <br>  |
+| **200** | The position book has been successfully provided. |  * Content-Encoding -  <br>  * Link -  <br>  * RequestID -  <br>  |
+| **400** |  |  -  |
+| **401** |  |  -  |
+| **404** |  |  -  |
+| **405** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

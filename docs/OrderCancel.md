@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.OrderCancel
+# GeriRemenyi.Oanda.V20.Client.Model.OrderCancel
 An OrderCancel represents an Order cancellation in the client's Account.
 ## Properties
 

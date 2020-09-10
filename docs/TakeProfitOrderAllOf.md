@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.TakeProfitOrderAllOf
+# GeriRemenyi.Oanda.V20.Client.Model.TakeProfitOrderAllOf
 ## Properties
 
 Name | Type | Description | Notes

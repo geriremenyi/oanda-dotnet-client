@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.UnitsAvailableDetails
+# GeriRemenyi.Oanda.V20.Client.Model.UnitsAvailableDetails
 Representation of many units of an Instrument are available to be traded for both long and short Orders.
 ## Properties
 

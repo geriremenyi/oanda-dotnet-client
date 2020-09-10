@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.DateTimeFormat
+# GeriRemenyi.Oanda.V20.Client.Model.DateTimeFormat
 Types of accepted and handled datetime formats
 ## Properties
 

@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.RelatedTransaction
+# GeriRemenyi.Oanda.V20.Client.Model.RelatedTransaction
 The definition of related transactions and the last transaction encapsulated in an object.
 ## Properties
 

@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.CandlestickGranularity
+# GeriRemenyi.Oanda.V20.Client.Model.CandlestickGranularity
 The granularity of the candlesticks.
 ## Properties
 

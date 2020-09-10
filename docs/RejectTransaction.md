@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.RejectTransaction
+# GeriRemenyi.Oanda.V20.Client.Model.RejectTransaction
 A RejectTransaction represents the abstract reject of any transaction kind.
 ## Properties
 
@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **AccountID** | **string** | The Account&#39;s identifier | [optional] 
 **BatchID** | **int** | The ID of the \&quot;batch\&quot; that the Transaction belongs to. Transactions in the same batch are applied to the Account simultaneously. | [optional] 
 **RequestID** | **string** | The Request ID of the request which generated the transaction. | [optional] 
-**Type** | **string** | The Type of the Transaction. | [optional] 
+**Type** | **TransactionType** |  | [optional] 
 **RejectReason** | **string** | The reason that the Reject Transaction was created | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

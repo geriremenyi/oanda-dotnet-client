@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.TrailingStopLossOrderAllOf
+# GeriRemenyi.Oanda.V20.Client.Model.TrailingStopLossOrderAllOf
 ## Properties
 
 Name | Type | Description | Notes

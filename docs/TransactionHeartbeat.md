@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.TransactionHeartbeat
+# GeriRemenyi.Oanda.V20.Client.Model.TransactionHeartbeat
 A TransactionHeartbeat object is injected into the Transaction stream to ensure that the HTTP connection remains active.
 ## Properties
 

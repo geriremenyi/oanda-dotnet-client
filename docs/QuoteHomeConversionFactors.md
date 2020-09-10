@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.QuoteHomeConversionFactors
+# GeriRemenyi.Oanda.V20.Client.Model.QuoteHomeConversionFactors
 QuoteHomeConversionFactors represents the factors that can be used used to convert quantities of a Price's Instrument's quote currency into the Account's home currency.
 ## Properties
 

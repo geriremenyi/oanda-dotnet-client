@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.PositionBookBucket
+# GeriRemenyi.Oanda.V20.Client.Model.PositionBookBucket
 The position book data for a partition of the instrument's prices.
 ## Properties
 

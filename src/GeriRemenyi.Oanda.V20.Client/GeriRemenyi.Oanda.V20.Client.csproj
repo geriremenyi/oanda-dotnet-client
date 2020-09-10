@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>GeriRemenyi.Oanda.V20.Client</AssemblyName>
+    <PackageId>GeriRemenyi.Oanda.V20.Client</PackageId>
+    <OutputType>Library</OutputType>
+    <Authors>geriremenyi</Authors>
+    <Company>geriremenyi.com</Company>
+    <AssemblyTitle>OANDA REST API V20 client</AssemblyTitle>
+    <Description>A generated client library for OANDA&#39;s REST API (V20)</Description>
+    <Copyright>No Copyright</Copyright>
+    <RootNamespace>GeriRemenyi.Oanda.V20.Client</RootNamespace>
+    <Version>0.0.1</Version>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\GeriRemenyi.Oanda.V20.Client.xml</DocumentationFile>
+    <RepositoryUrl>https://github.com/geriremenyi/oanda-dotnet-client.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Minor update</PackageReleaseNotes>
+    <PackageTags>OANDA; OANDA V20; OANDA API; OANDA REST API; OANDA REST V20 API; Oanda</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JsonSubTypes" Version="1.5.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="RestSharp" Version="106.10.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+  </ItemGroup>
+
+</Project>

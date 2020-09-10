@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.InstrumentComission
+# GeriRemenyi.Oanda.V20.Client.Model.InstrumentComission
 An InstrumentCommission represents an instrument-specific commission
 ## Properties
 

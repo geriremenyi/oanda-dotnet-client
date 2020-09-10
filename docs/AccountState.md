@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.AccountState
+# GeriRemenyi.Oanda.V20.Client.Model.AccountState
 An AccountState Object is used to represent an Account's current price-dependent state. Price-dependent Account state is dependent on OANDA's current Prices, and includes things like unrealized PL, NAV and Trailing Stop Loss Order state.
 ## Properties
 

@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.ClientConfigure
+# GeriRemenyi.Oanda.V20.Client.Model.ClientConfigure
 A ClientConfigure represents the configuration of an Account by a client.
 ## Properties
 

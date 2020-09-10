@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.MarketOrderReason
+# GeriRemenyi.Oanda.V20.Client.Model.MarketOrderReason
 The reason that the Market Order was created
 ## Properties
 

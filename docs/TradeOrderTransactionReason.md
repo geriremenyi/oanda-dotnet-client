@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.TradeOrderTransactionReason
+# GeriRemenyi.Oanda.V20.Client.Model.TradeOrderTransactionReason
 The reason that the Stop Loss Order was initiated
 ## Properties
 

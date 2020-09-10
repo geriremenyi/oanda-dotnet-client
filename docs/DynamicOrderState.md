@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.DynamicOrderState
+# GeriRemenyi.Oanda.V20.Client.Model.DynamicOrderState
 The dynamic state of an Order. This is only relevant to TrailingStopLoss Orders, as no other Order type has dynamic state.
 ## Properties
 

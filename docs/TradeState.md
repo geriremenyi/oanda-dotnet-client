@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.TradeState
+# GeriRemenyi.Oanda.V20.Client.Model.TradeState
 The current state of the Trade.
 ## Properties
 

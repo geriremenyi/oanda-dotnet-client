@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.AccountCurrency
+# GeriRemenyi.Oanda.V20.Client.Model.AccountCurrency
 The home currency of the Account
 ## Properties
 

@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.TransactionType
+# GeriRemenyi.Oanda.V20.Client.Model.TransactionType
 The Type of the Transaction.
 ## Properties
 

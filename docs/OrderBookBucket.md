@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.OrderBookBucket
+# GeriRemenyi.Oanda.V20.Client.Model.OrderBookBucket
 The order book data for a partition of the instrument's prices.
 ## Properties
 

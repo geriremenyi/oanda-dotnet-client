@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.OrderCancelReason
+# GeriRemenyi.Oanda.V20.Client.Model.OrderCancelReason
 The reason that the Order was cancelled.
 ## Properties
 

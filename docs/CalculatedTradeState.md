@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.CalculatedTradeState
+# GeriRemenyi.Oanda.V20.Client.Model.CalculatedTradeState
 The dynamic (calculated) state of an open Trade
 ## Properties
 

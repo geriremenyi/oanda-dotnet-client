@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.OrderState
+# GeriRemenyi.Oanda.V20.Client.Model.OrderState
 The current state of the Order.
 ## Properties
 

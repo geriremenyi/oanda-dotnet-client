@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.AccountProperties
+# GeriRemenyi.Oanda.V20.Client.Model.AccountProperties
 Properties related to an Account.
 ## Properties
 

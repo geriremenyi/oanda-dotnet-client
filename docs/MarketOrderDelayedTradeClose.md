@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.MarketOrderDelayedTradeClose
+# GeriRemenyi.Oanda.V20.Client.Model.MarketOrderDelayedTradeClose
 Details for the Market Order extensions specific to a Market Order placed with the intent of fully closing a specific open trade that should have already been closed but wasn't due to halted market conditions
 ## Properties
 

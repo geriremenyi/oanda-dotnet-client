@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.MarketOrderPositionFill
+# GeriRemenyi.Oanda.V20.Client.Model.MarketOrderPositionFill
 Specification of how Positions in the Account are modified when the Order is filled.
 ## Properties
 

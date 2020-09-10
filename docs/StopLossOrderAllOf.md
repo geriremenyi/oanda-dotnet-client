@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.StopLossOrderAllOf
+# GeriRemenyi.Oanda.V20.Client.Model.StopLossOrderAllOf
 ## Properties
 
 Name | Type | Description | Notes

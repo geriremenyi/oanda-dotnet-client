@@ -1,18 +1,179 @@
-# GeriRemenyi.Oanda.V20.Api.PositionApi
+# GeriRemenyi.Oanda.V20.Client.Api.PositionApi
 
 All URIs are relative to *https://api-fxpractice.oanda.com/v3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AccountsAccountIDOpenPositionsGet**](PositionApi.md#accountsaccountidopenpositionsget) | **GET** /accounts/{accountID}/openPositions | Open Positions
-[**AccountsAccountIDPositionsGet**](PositionApi.md#accountsaccountidpositionsget) | **GET** /accounts/{accountID}/positions | List Positions
-[**AccountsAccountIDPositionsInstrumentClosePut**](PositionApi.md#accountsaccountidpositionsinstrumentcloseput) | **PUT** /accounts/{accountID}/positions/{instrument}/close | Close Position
-[**AccountsAccountIDPositionsInstrumentGet**](PositionApi.md#accountsaccountidpositionsinstrumentget) | **GET** /accounts/{accountID}/positions/{instrument} | Instrument Position
+[**ClosePosition**](PositionApi.md#closeposition) | **PUT** /accounts/{accountID}/positions/{instrument}/close | Close Position
+[**GetInstrumentPosition**](PositionApi.md#getinstrumentposition) | **GET** /accounts/{accountID}/positions/{instrument} | Instrument Position
+[**GetOpenPositions**](PositionApi.md#getopenpositions) | **GET** /accounts/{accountID}/openPositions | Open Positions
+[**GetPositions**](PositionApi.md#getpositions) | **GET** /accounts/{accountID}/positions | List Positions
 
 
-<a name="accountsaccountidopenpositionsget"></a>
-# **AccountsAccountIDOpenPositionsGet**
-> InlineResponse20016 AccountsAccountIDOpenPositionsGet (string accountID)
+<a name="closeposition"></a>
+# **ClosePosition**
+> ClosePositionResponse ClosePosition (string accountID, InstrumentName instrument, ClosePositionRequest closePositionRequest, DateTimeFormat? acceptDatetimeFormat = null)
+
+Close Position
+
+Closeout the open Position for a specific instrument in an Account.
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using GeriRemenyi.Oanda.V20.Client.Api;
+using GeriRemenyi.Oanda.V20.Client.Client;
+using GeriRemenyi.Oanda.V20.Client.Model;
+
+namespace Example
+{
+    public class ClosePositionExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api-fxpractice.oanda.com/v3";
+            // Configure Bearer token for authorization: PersonalAccessToken
+            config.AccessToken = "YOUR_BEARER_TOKEN";
+
+            var apiInstance = new PositionApi(config);
+            var accountID = accountID_example;  // string | Account identifier
+            var instrument = ;  // InstrumentName | Instrument name
+            var closePositionRequest = new ClosePositionRequest(); // ClosePositionRequest | Representation of how to close the position
+            var acceptDatetimeFormat = ;  // DateTimeFormat? | Format of DateTime fields in the request and response. (optional) 
+
+            try
+            {
+                // Close Position
+                ClosePositionResponse result = apiInstance.ClosePosition(accountID, instrument, closePositionRequest, acceptDatetimeFormat);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling PositionApi.ClosePosition: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **accountID** | **string**| Account identifier | 
+ **instrument** | **InstrumentName**| Instrument name | 
+ **closePositionRequest** | [**ClosePositionRequest**](ClosePositionRequest.md)| Representation of how to close the position | 
+ **acceptDatetimeFormat** | **DateTimeFormat?**| Format of DateTime fields in the request and response. | [optional] 
+
+### Return type
+
+[**ClosePositionResponse**](ClosePositionResponse.md)
+
+### Authorization
+
+[PersonalAccessToken](../README.md#PersonalAccessToken)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | The Position closeout request has been successfully processed. |  * Location -  <br>  * RequestID -  <br>  |
+| **400** | The Parameters provided that describe the Position closeout are invalid. |  * RequestID -  <br>  |
+| **401** |  |  -  |
+| **404** | The Account or one or more of the Positions specified does not exist. |  * RequestID -  <br>  |
+| **405** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getinstrumentposition"></a>
+# **GetInstrumentPosition**
+> InstrumentPositionResponse GetInstrumentPosition (string accountID, InstrumentName instrument)
+
+Instrument Position
+
+Get the details of a single Instrument's Position in an Account. The Position may by open or not.
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using GeriRemenyi.Oanda.V20.Client.Api;
+using GeriRemenyi.Oanda.V20.Client.Client;
+using GeriRemenyi.Oanda.V20.Client.Model;
+
+namespace Example
+{
+    public class GetInstrumentPositionExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api-fxpractice.oanda.com/v3";
+            // Configure Bearer token for authorization: PersonalAccessToken
+            config.AccessToken = "YOUR_BEARER_TOKEN";
+
+            var apiInstance = new PositionApi(config);
+            var accountID = accountID_example;  // string | Account identifier
+            var instrument = ;  // InstrumentName | Instrument name
+
+            try
+            {
+                // Instrument Position
+                InstrumentPositionResponse result = apiInstance.GetInstrumentPosition(accountID, instrument);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling PositionApi.GetInstrumentPosition: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **accountID** | **string**| Account identifier | 
+ **instrument** | **InstrumentName**| Instrument name | 
+
+### Return type
+
+[**InstrumentPositionResponse**](InstrumentPositionResponse.md)
+
+### Authorization
+
+[PersonalAccessToken](../README.md#PersonalAccessToken)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | The Position is provided. |  * RequestID -  <br>  |
+| **401** |  |  -  |
+| **404** |  |  -  |
+| **405** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getopenpositions"></a>
+# **GetOpenPositions**
+> OpenPositionsResponse GetOpenPositions (string accountID)
 
 Open Positions
 
@@ -22,13 +183,13 @@ List all open Positions for an Account. An open Position is a Position in an Acc
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using GeriRemenyi.Oanda.V20.Api;
-using GeriRemenyi.Oanda.V20.Client;
-using GeriRemenyi.Oanda.V20.Model;
+using GeriRemenyi.Oanda.V20.Client.Api;
+using GeriRemenyi.Oanda.V20.Client.Client;
+using GeriRemenyi.Oanda.V20.Client.Model;
 
 namespace Example
 {
-    public class AccountsAccountIDOpenPositionsGetExample
+    public class GetOpenPositionsExample
     {
         public static void Main()
         {
@@ -43,12 +204,12 @@ namespace Example
             try
             {
                 // Open Positions
-                InlineResponse20016 result = apiInstance.AccountsAccountIDOpenPositionsGet(accountID);
+                OpenPositionsResponse result = apiInstance.GetOpenPositions(accountID);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PositionApi.AccountsAccountIDOpenPositionsGet: " + e.Message );
+                Debug.Print("Exception when calling PositionApi.GetOpenPositions: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -65,7 +226,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](InlineResponse20016.md)
+[**OpenPositionsResponse**](OpenPositionsResponse.md)
 
 ### Authorization
 
@@ -79,16 +240,16 @@ Name | Type | Description  | Notes
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-| **200** | The Account&#39;s open Positions are provided. |  * RequestID - The unique identifier generated for the request <br>  |
-| **401** | Unauthorized. The endpoint being access required the client to authenticated, however the the authentication token is invalid or has not been provided. |  * RequestID - The unique identifier generated for the request <br>  |
-| **404** | Not Found. The client has attempted to access an entity that does not exist. |  * RequestID - The unique identifier generated for the request <br>  |
-| **405** | Method Not Allowed. The client has attempted to access an endpoint using an HTTP method that is not supported. |  * RequestID - The unique identifier generated for the request <br>  |
+| **200** | The Account&#39;s open Positions are provided. |  * RequestID -  <br>  |
+| **401** |  |  -  |
+| **404** |  |  -  |
+| **405** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="accountsaccountidpositionsget"></a>
-# **AccountsAccountIDPositionsGet**
-> InlineResponse20015 AccountsAccountIDPositionsGet (string accountID)
+<a name="getpositions"></a>
+# **GetPositions**
+> PositionsResponse GetPositions (string accountID)
 
 List Positions
 
@@ -98,13 +259,13 @@ List all Positions for an Account. The Positions returned are for every instrume
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using GeriRemenyi.Oanda.V20.Api;
-using GeriRemenyi.Oanda.V20.Client;
-using GeriRemenyi.Oanda.V20.Model;
+using GeriRemenyi.Oanda.V20.Client.Api;
+using GeriRemenyi.Oanda.V20.Client.Client;
+using GeriRemenyi.Oanda.V20.Client.Model;
 
 namespace Example
 {
-    public class AccountsAccountIDPositionsGetExample
+    public class GetPositionsExample
     {
         public static void Main()
         {
@@ -119,12 +280,12 @@ namespace Example
             try
             {
                 // List Positions
-                InlineResponse20015 result = apiInstance.AccountsAccountIDPositionsGet(accountID);
+                PositionsResponse result = apiInstance.GetPositions(accountID);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PositionApi.AccountsAccountIDPositionsGet: " + e.Message );
+                Debug.Print("Exception when calling PositionApi.GetPositions: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -141,7 +302,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20015**](InlineResponse20015.md)
+[**PositionsResponse**](PositionsResponse.md)
 
 ### Authorization
 
@@ -155,171 +316,10 @@ Name | Type | Description  | Notes
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-| **200** | The Account&#39;s Positions are provided. |  * RequestID - The unique identifier generated for the request <br>  |
-| **401** | Unauthorized. The endpoint being access required the client to authenticated, however the the authentication token is invalid or has not been provided. |  * RequestID - The unique identifier generated for the request <br>  |
-| **404** | Not Found. The client has attempted to access an entity that does not exist. |  * RequestID - The unique identifier generated for the request <br>  |
-| **405** | Method Not Allowed. The client has attempted to access an endpoint using an HTTP method that is not supported. |  * RequestID - The unique identifier generated for the request <br>  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="accountsaccountidpositionsinstrumentcloseput"></a>
-# **AccountsAccountIDPositionsInstrumentClosePut**
-> Object AccountsAccountIDPositionsInstrumentClosePut (string accountID, string instrument, InlineObject7 inlineObject7, string acceptDatetimeFormat = null)
-
-Close Position
-
-Closeout the open Position for a specific instrument in an Account.
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using GeriRemenyi.Oanda.V20.Api;
-using GeriRemenyi.Oanda.V20.Client;
-using GeriRemenyi.Oanda.V20.Model;
-
-namespace Example
-{
-    public class AccountsAccountIDPositionsInstrumentClosePutExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://api-fxpractice.oanda.com/v3";
-            // Configure Bearer token for authorization: PersonalAccessToken
-            config.AccessToken = "YOUR_BEARER_TOKEN";
-
-            var apiInstance = new PositionApi(config);
-            var accountID = accountID_example;  // string | Account identifier
-            var instrument = instrument_example;  // string | Instrument name
-            var inlineObject7 = new InlineObject7(); // InlineObject7 | 
-            var acceptDatetimeFormat = acceptDatetimeFormat_example;  // string | Format of DateTime fields in the request and response. (optional) 
-
-            try
-            {
-                // Close Position
-                Object result = apiInstance.AccountsAccountIDPositionsInstrumentClosePut(accountID, instrument, inlineObject7, acceptDatetimeFormat);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling PositionApi.AccountsAccountIDPositionsInstrumentClosePut: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **accountID** | **string**| Account identifier | 
- **instrument** | **string**| Instrument name | 
- **inlineObject7** | [**InlineObject7**](InlineObject7.md)|  | 
- **acceptDatetimeFormat** | **string**| Format of DateTime fields in the request and response. | [optional] 
-
-### Return type
-
-**Object**
-
-### Authorization
-
-[PersonalAccessToken](../README.md#PersonalAccessToken)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | The Position closeout request has been successfully processed. |  * Location - A link to the newly created entity <br>  * RequestID - The unique identifier generated for the request <br>  |
-| **400** | The Parameters provided that describe the Position closeout are invalid. |  * RequestID - The unique identifier generated for the request <br>  |
-| **401** | Unauthorized. The endpoint being access required the client to authenticated, however the the authentication token is invalid or has not been provided. |  * RequestID - The unique identifier generated for the request <br>  |
-| **404** | The Account or one or more of the Positions specified does not exist. |  * RequestID - The unique identifier generated for the request <br>  |
-| **405** | Method Not Allowed. The client has attempted to access an endpoint using an HTTP method that is not supported. |  * RequestID - The unique identifier generated for the request <br>  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="accountsaccountidpositionsinstrumentget"></a>
-# **AccountsAccountIDPositionsInstrumentGet**
-> InlineResponse20017 AccountsAccountIDPositionsInstrumentGet (string accountID, string instrument)
-
-Instrument Position
-
-Get the details of a single Instrument's Position in an Account. The Position may by open or not.
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using GeriRemenyi.Oanda.V20.Api;
-using GeriRemenyi.Oanda.V20.Client;
-using GeriRemenyi.Oanda.V20.Model;
-
-namespace Example
-{
-    public class AccountsAccountIDPositionsInstrumentGetExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://api-fxpractice.oanda.com/v3";
-            // Configure Bearer token for authorization: PersonalAccessToken
-            config.AccessToken = "YOUR_BEARER_TOKEN";
-
-            var apiInstance = new PositionApi(config);
-            var accountID = accountID_example;  // string | Account identifier
-            var instrument = instrument_example;  // string | Instrument name
-
-            try
-            {
-                // Instrument Position
-                InlineResponse20017 result = apiInstance.AccountsAccountIDPositionsInstrumentGet(accountID, instrument);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling PositionApi.AccountsAccountIDPositionsInstrumentGet: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **accountID** | **string**| Account identifier | 
- **instrument** | **string**| Instrument name | 
-
-### Return type
-
-[**InlineResponse20017**](InlineResponse20017.md)
-
-### Authorization
-
-[PersonalAccessToken](../README.md#PersonalAccessToken)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | The Position is provided. |  * RequestID - The unique identifier generated for the request <br>  |
-| **401** | Unauthorized. The endpoint being access required the client to authenticated, however the the authentication token is invalid or has not been provided. |  * RequestID - The unique identifier generated for the request <br>  |
-| **404** | Not Found. The client has attempted to access an entity that does not exist. |  * RequestID - The unique identifier generated for the request <br>  |
-| **405** | Method Not Allowed. The client has attempted to access an endpoint using an HTTP method that is not supported. |  * RequestID - The unique identifier generated for the request <br>  |
+| **200** | The Account&#39;s Positions are provided. |  * RequestID -  <br>  |
+| **401** |  |  -  |
+| **404** |  |  -  |
+| **405** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

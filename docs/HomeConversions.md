@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.HomeConversions
+# GeriRemenyi.Oanda.V20.Client.Model.HomeConversions
 HomeConversions represents the factors to use to convert quantities of a given currency into the Account's home currency. The conversion factor depends on the scenario the conversion is required for.
 ## Properties
 

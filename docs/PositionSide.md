@@ -1,4 +1,4 @@
-# GeriRemenyi.Oanda.V20.Model.PositionSide
+# GeriRemenyi.Oanda.V20.Client.Model.PositionSide
 The representation of a Position for a single direction (long or short).
 ## Properties
 
