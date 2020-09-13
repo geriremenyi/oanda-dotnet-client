@@ -35,34 +35,34 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
     public enum MarketOrderReason
     {
         /// <summary>
-        /// Enum CLIENTORDER for value: CLIENT_ORDER
+        /// Enum CLIENT_ORDER for value: CLIENT_ORDER
         /// </summary>
         [EnumMember(Value = "CLIENT_ORDER")]
-        CLIENTORDER = 1,
+        CLIENT_ORDER = 1,
 
         /// <summary>
-        /// Enum TRADECLOSE for value: TRADE_CLOSE
+        /// Enum TRADE_CLOSE for value: TRADE_CLOSE
         /// </summary>
         [EnumMember(Value = "TRADE_CLOSE")]
-        TRADECLOSE = 2,
+        TRADE_CLOSE = 2,
 
         /// <summary>
-        /// Enum POSITIONCLOSEOUT for value: POSITION_CLOSEOUT
+        /// Enum POSITION_CLOSEOUT for value: POSITION_CLOSEOUT
         /// </summary>
         [EnumMember(Value = "POSITION_CLOSEOUT")]
-        POSITIONCLOSEOUT = 3,
+        POSITION_CLOSEOUT = 3,
 
         /// <summary>
-        /// Enum MARGINCLOSEOUT for value: MARGIN_CLOSEOUT
+        /// Enum MARGIN_CLOSEOUT for value: MARGIN_CLOSEOUT
         /// </summary>
         [EnumMember(Value = "MARGIN_CLOSEOUT")]
-        MARGINCLOSEOUT = 4,
+        MARGIN_CLOSEOUT = 4,
 
         /// <summary>
-        /// Enum DELAYEDTRADECLOSE for value: DELAYED_TRADE_CLOSE
+        /// Enum DELAYED_TRADE_CLOSE for value: DELAYED_TRADE_CLOSE
         /// </summary>
         [EnumMember(Value = "DELAYED_TRADE_CLOSE")]
-        DELAYEDTRADECLOSE = 5
+        DELAYED_TRADE_CLOSE = 5
 
     }
 

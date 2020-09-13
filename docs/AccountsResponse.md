@@ -1,10 +1,9 @@
-# GeriRemenyi.Oanda.V20.Client.Model.InlineResponse2003
+# GeriRemenyi.Oanda.V20.Client.Model.AccountsResponse
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Orders** | [**List&lt;Order&gt;**](Order.md) | The list of pending Order details | [optional] 
-**LastTransactionID** | **int** | The ID of the most recent Transaction created for the Account | [optional] 
+**Accounts** | [**List&lt;AccountProperties&gt;**](AccountProperties.md) | The list of Accounts the client is authorized to access and their associated properties. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

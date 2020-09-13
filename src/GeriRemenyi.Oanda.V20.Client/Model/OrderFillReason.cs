@@ -35,70 +35,70 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
     public enum OrderFillReason
     {
         /// <summary>
-        /// Enum LIMITORDER for value: LIMIT_ORDER
+        /// Enum LIMIT_ORDER for value: LIMIT_ORDER
         /// </summary>
         [EnumMember(Value = "LIMIT_ORDER")]
-        LIMITORDER = 1,
+        LIMIT_ORDER = 1,
 
         /// <summary>
-        /// Enum STOPORDER for value: STOP_ORDER
+        /// Enum STOP_ORDER for value: STOP_ORDER
         /// </summary>
         [EnumMember(Value = "STOP_ORDER")]
-        STOPORDER = 2,
+        STOP_ORDER = 2,
 
         /// <summary>
-        /// Enum MARKETIFTOUCHEDORDER for value: MARKET_IF_TOUCHED_ORDER
+        /// Enum MARKET_IF_TOUCHED_ORDER for value: MARKET_IF_TOUCHED_ORDER
         /// </summary>
         [EnumMember(Value = "MARKET_IF_TOUCHED_ORDER")]
-        MARKETIFTOUCHEDORDER = 3,
+        MARKET_IF_TOUCHED_ORDER = 3,
 
         /// <summary>
-        /// Enum TAKEPROFITORDER for value: TAKE_PROFIT_ORDER
+        /// Enum TAKE_PROFIT_ORDER for value: TAKE_PROFIT_ORDER
         /// </summary>
         [EnumMember(Value = "TAKE_PROFIT_ORDER")]
-        TAKEPROFITORDER = 4,
+        TAKE_PROFIT_ORDER = 4,
 
         /// <summary>
-        /// Enum STOPLOSSORDER for value: STOP_LOSS_ORDER
+        /// Enum STOP_LOSS_ORDER for value: STOP_LOSS_ORDER
         /// </summary>
         [EnumMember(Value = "STOP_LOSS_ORDER")]
-        STOPLOSSORDER = 5,
+        STOP_LOSS_ORDER = 5,
 
         /// <summary>
-        /// Enum TRAILINGSTOPLOSSORDER for value: TRAILING_STOP_LOSS_ORDER
+        /// Enum TRAILING_STOP_LOSS_ORDER for value: TRAILING_STOP_LOSS_ORDER
         /// </summary>
         [EnumMember(Value = "TRAILING_STOP_LOSS_ORDER")]
-        TRAILINGSTOPLOSSORDER = 6,
+        TRAILING_STOP_LOSS_ORDER = 6,
 
         /// <summary>
-        /// Enum MARKETORDER for value: MARKET_ORDER
+        /// Enum MARKET_ORDER for value: MARKET_ORDER
         /// </summary>
         [EnumMember(Value = "MARKET_ORDER")]
-        MARKETORDER = 7,
+        MARKET_ORDER = 7,
 
         /// <summary>
-        /// Enum MARKETORDERTRADECLOSE for value: MARKET_ORDER_TRADE_CLOSE
+        /// Enum MARKET_ORDER_TRADE_CLOSE for value: MARKET_ORDER_TRADE_CLOSE
         /// </summary>
         [EnumMember(Value = "MARKET_ORDER_TRADE_CLOSE")]
-        MARKETORDERTRADECLOSE = 8,
+        MARKET_ORDER_TRADE_CLOSE = 8,
 
         /// <summary>
-        /// Enum MARKETORDERPOSITIONCLOSEOUT for value: MARKET_ORDER_POSITION_CLOSEOUT
+        /// Enum MARKET_ORDER_POSITION_CLOSEOUT for value: MARKET_ORDER_POSITION_CLOSEOUT
         /// </summary>
         [EnumMember(Value = "MARKET_ORDER_POSITION_CLOSEOUT")]
-        MARKETORDERPOSITIONCLOSEOUT = 9,
+        MARKET_ORDER_POSITION_CLOSEOUT = 9,
 
         /// <summary>
-        /// Enum MARKETORDERMARGINCLOSEOUT for value: MARKET_ORDER_MARGIN_CLOSEOUT
+        /// Enum MARKET_ORDER_MARGIN_CLOSEOUT for value: MARKET_ORDER_MARGIN_CLOSEOUT
         /// </summary>
         [EnumMember(Value = "MARKET_ORDER_MARGIN_CLOSEOUT")]
-        MARKETORDERMARGINCLOSEOUT = 10,
+        MARKET_ORDER_MARGIN_CLOSEOUT = 10,
 
         /// <summary>
-        /// Enum MARKETORDERDELAYEDTRADECLOSE for value: MARKET_ORDER_DELAYED_TRADE_CLOSE
+        /// Enum MARKET_ORDER_DELAYED_TRADE_CLOSE for value: MARKET_ORDER_DELAYED_TRADE_CLOSE
         /// </summary>
         [EnumMember(Value = "MARKET_ORDER_DELAYED_TRADE_CLOSE")]
-        MARKETORDERDELAYEDTRADECLOSE = 11
+        MARKET_ORDER_DELAYED_TRADE_CLOSE = 11
 
     }
 

@@ -47,10 +47,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         CLOSED = 2,
 
         /// <summary>
-        /// Enum CLOSEWHENTRADEABLE for value: CLOSE_WHEN_TRADEABLE
+        /// Enum CLOSE_WHEN_TRADEABLE for value: CLOSE_WHEN_TRADEABLE
         /// </summary>
         [EnumMember(Value = "CLOSE_WHEN_TRADEABLE")]
-        CLOSEWHENTRADEABLE = 3
+        CLOSE_WHEN_TRADEABLE = 3
 
     }
 

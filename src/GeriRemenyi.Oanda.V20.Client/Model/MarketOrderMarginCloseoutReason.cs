@@ -35,22 +35,22 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
     public enum MarketOrderMarginCloseoutReason
     {
         /// <summary>
-        /// Enum MARGINCHECKVIOLATION for value: MARGIN_CHECK_VIOLATION
+        /// Enum MARGIN_CHECK_VIOLATION for value: MARGIN_CHECK_VIOLATION
         /// </summary>
         [EnumMember(Value = "MARGIN_CHECK_VIOLATION")]
-        MARGINCHECKVIOLATION = 1,
+        MARGIN_CHECK_VIOLATION = 1,
 
         /// <summary>
-        /// Enum REGULATORYMARGINCALLVIOLATION for value: REGULATORY_MARGIN_CALL_VIOLATION
+        /// Enum REGULATORY_MARGIN_CALL_VIOLATION for value: REGULATORY_MARGIN_CALL_VIOLATION
         /// </summary>
         [EnumMember(Value = "REGULATORY_MARGIN_CALL_VIOLATION")]
-        REGULATORYMARGINCALLVIOLATION = 2,
+        REGULATORY_MARGIN_CALL_VIOLATION = 2,
 
         /// <summary>
-        /// Enum REGULATORYMARGINCHECKVIOLATION for value: REGULATORY_MARGIN_CHECK_VIOLATION
+        /// Enum REGULATORY_MARGIN_CHECK_VIOLATION for value: REGULATORY_MARGIN_CHECK_VIOLATION
         /// </summary>
         [EnumMember(Value = "REGULATORY_MARGIN_CHECK_VIOLATION")]
-        REGULATORYMARGINCHECKVIOLATION = 3
+        REGULATORY_MARGIN_CHECK_VIOLATION = 3
 
     }
 

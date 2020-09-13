@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 
 <a name="getaccountinstruments"></a>
 # **GetAccountInstruments**
-> InlineResponse2002 GetAccountInstruments (string accountID, List<InstrumentName> instruments = null)
+> AccountInstrumentsResponse GetAccountInstruments (string accountID, List<InstrumentName> instruments = null)
 
 Account Instruments
 
@@ -287,7 +287,7 @@ namespace Example
             try
             {
                 // Account Instruments
-                InlineResponse2002 result = apiInstance.GetAccountInstruments(accountID, instruments);
+                AccountInstrumentsResponse result = apiInstance.GetAccountInstruments(accountID, instruments);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -310,7 +310,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**AccountInstrumentsResponse**](AccountInstrumentsResponse.md)
 
 ### Authorization
 
@@ -333,7 +333,7 @@ Name | Type | Description  | Notes
 
 <a name="getaccountsummary"></a>
 # **GetAccountSummary**
-> InlineResponse2001 GetAccountSummary (string accountID, DateTimeFormat? acceptDatetimeFormat = null)
+> AccountSummaryResponse GetAccountSummary (string accountID, DateTimeFormat? acceptDatetimeFormat = null)
 
 Account Summary
 
@@ -365,7 +365,7 @@ namespace Example
             try
             {
                 // Account Summary
-                InlineResponse2001 result = apiInstance.GetAccountSummary(accountID, acceptDatetimeFormat);
+                AccountSummaryResponse result = apiInstance.GetAccountSummary(accountID, acceptDatetimeFormat);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -388,7 +388,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**AccountSummaryResponse**](AccountSummaryResponse.md)
 
 ### Authorization
 
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 <a name="getaccounts"></a>
 # **GetAccounts**
-> InlineResponse200 GetAccounts ()
+> AccountsResponse GetAccounts ()
 
 List Accounts
 
@@ -441,7 +441,7 @@ namespace Example
             try
             {
                 // List Accounts
-                InlineResponse200 result = apiInstance.GetAccounts();
+                AccountsResponse result = apiInstance.GetAccounts();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -460,7 +460,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**AccountsResponse**](AccountsResponse.md)
 
 ### Authorization
 

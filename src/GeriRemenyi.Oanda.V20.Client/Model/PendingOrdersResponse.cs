@@ -26,17 +26,17 @@ using OpenAPIDateConverter = GeriRemenyi.Oanda.V20.Client.Client.OpenAPIDateConv
 namespace GeriRemenyi.Oanda.V20.Client.Model
 {
     /// <summary>
-    /// InlineResponse2003
+    /// PendingOrdersResponse
     /// </summary>
     [DataContract]
-    public partial class InlineResponse2003 :  IEquatable<InlineResponse2003>, IValidatableObject
+    public partial class PendingOrdersResponse :  IEquatable<PendingOrdersResponse>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="InlineResponse2003" /> class.
+        /// Initializes a new instance of the <see cref="PendingOrdersResponse" /> class.
         /// </summary>
         /// <param name="orders">The list of pending Order details.</param>
         /// <param name="lastTransactionID">The ID of the most recent Transaction created for the Account.</param>
-        public InlineResponse2003(List<Order> orders = default(List<Order>), int lastTransactionID = default(int))
+        public PendingOrdersResponse(List<Order> orders = default(List<Order>), int lastTransactionID = default(int))
         {
             this.Orders = orders;
             this.LastTransactionID = lastTransactionID;
@@ -63,7 +63,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class InlineResponse2003 {\n");
+            sb.Append("class PendingOrdersResponse {\n");
             sb.Append("  Orders: ").Append(Orders).Append("\n");
             sb.Append("  LastTransactionID: ").Append(LastTransactionID).Append("\n");
             sb.Append("}\n");
@@ -86,15 +86,15 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as InlineResponse2003);
+            return this.Equals(input as PendingOrdersResponse);
         }
 
         /// <summary>
-        /// Returns true if InlineResponse2003 instances are equal
+        /// Returns true if PendingOrdersResponse instances are equal
         /// </summary>
-        /// <param name="input">Instance of InlineResponse2003 to be compared</param>
+        /// <param name="input">Instance of PendingOrdersResponse to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(InlineResponse2003 input)
+        public bool Equals(PendingOrdersResponse input)
         {
             if (input == null)
                 return false;

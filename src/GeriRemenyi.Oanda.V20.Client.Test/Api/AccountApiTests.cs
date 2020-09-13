@@ -106,7 +106,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Test
             //string accountID = null;
             //List<InstrumentName> instruments = null;
             //var response = instance.GetAccountInstruments(accountID, instruments);
-            //Assert.IsType<InlineResponse2002> (response, "response is InlineResponse2002");
+            //Assert.IsType<AccountInstrumentsResponse> (response, "response is AccountInstrumentsResponse");
         }
         
         /// <summary>
@@ -119,7 +119,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Test
             //string accountID = null;
             //DateTimeFormat? acceptDatetimeFormat = null;
             //var response = instance.GetAccountSummary(accountID, acceptDatetimeFormat);
-            //Assert.IsType<InlineResponse2001> (response, "response is InlineResponse2001");
+            //Assert.IsType<AccountSummaryResponse> (response, "response is AccountSummaryResponse");
         }
         
         /// <summary>
@@ -130,7 +130,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Test
         {
             // TODO uncomment below to test the method and replace null with proper value
             //var response = instance.GetAccounts();
-            //Assert.IsType<InlineResponse200> (response, "response is InlineResponse200");
+            //Assert.IsType<AccountsResponse> (response, "response is AccountsResponse");
         }
         
     }

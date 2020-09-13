@@ -39,862 +39,862 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         public enum RejectReasonEnum
         {
             /// <summary>
-            /// Enum INTERNALSERVERERROR for value: INTERNAL_SERVER_ERROR
+            /// Enum INTERNAL_SERVER_ERROR for value: INTERNAL_SERVER_ERROR
             /// </summary>
             [EnumMember(Value = "INTERNAL_SERVER_ERROR")]
-            INTERNALSERVERERROR = 1,
+            INTERNAL_SERVER_ERROR = 1,
 
             /// <summary>
-            /// Enum INSTRUMENTPRICEUNKNOWN for value: INSTRUMENT_PRICE_UNKNOWN
+            /// Enum INSTRUMENT_PRICE_UNKNOWN for value: INSTRUMENT_PRICE_UNKNOWN
             /// </summary>
             [EnumMember(Value = "INSTRUMENT_PRICE_UNKNOWN")]
-            INSTRUMENTPRICEUNKNOWN = 2,
+            INSTRUMENT_PRICE_UNKNOWN = 2,
 
             /// <summary>
-            /// Enum ACCOUNTNOTACTIVE for value: ACCOUNT_NOT_ACTIVE
+            /// Enum ACCOUNT_NOT_ACTIVE for value: ACCOUNT_NOT_ACTIVE
             /// </summary>
             [EnumMember(Value = "ACCOUNT_NOT_ACTIVE")]
-            ACCOUNTNOTACTIVE = 3,
+            ACCOUNT_NOT_ACTIVE = 3,
 
             /// <summary>
-            /// Enum ACCOUNTLOCKED for value: ACCOUNT_LOCKED
+            /// Enum ACCOUNT_LOCKED for value: ACCOUNT_LOCKED
             /// </summary>
             [EnumMember(Value = "ACCOUNT_LOCKED")]
-            ACCOUNTLOCKED = 4,
+            ACCOUNT_LOCKED = 4,
 
             /// <summary>
-            /// Enum ACCOUNTORDERCREATIONLOCKED for value: ACCOUNT_ORDER_CREATION_LOCKED
+            /// Enum ACCOUNT_ORDER_CREATION_LOCKED for value: ACCOUNT_ORDER_CREATION_LOCKED
             /// </summary>
             [EnumMember(Value = "ACCOUNT_ORDER_CREATION_LOCKED")]
-            ACCOUNTORDERCREATIONLOCKED = 5,
+            ACCOUNT_ORDER_CREATION_LOCKED = 5,
 
             /// <summary>
-            /// Enum ACCOUNTCONFIGURATIONLOCKED for value: ACCOUNT_CONFIGURATION_LOCKED
+            /// Enum ACCOUNT_CONFIGURATION_LOCKED for value: ACCOUNT_CONFIGURATION_LOCKED
             /// </summary>
             [EnumMember(Value = "ACCOUNT_CONFIGURATION_LOCKED")]
-            ACCOUNTCONFIGURATIONLOCKED = 6,
+            ACCOUNT_CONFIGURATION_LOCKED = 6,
 
             /// <summary>
-            /// Enum ACCOUNTDEPOSITLOCKED for value: ACCOUNT_DEPOSIT_LOCKED
+            /// Enum ACCOUNT_DEPOSIT_LOCKED for value: ACCOUNT_DEPOSIT_LOCKED
             /// </summary>
             [EnumMember(Value = "ACCOUNT_DEPOSIT_LOCKED")]
-            ACCOUNTDEPOSITLOCKED = 7,
+            ACCOUNT_DEPOSIT_LOCKED = 7,
 
             /// <summary>
-            /// Enum ACCOUNTWITHDRAWALLOCKED for value: ACCOUNT_WITHDRAWAL_LOCKED
+            /// Enum ACCOUNT_WITHDRAWAL_LOCKED for value: ACCOUNT_WITHDRAWAL_LOCKED
             /// </summary>
             [EnumMember(Value = "ACCOUNT_WITHDRAWAL_LOCKED")]
-            ACCOUNTWITHDRAWALLOCKED = 8,
+            ACCOUNT_WITHDRAWAL_LOCKED = 8,
 
             /// <summary>
-            /// Enum ACCOUNTORDERCANCELLOCKED for value: ACCOUNT_ORDER_CANCEL_LOCKED
+            /// Enum ACCOUNT_ORDER_CANCEL_LOCKED for value: ACCOUNT_ORDER_CANCEL_LOCKED
             /// </summary>
             [EnumMember(Value = "ACCOUNT_ORDER_CANCEL_LOCKED")]
-            ACCOUNTORDERCANCELLOCKED = 9,
+            ACCOUNT_ORDER_CANCEL_LOCKED = 9,
 
             /// <summary>
-            /// Enum INSTRUMENTNOTTRADEABLE for value: INSTRUMENT_NOT_TRADEABLE
+            /// Enum INSTRUMENT_NOT_TRADEABLE for value: INSTRUMENT_NOT_TRADEABLE
             /// </summary>
             [EnumMember(Value = "INSTRUMENT_NOT_TRADEABLE")]
-            INSTRUMENTNOTTRADEABLE = 10,
+            INSTRUMENT_NOT_TRADEABLE = 10,
 
             /// <summary>
-            /// Enum PENDINGORDERSALLOWEDEXCEEDED for value: PENDING_ORDERS_ALLOWED_EXCEEDED
+            /// Enum PENDING_ORDERS_ALLOWED_EXCEEDED for value: PENDING_ORDERS_ALLOWED_EXCEEDED
             /// </summary>
             [EnumMember(Value = "PENDING_ORDERS_ALLOWED_EXCEEDED")]
-            PENDINGORDERSALLOWEDEXCEEDED = 11,
+            PENDING_ORDERS_ALLOWED_EXCEEDED = 11,
 
             /// <summary>
-            /// Enum ORDERIDUNSPECIFIED for value: ORDER_ID_UNSPECIFIED
+            /// Enum ORDER_ID_UNSPECIFIED for value: ORDER_ID_UNSPECIFIED
             /// </summary>
             [EnumMember(Value = "ORDER_ID_UNSPECIFIED")]
-            ORDERIDUNSPECIFIED = 12,
+            ORDER_ID_UNSPECIFIED = 12,
 
             /// <summary>
-            /// Enum ORDERDOESNTEXIST for value: ORDER_DOESNT_EXIST
+            /// Enum ORDER_DOESNT_EXIST for value: ORDER_DOESNT_EXIST
             /// </summary>
             [EnumMember(Value = "ORDER_DOESNT_EXIST")]
-            ORDERDOESNTEXIST = 13,
+            ORDER_DOESNT_EXIST = 13,
 
             /// <summary>
-            /// Enum ORDERIDENTIFIERINCONSISTENCY for value: ORDER_IDENTIFIER_INCONSISTENCY
+            /// Enum ORDER_IDENTIFIER_INCONSISTENCY for value: ORDER_IDENTIFIER_INCONSISTENCY
             /// </summary>
             [EnumMember(Value = "ORDER_IDENTIFIER_INCONSISTENCY")]
-            ORDERIDENTIFIERINCONSISTENCY = 14,
+            ORDER_IDENTIFIER_INCONSISTENCY = 14,
 
             /// <summary>
-            /// Enum TRADEIDUNSPECIFIED for value: TRADE_ID_UNSPECIFIED
+            /// Enum TRADE_ID_UNSPECIFIED for value: TRADE_ID_UNSPECIFIED
             /// </summary>
             [EnumMember(Value = "TRADE_ID_UNSPECIFIED")]
-            TRADEIDUNSPECIFIED = 15,
+            TRADE_ID_UNSPECIFIED = 15,
 
             /// <summary>
-            /// Enum TRADEDOESNTEXIST for value: TRADE_DOESNT_EXIST
+            /// Enum TRADE_DOESNT_EXIST for value: TRADE_DOESNT_EXIST
             /// </summary>
             [EnumMember(Value = "TRADE_DOESNT_EXIST")]
-            TRADEDOESNTEXIST = 16,
+            TRADE_DOESNT_EXIST = 16,
 
             /// <summary>
-            /// Enum TRADEIDENTIFIERINCONSISTENCY for value: TRADE_IDENTIFIER_INCONSISTENCY
+            /// Enum TRADE_IDENTIFIER_INCONSISTENCY for value: TRADE_IDENTIFIER_INCONSISTENCY
             /// </summary>
             [EnumMember(Value = "TRADE_IDENTIFIER_INCONSISTENCY")]
-            TRADEIDENTIFIERINCONSISTENCY = 17,
+            TRADE_IDENTIFIER_INCONSISTENCY = 17,
 
             /// <summary>
-            /// Enum INSUFFICIENTMARGIN for value: INSUFFICIENT_MARGIN
+            /// Enum INSUFFICIENT_MARGIN for value: INSUFFICIENT_MARGIN
             /// </summary>
             [EnumMember(Value = "INSUFFICIENT_MARGIN")]
-            INSUFFICIENTMARGIN = 18,
+            INSUFFICIENT_MARGIN = 18,
 
             /// <summary>
-            /// Enum INSTRUMENTMISSING for value: INSTRUMENT_MISSING
+            /// Enum INSTRUMENT_MISSING for value: INSTRUMENT_MISSING
             /// </summary>
             [EnumMember(Value = "INSTRUMENT_MISSING")]
-            INSTRUMENTMISSING = 19,
+            INSTRUMENT_MISSING = 19,
 
             /// <summary>
-            /// Enum INSTRUMENTUNKNOWN for value: INSTRUMENT_UNKNOWN
+            /// Enum INSTRUMENT_UNKNOWN for value: INSTRUMENT_UNKNOWN
             /// </summary>
             [EnumMember(Value = "INSTRUMENT_UNKNOWN")]
-            INSTRUMENTUNKNOWN = 20,
+            INSTRUMENT_UNKNOWN = 20,
 
             /// <summary>
-            /// Enum UNITSMISSING for value: UNITS_MISSING
+            /// Enum UNITS_MISSING for value: UNITS_MISSING
             /// </summary>
             [EnumMember(Value = "UNITS_MISSING")]
-            UNITSMISSING = 21,
+            UNITS_MISSING = 21,
 
             /// <summary>
-            /// Enum UNITSINVALID for value: UNITS_INVALID
+            /// Enum UNITS_INVALID for value: UNITS_INVALID
             /// </summary>
             [EnumMember(Value = "UNITS_INVALID")]
-            UNITSINVALID = 22,
+            UNITS_INVALID = 22,
 
             /// <summary>
-            /// Enum UNITSPRECISIONEXCEEDED for value: UNITS_PRECISION_EXCEEDED
+            /// Enum UNITS_PRECISION_EXCEEDED for value: UNITS_PRECISION_EXCEEDED
             /// </summary>
             [EnumMember(Value = "UNITS_PRECISION_EXCEEDED")]
-            UNITSPRECISIONEXCEEDED = 23,
+            UNITS_PRECISION_EXCEEDED = 23,
 
             /// <summary>
-            /// Enum UNITSLIMITEXCEEDED for value: UNITS_LIMIT_EXCEEDED
+            /// Enum UNITS_LIMIT_EXCEEDED for value: UNITS_LIMIT_EXCEEDED
             /// </summary>
             [EnumMember(Value = "UNITS_LIMIT_EXCEEDED")]
-            UNITSLIMITEXCEEDED = 24,
+            UNITS_LIMIT_EXCEEDED = 24,
 
             /// <summary>
-            /// Enum UNITSMIMIMUMNOTMET for value: UNITS_MIMIMUM_NOT_MET
+            /// Enum UNITS_MIMIMUM_NOT_MET for value: UNITS_MIMIMUM_NOT_MET
             /// </summary>
             [EnumMember(Value = "UNITS_MIMIMUM_NOT_MET")]
-            UNITSMIMIMUMNOTMET = 25,
+            UNITS_MIMIMUM_NOT_MET = 25,
 
             /// <summary>
-            /// Enum PRICEMISSING for value: PRICE_MISSING
+            /// Enum PRICE_MISSING for value: PRICE_MISSING
             /// </summary>
             [EnumMember(Value = "PRICE_MISSING")]
-            PRICEMISSING = 26,
+            PRICE_MISSING = 26,
 
             /// <summary>
-            /// Enum PRICEINVALID for value: PRICE_INVALID
+            /// Enum PRICE_INVALID for value: PRICE_INVALID
             /// </summary>
             [EnumMember(Value = "PRICE_INVALID")]
-            PRICEINVALID = 27,
+            PRICE_INVALID = 27,
 
             /// <summary>
-            /// Enum PRICEPRECISIONEXCEEDED for value: PRICE_PRECISION_EXCEEDED
+            /// Enum PRICE_PRECISION_EXCEEDED for value: PRICE_PRECISION_EXCEEDED
             /// </summary>
             [EnumMember(Value = "PRICE_PRECISION_EXCEEDED")]
-            PRICEPRECISIONEXCEEDED = 28,
+            PRICE_PRECISION_EXCEEDED = 28,
 
             /// <summary>
-            /// Enum PRICEDISTANCEMISSING for value: PRICE_DISTANCE_MISSING
+            /// Enum PRICE_DISTANCE_MISSING for value: PRICE_DISTANCE_MISSING
             /// </summary>
             [EnumMember(Value = "PRICE_DISTANCE_MISSING")]
-            PRICEDISTANCEMISSING = 29,
+            PRICE_DISTANCE_MISSING = 29,
 
             /// <summary>
-            /// Enum PRICEDISTANCEINVALID for value: PRICE_DISTANCE_INVALID
+            /// Enum PRICE_DISTANCE_INVALID for value: PRICE_DISTANCE_INVALID
             /// </summary>
             [EnumMember(Value = "PRICE_DISTANCE_INVALID")]
-            PRICEDISTANCEINVALID = 30,
+            PRICE_DISTANCE_INVALID = 30,
 
             /// <summary>
-            /// Enum PRICEDISTANCEPRECISIONEXCEEDED for value: PRICE_DISTANCE_PRECISION_EXCEEDED
+            /// Enum PRICE_DISTANCE_PRECISION_EXCEEDED for value: PRICE_DISTANCE_PRECISION_EXCEEDED
             /// </summary>
             [EnumMember(Value = "PRICE_DISTANCE_PRECISION_EXCEEDED")]
-            PRICEDISTANCEPRECISIONEXCEEDED = 31,
+            PRICE_DISTANCE_PRECISION_EXCEEDED = 31,
 
             /// <summary>
-            /// Enum PRICEDISTANCEMAXIMUMEXCEEDED for value: PRICE_DISTANCE_MAXIMUM_EXCEEDED
+            /// Enum PRICE_DISTANCE_MAXIMUM_EXCEEDED for value: PRICE_DISTANCE_MAXIMUM_EXCEEDED
             /// </summary>
             [EnumMember(Value = "PRICE_DISTANCE_MAXIMUM_EXCEEDED")]
-            PRICEDISTANCEMAXIMUMEXCEEDED = 32,
+            PRICE_DISTANCE_MAXIMUM_EXCEEDED = 32,
 
             /// <summary>
-            /// Enum PRICEDISTANCEMINIMUMNOTMET for value: PRICE_DISTANCE_MINIMUM_NOT_MET
+            /// Enum PRICE_DISTANCE_MINIMUM_NOT_MET for value: PRICE_DISTANCE_MINIMUM_NOT_MET
             /// </summary>
             [EnumMember(Value = "PRICE_DISTANCE_MINIMUM_NOT_MET")]
-            PRICEDISTANCEMINIMUMNOTMET = 33,
+            PRICE_DISTANCE_MINIMUM_NOT_MET = 33,
 
             /// <summary>
-            /// Enum TIMEINFORCEMISSING for value: TIME_IN_FORCE_MISSING
+            /// Enum TIME_IN_FORCE_MISSING for value: TIME_IN_FORCE_MISSING
             /// </summary>
             [EnumMember(Value = "TIME_IN_FORCE_MISSING")]
-            TIMEINFORCEMISSING = 34,
+            TIME_IN_FORCE_MISSING = 34,
 
             /// <summary>
-            /// Enum TIMEINFORCEINVALID for value: TIME_IN_FORCE_INVALID
+            /// Enum TIME_IN_FORCE_INVALID for value: TIME_IN_FORCE_INVALID
             /// </summary>
             [EnumMember(Value = "TIME_IN_FORCE_INVALID")]
-            TIMEINFORCEINVALID = 35,
+            TIME_IN_FORCE_INVALID = 35,
 
             /// <summary>
-            /// Enum TIMEINFORCEGTDTIMESTAMPMISSING for value: TIME_IN_FORCE_GTD_TIMESTAMP_MISSING
+            /// Enum TIME_IN_FORCE_GTD_TIMESTAMP_MISSING for value: TIME_IN_FORCE_GTD_TIMESTAMP_MISSING
             /// </summary>
             [EnumMember(Value = "TIME_IN_FORCE_GTD_TIMESTAMP_MISSING")]
-            TIMEINFORCEGTDTIMESTAMPMISSING = 36,
+            TIME_IN_FORCE_GTD_TIMESTAMP_MISSING = 36,
 
             /// <summary>
-            /// Enum TIMEINFORCEGTDTIMESTAMPINPAST for value: TIME_IN_FORCE_GTD_TIMESTAMP_IN_PAST
+            /// Enum TIME_IN_FORCE_GTD_TIMESTAMP_IN_PAST for value: TIME_IN_FORCE_GTD_TIMESTAMP_IN_PAST
             /// </summary>
             [EnumMember(Value = "TIME_IN_FORCE_GTD_TIMESTAMP_IN_PAST")]
-            TIMEINFORCEGTDTIMESTAMPINPAST = 37,
+            TIME_IN_FORCE_GTD_TIMESTAMP_IN_PAST = 37,
 
             /// <summary>
-            /// Enum PRICEBOUNDINVALID for value: PRICE_BOUND_INVALID
+            /// Enum PRICE_BOUND_INVALID for value: PRICE_BOUND_INVALID
             /// </summary>
             [EnumMember(Value = "PRICE_BOUND_INVALID")]
-            PRICEBOUNDINVALID = 38,
+            PRICE_BOUND_INVALID = 38,
 
             /// <summary>
-            /// Enum PRICEBOUNDPRECISIONEXCEEDED for value: PRICE_BOUND_PRECISION_EXCEEDED
+            /// Enum PRICE_BOUND_PRECISION_EXCEEDED for value: PRICE_BOUND_PRECISION_EXCEEDED
             /// </summary>
             [EnumMember(Value = "PRICE_BOUND_PRECISION_EXCEEDED")]
-            PRICEBOUNDPRECISIONEXCEEDED = 39,
+            PRICE_BOUND_PRECISION_EXCEEDED = 39,
 
             /// <summary>
-            /// Enum ORDERSONFILLDUPLICATECLIENTORDERIDS for value: ORDERS_ON_FILL_DUPLICATE_CLIENT_ORDER_IDS
+            /// Enum ORDERS_ON_FILL_DUPLICATE_CLIENT_ORDER_IDS for value: ORDERS_ON_FILL_DUPLICATE_CLIENT_ORDER_IDS
             /// </summary>
             [EnumMember(Value = "ORDERS_ON_FILL_DUPLICATE_CLIENT_ORDER_IDS")]
-            ORDERSONFILLDUPLICATECLIENTORDERIDS = 40,
+            ORDERS_ON_FILL_DUPLICATE_CLIENT_ORDER_IDS = 40,
 
             /// <summary>
-            /// Enum TRADEONFILLCLIENTEXTENSIONSNOTSUPPORTED for value: TRADE_ON_FILL_CLIENT_EXTENSIONS_NOT_SUPPORTED
+            /// Enum TRADE_ON_FILL_CLIENT_EXTENSIONS_NOT_SUPPORTED for value: TRADE_ON_FILL_CLIENT_EXTENSIONS_NOT_SUPPORTED
             /// </summary>
             [EnumMember(Value = "TRADE_ON_FILL_CLIENT_EXTENSIONS_NOT_SUPPORTED")]
-            TRADEONFILLCLIENTEXTENSIONSNOTSUPPORTED = 41,
+            TRADE_ON_FILL_CLIENT_EXTENSIONS_NOT_SUPPORTED = 41,
 
             /// <summary>
-            /// Enum CLIENTORDERIDINVALID for value: CLIENT_ORDER_ID_INVALID
+            /// Enum CLIENT_ORDER_ID_INVALID for value: CLIENT_ORDER_ID_INVALID
             /// </summary>
             [EnumMember(Value = "CLIENT_ORDER_ID_INVALID")]
-            CLIENTORDERIDINVALID = 42,
+            CLIENT_ORDER_ID_INVALID = 42,
 
             /// <summary>
-            /// Enum CLIENTORDERIDALREADYEXISTS for value: CLIENT_ORDER_ID_ALREADY_EXISTS
+            /// Enum CLIENT_ORDER_ID_ALREADY_EXISTS for value: CLIENT_ORDER_ID_ALREADY_EXISTS
             /// </summary>
             [EnumMember(Value = "CLIENT_ORDER_ID_ALREADY_EXISTS")]
-            CLIENTORDERIDALREADYEXISTS = 43,
+            CLIENT_ORDER_ID_ALREADY_EXISTS = 43,
 
             /// <summary>
-            /// Enum CLIENTORDERTAGINVALID for value: CLIENT_ORDER_TAG_INVALID
+            /// Enum CLIENT_ORDER_TAG_INVALID for value: CLIENT_ORDER_TAG_INVALID
             /// </summary>
             [EnumMember(Value = "CLIENT_ORDER_TAG_INVALID")]
-            CLIENTORDERTAGINVALID = 44,
+            CLIENT_ORDER_TAG_INVALID = 44,
 
             /// <summary>
-            /// Enum CLIENTORDERCOMMENTINVALID for value: CLIENT_ORDER_COMMENT_INVALID
+            /// Enum CLIENT_ORDER_COMMENT_INVALID for value: CLIENT_ORDER_COMMENT_INVALID
             /// </summary>
             [EnumMember(Value = "CLIENT_ORDER_COMMENT_INVALID")]
-            CLIENTORDERCOMMENTINVALID = 45,
+            CLIENT_ORDER_COMMENT_INVALID = 45,
 
             /// <summary>
-            /// Enum CLIENTTRADEIDINVALID for value: CLIENT_TRADE_ID_INVALID
+            /// Enum CLIENT_TRADE_ID_INVALID for value: CLIENT_TRADE_ID_INVALID
             /// </summary>
             [EnumMember(Value = "CLIENT_TRADE_ID_INVALID")]
-            CLIENTTRADEIDINVALID = 46,
+            CLIENT_TRADE_ID_INVALID = 46,
 
             /// <summary>
-            /// Enum CLIENTTRADEIDALREADYEXISTS for value: CLIENT_TRADE_ID_ALREADY_EXISTS
+            /// Enum CLIENT_TRADE_ID_ALREADY_EXISTS for value: CLIENT_TRADE_ID_ALREADY_EXISTS
             /// </summary>
             [EnumMember(Value = "CLIENT_TRADE_ID_ALREADY_EXISTS")]
-            CLIENTTRADEIDALREADYEXISTS = 47,
+            CLIENT_TRADE_ID_ALREADY_EXISTS = 47,
 
             /// <summary>
-            /// Enum CLIENTTRADETAGINVALID for value: CLIENT_TRADE_TAG_INVALID
+            /// Enum CLIENT_TRADE_TAG_INVALID for value: CLIENT_TRADE_TAG_INVALID
             /// </summary>
             [EnumMember(Value = "CLIENT_TRADE_TAG_INVALID")]
-            CLIENTTRADETAGINVALID = 48,
+            CLIENT_TRADE_TAG_INVALID = 48,
 
             /// <summary>
-            /// Enum CLIENTTRADECOMMENTINVALID for value: CLIENT_TRADE_COMMENT_INVALID
+            /// Enum CLIENT_TRADE_COMMENT_INVALID for value: CLIENT_TRADE_COMMENT_INVALID
             /// </summary>
             [EnumMember(Value = "CLIENT_TRADE_COMMENT_INVALID")]
-            CLIENTTRADECOMMENTINVALID = 49,
+            CLIENT_TRADE_COMMENT_INVALID = 49,
 
             /// <summary>
-            /// Enum ORDERFILLPOSITIONACTIONMISSING for value: ORDER_FILL_POSITION_ACTION_MISSING
+            /// Enum ORDER_FILL_POSITION_ACTION_MISSING for value: ORDER_FILL_POSITION_ACTION_MISSING
             /// </summary>
             [EnumMember(Value = "ORDER_FILL_POSITION_ACTION_MISSING")]
-            ORDERFILLPOSITIONACTIONMISSING = 50,
+            ORDER_FILL_POSITION_ACTION_MISSING = 50,
 
             /// <summary>
-            /// Enum ORDERFILLPOSITIONACTIONINVALID for value: ORDER_FILL_POSITION_ACTION_INVALID
+            /// Enum ORDER_FILL_POSITION_ACTION_INVALID for value: ORDER_FILL_POSITION_ACTION_INVALID
             /// </summary>
             [EnumMember(Value = "ORDER_FILL_POSITION_ACTION_INVALID")]
-            ORDERFILLPOSITIONACTIONINVALID = 51,
+            ORDER_FILL_POSITION_ACTION_INVALID = 51,
 
             /// <summary>
-            /// Enum TRIGGERCONDITIONMISSING for value: TRIGGER_CONDITION_MISSING
+            /// Enum TRIGGER_CONDITION_MISSING for value: TRIGGER_CONDITION_MISSING
             /// </summary>
             [EnumMember(Value = "TRIGGER_CONDITION_MISSING")]
-            TRIGGERCONDITIONMISSING = 52,
+            TRIGGER_CONDITION_MISSING = 52,
 
             /// <summary>
-            /// Enum TRIGGERCONDITIONINVALID for value: TRIGGER_CONDITION_INVALID
+            /// Enum TRIGGER_CONDITION_INVALID for value: TRIGGER_CONDITION_INVALID
             /// </summary>
             [EnumMember(Value = "TRIGGER_CONDITION_INVALID")]
-            TRIGGERCONDITIONINVALID = 53,
+            TRIGGER_CONDITION_INVALID = 53,
 
             /// <summary>
-            /// Enum ORDERPARTIALFILLOPTIONMISSING for value: ORDER_PARTIAL_FILL_OPTION_MISSING
+            /// Enum ORDER_PARTIAL_FILL_OPTION_MISSING for value: ORDER_PARTIAL_FILL_OPTION_MISSING
             /// </summary>
             [EnumMember(Value = "ORDER_PARTIAL_FILL_OPTION_MISSING")]
-            ORDERPARTIALFILLOPTIONMISSING = 54,
+            ORDER_PARTIAL_FILL_OPTION_MISSING = 54,
 
             /// <summary>
-            /// Enum ORDERPARTIALFILLOPTIONINVALID for value: ORDER_PARTIAL_FILL_OPTION_INVALID
+            /// Enum ORDER_PARTIAL_FILL_OPTION_INVALID for value: ORDER_PARTIAL_FILL_OPTION_INVALID
             /// </summary>
             [EnumMember(Value = "ORDER_PARTIAL_FILL_OPTION_INVALID")]
-            ORDERPARTIALFILLOPTIONINVALID = 55,
+            ORDER_PARTIAL_FILL_OPTION_INVALID = 55,
 
             /// <summary>
-            /// Enum INVALIDREISSUEIMMEDIATEPARTIALFILL for value: INVALID_REISSUE_IMMEDIATE_PARTIAL_FILL
+            /// Enum INVALID_REISSUE_IMMEDIATE_PARTIAL_FILL for value: INVALID_REISSUE_IMMEDIATE_PARTIAL_FILL
             /// </summary>
             [EnumMember(Value = "INVALID_REISSUE_IMMEDIATE_PARTIAL_FILL")]
-            INVALIDREISSUEIMMEDIATEPARTIALFILL = 56,
+            INVALID_REISSUE_IMMEDIATE_PARTIAL_FILL = 56,
 
             /// <summary>
-            /// Enum TAKEPROFITORDERALREADYEXISTS for value: TAKE_PROFIT_ORDER_ALREADY_EXISTS
+            /// Enum TAKE_PROFIT_ORDER_ALREADY_EXISTS for value: TAKE_PROFIT_ORDER_ALREADY_EXISTS
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT_ORDER_ALREADY_EXISTS")]
-            TAKEPROFITORDERALREADYEXISTS = 57,
+            TAKE_PROFIT_ORDER_ALREADY_EXISTS = 57,
 
             /// <summary>
-            /// Enum TAKEPROFITONFILLPRICEMISSING for value: TAKE_PROFIT_ON_FILL_PRICE_MISSING
+            /// Enum TAKE_PROFIT_ON_FILL_PRICE_MISSING for value: TAKE_PROFIT_ON_FILL_PRICE_MISSING
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT_ON_FILL_PRICE_MISSING")]
-            TAKEPROFITONFILLPRICEMISSING = 58,
+            TAKE_PROFIT_ON_FILL_PRICE_MISSING = 58,
 
             /// <summary>
-            /// Enum TAKEPROFITONFILLPRICEINVALID for value: TAKE_PROFIT_ON_FILL_PRICE_INVALID
+            /// Enum TAKE_PROFIT_ON_FILL_PRICE_INVALID for value: TAKE_PROFIT_ON_FILL_PRICE_INVALID
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT_ON_FILL_PRICE_INVALID")]
-            TAKEPROFITONFILLPRICEINVALID = 59,
+            TAKE_PROFIT_ON_FILL_PRICE_INVALID = 59,
 
             /// <summary>
-            /// Enum TAKEPROFITONFILLPRICEPRECISIONEXCEEDED for value: TAKE_PROFIT_ON_FILL_PRICE_PRECISION_EXCEEDED
+            /// Enum TAKE_PROFIT_ON_FILL_PRICE_PRECISION_EXCEEDED for value: TAKE_PROFIT_ON_FILL_PRICE_PRECISION_EXCEEDED
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT_ON_FILL_PRICE_PRECISION_EXCEEDED")]
-            TAKEPROFITONFILLPRICEPRECISIONEXCEEDED = 60,
+            TAKE_PROFIT_ON_FILL_PRICE_PRECISION_EXCEEDED = 60,
 
             /// <summary>
-            /// Enum TAKEPROFITONFILLTIMEINFORCEMISSING for value: TAKE_PROFIT_ON_FILL_TIME_IN_FORCE_MISSING
+            /// Enum TAKE_PROFIT_ON_FILL_TIME_IN_FORCE_MISSING for value: TAKE_PROFIT_ON_FILL_TIME_IN_FORCE_MISSING
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT_ON_FILL_TIME_IN_FORCE_MISSING")]
-            TAKEPROFITONFILLTIMEINFORCEMISSING = 61,
+            TAKE_PROFIT_ON_FILL_TIME_IN_FORCE_MISSING = 61,
 
             /// <summary>
-            /// Enum TAKEPROFITONFILLTIMEINFORCEINVALID for value: TAKE_PROFIT_ON_FILL_TIME_IN_FORCE_INVALID
+            /// Enum TAKE_PROFIT_ON_FILL_TIME_IN_FORCE_INVALID for value: TAKE_PROFIT_ON_FILL_TIME_IN_FORCE_INVALID
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT_ON_FILL_TIME_IN_FORCE_INVALID")]
-            TAKEPROFITONFILLTIMEINFORCEINVALID = 62,
+            TAKE_PROFIT_ON_FILL_TIME_IN_FORCE_INVALID = 62,
 
             /// <summary>
-            /// Enum TAKEPROFITONFILLGTDTIMESTAMPMISSING for value: TAKE_PROFIT_ON_FILL_GTD_TIMESTAMP_MISSING
+            /// Enum TAKE_PROFIT_ON_FILL_GTD_TIMESTAMP_MISSING for value: TAKE_PROFIT_ON_FILL_GTD_TIMESTAMP_MISSING
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT_ON_FILL_GTD_TIMESTAMP_MISSING")]
-            TAKEPROFITONFILLGTDTIMESTAMPMISSING = 63,
+            TAKE_PROFIT_ON_FILL_GTD_TIMESTAMP_MISSING = 63,
 
             /// <summary>
-            /// Enum TAKEPROFITONFILLGTDTIMESTAMPINPAST for value: TAKE_PROFIT_ON_FILL_GTD_TIMESTAMP_IN_PAST
+            /// Enum TAKE_PROFIT_ON_FILL_GTD_TIMESTAMP_IN_PAST for value: TAKE_PROFIT_ON_FILL_GTD_TIMESTAMP_IN_PAST
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT_ON_FILL_GTD_TIMESTAMP_IN_PAST")]
-            TAKEPROFITONFILLGTDTIMESTAMPINPAST = 64,
+            TAKE_PROFIT_ON_FILL_GTD_TIMESTAMP_IN_PAST = 64,
 
             /// <summary>
-            /// Enum TAKEPROFITONFILLCLIENTORDERIDINVALID for value: TAKE_PROFIT_ON_FILL_CLIENT_ORDER_ID_INVALID
+            /// Enum TAKE_PROFIT_ON_FILL_CLIENT_ORDER_ID_INVALID for value: TAKE_PROFIT_ON_FILL_CLIENT_ORDER_ID_INVALID
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT_ON_FILL_CLIENT_ORDER_ID_INVALID")]
-            TAKEPROFITONFILLCLIENTORDERIDINVALID = 65,
+            TAKE_PROFIT_ON_FILL_CLIENT_ORDER_ID_INVALID = 65,
 
             /// <summary>
-            /// Enum TAKEPROFITONFILLCLIENTORDERTAGINVALID for value: TAKE_PROFIT_ON_FILL_CLIENT_ORDER_TAG_INVALID
+            /// Enum TAKE_PROFIT_ON_FILL_CLIENT_ORDER_TAG_INVALID for value: TAKE_PROFIT_ON_FILL_CLIENT_ORDER_TAG_INVALID
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT_ON_FILL_CLIENT_ORDER_TAG_INVALID")]
-            TAKEPROFITONFILLCLIENTORDERTAGINVALID = 66,
+            TAKE_PROFIT_ON_FILL_CLIENT_ORDER_TAG_INVALID = 66,
 
             /// <summary>
-            /// Enum TAKEPROFITONFILLCLIENTORDERCOMMENTINVALID for value: TAKE_PROFIT_ON_FILL_CLIENT_ORDER_COMMENT_INVALID
+            /// Enum TAKE_PROFIT_ON_FILL_CLIENT_ORDER_COMMENT_INVALID for value: TAKE_PROFIT_ON_FILL_CLIENT_ORDER_COMMENT_INVALID
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT_ON_FILL_CLIENT_ORDER_COMMENT_INVALID")]
-            TAKEPROFITONFILLCLIENTORDERCOMMENTINVALID = 67,
+            TAKE_PROFIT_ON_FILL_CLIENT_ORDER_COMMENT_INVALID = 67,
 
             /// <summary>
-            /// Enum TAKEPROFITONFILLTRIGGERCONDITIONMISSING for value: TAKE_PROFIT_ON_FILL_TRIGGER_CONDITION_MISSING
+            /// Enum TAKE_PROFIT_ON_FILL_TRIGGER_CONDITION_MISSING for value: TAKE_PROFIT_ON_FILL_TRIGGER_CONDITION_MISSING
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT_ON_FILL_TRIGGER_CONDITION_MISSING")]
-            TAKEPROFITONFILLTRIGGERCONDITIONMISSING = 68,
+            TAKE_PROFIT_ON_FILL_TRIGGER_CONDITION_MISSING = 68,
 
             /// <summary>
-            /// Enum TAKEPROFITONFILLTRIGGERCONDITIONINVALID for value: TAKE_PROFIT_ON_FILL_TRIGGER_CONDITION_INVALID
+            /// Enum TAKE_PROFIT_ON_FILL_TRIGGER_CONDITION_INVALID for value: TAKE_PROFIT_ON_FILL_TRIGGER_CONDITION_INVALID
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT_ON_FILL_TRIGGER_CONDITION_INVALID")]
-            TAKEPROFITONFILLTRIGGERCONDITIONINVALID = 69,
+            TAKE_PROFIT_ON_FILL_TRIGGER_CONDITION_INVALID = 69,
 
             /// <summary>
-            /// Enum STOPLOSSORDERALREADYEXISTS for value: STOP_LOSS_ORDER_ALREADY_EXISTS
+            /// Enum STOP_LOSS_ORDER_ALREADY_EXISTS for value: STOP_LOSS_ORDER_ALREADY_EXISTS
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ORDER_ALREADY_EXISTS")]
-            STOPLOSSORDERALREADYEXISTS = 70,
+            STOP_LOSS_ORDER_ALREADY_EXISTS = 70,
 
             /// <summary>
-            /// Enum STOPLOSSORDERGUARANTEEDREQUIRED for value: STOP_LOSS_ORDER_GUARANTEED_REQUIRED
+            /// Enum STOP_LOSS_ORDER_GUARANTEED_REQUIRED for value: STOP_LOSS_ORDER_GUARANTEED_REQUIRED
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ORDER_GUARANTEED_REQUIRED")]
-            STOPLOSSORDERGUARANTEEDREQUIRED = 71,
+            STOP_LOSS_ORDER_GUARANTEED_REQUIRED = 71,
 
             /// <summary>
-            /// Enum STOPLOSSORDERGUARANTEEDPRICEWITHINSPREAD for value: STOP_LOSS_ORDER_GUARANTEED_PRICE_WITHIN_SPREAD
+            /// Enum STOP_LOSS_ORDER_GUARANTEED_PRICE_WITHIN_SPREAD for value: STOP_LOSS_ORDER_GUARANTEED_PRICE_WITHIN_SPREAD
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ORDER_GUARANTEED_PRICE_WITHIN_SPREAD")]
-            STOPLOSSORDERGUARANTEEDPRICEWITHINSPREAD = 72,
+            STOP_LOSS_ORDER_GUARANTEED_PRICE_WITHIN_SPREAD = 72,
 
             /// <summary>
-            /// Enum STOPLOSSORDERGUARANTEEDNOTALLOWED for value: STOP_LOSS_ORDER_GUARANTEED_NOT_ALLOWED
+            /// Enum STOP_LOSS_ORDER_GUARANTEED_NOT_ALLOWED for value: STOP_LOSS_ORDER_GUARANTEED_NOT_ALLOWED
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ORDER_GUARANTEED_NOT_ALLOWED")]
-            STOPLOSSORDERGUARANTEEDNOTALLOWED = 73,
+            STOP_LOSS_ORDER_GUARANTEED_NOT_ALLOWED = 73,
 
             /// <summary>
-            /// Enum STOPLOSSORDERGUARANTEEDHALTEDCREATEVIOLATION for value: STOP_LOSS_ORDER_GUARANTEED_HALTED_CREATE_VIOLATION
+            /// Enum STOP_LOSS_ORDER_GUARANTEED_HALTED_CREATE_VIOLATION for value: STOP_LOSS_ORDER_GUARANTEED_HALTED_CREATE_VIOLATION
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ORDER_GUARANTEED_HALTED_CREATE_VIOLATION")]
-            STOPLOSSORDERGUARANTEEDHALTEDCREATEVIOLATION = 74,
+            STOP_LOSS_ORDER_GUARANTEED_HALTED_CREATE_VIOLATION = 74,
 
             /// <summary>
-            /// Enum STOPLOSSORDERGUARANTEEDHALTEDTIGHTENVIOLATION for value: STOP_LOSS_ORDER_GUARANTEED_HALTED_TIGHTEN_VIOLATION
+            /// Enum STOP_LOSS_ORDER_GUARANTEED_HALTED_TIGHTEN_VIOLATION for value: STOP_LOSS_ORDER_GUARANTEED_HALTED_TIGHTEN_VIOLATION
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ORDER_GUARANTEED_HALTED_TIGHTEN_VIOLATION")]
-            STOPLOSSORDERGUARANTEEDHALTEDTIGHTENVIOLATION = 75,
+            STOP_LOSS_ORDER_GUARANTEED_HALTED_TIGHTEN_VIOLATION = 75,
 
             /// <summary>
-            /// Enum STOPLOSSORDERGUARANTEEDHEDGINGNOTALLOWED for value: STOP_LOSS_ORDER_GUARANTEED_HEDGING_NOT_ALLOWED
+            /// Enum STOP_LOSS_ORDER_GUARANTEED_HEDGING_NOT_ALLOWED for value: STOP_LOSS_ORDER_GUARANTEED_HEDGING_NOT_ALLOWED
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ORDER_GUARANTEED_HEDGING_NOT_ALLOWED")]
-            STOPLOSSORDERGUARANTEEDHEDGINGNOTALLOWED = 76,
+            STOP_LOSS_ORDER_GUARANTEED_HEDGING_NOT_ALLOWED = 76,
 
             /// <summary>
-            /// Enum STOPLOSSORDERGUARANTEEDMINIMUMDISTANCENOTMET for value: STOP_LOSS_ORDER_GUARANTEED_MINIMUM_DISTANCE_NOT_MET
+            /// Enum STOP_LOSS_ORDER_GUARANTEED_MINIMUM_DISTANCE_NOT_MET for value: STOP_LOSS_ORDER_GUARANTEED_MINIMUM_DISTANCE_NOT_MET
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ORDER_GUARANTEED_MINIMUM_DISTANCE_NOT_MET")]
-            STOPLOSSORDERGUARANTEEDMINIMUMDISTANCENOTMET = 77,
+            STOP_LOSS_ORDER_GUARANTEED_MINIMUM_DISTANCE_NOT_MET = 77,
 
             /// <summary>
-            /// Enum STOPLOSSORDERNOTCANCELABLE for value: STOP_LOSS_ORDER_NOT_CANCELABLE
+            /// Enum STOP_LOSS_ORDER_NOT_CANCELABLE for value: STOP_LOSS_ORDER_NOT_CANCELABLE
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ORDER_NOT_CANCELABLE")]
-            STOPLOSSORDERNOTCANCELABLE = 78,
+            STOP_LOSS_ORDER_NOT_CANCELABLE = 78,
 
             /// <summary>
-            /// Enum STOPLOSSORDERNOTREPLACEABLE for value: STOP_LOSS_ORDER_NOT_REPLACEABLE
+            /// Enum STOP_LOSS_ORDER_NOT_REPLACEABLE for value: STOP_LOSS_ORDER_NOT_REPLACEABLE
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ORDER_NOT_REPLACEABLE")]
-            STOPLOSSORDERNOTREPLACEABLE = 79,
+            STOP_LOSS_ORDER_NOT_REPLACEABLE = 79,
 
             /// <summary>
-            /// Enum STOPLOSSORDERGUARANTEEDLEVELRESTRICTIONEXCEEDED for value: STOP_LOSS_ORDER_GUARANTEED_LEVEL_RESTRICTION_EXCEEDED
+            /// Enum STOP_LOSS_ORDER_GUARANTEED_LEVEL_RESTRICTION_EXCEEDED for value: STOP_LOSS_ORDER_GUARANTEED_LEVEL_RESTRICTION_EXCEEDED
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ORDER_GUARANTEED_LEVEL_RESTRICTION_EXCEEDED")]
-            STOPLOSSORDERGUARANTEEDLEVELRESTRICTIONEXCEEDED = 80,
+            STOP_LOSS_ORDER_GUARANTEED_LEVEL_RESTRICTION_EXCEEDED = 80,
 
             /// <summary>
-            /// Enum STOPLOSSORDERPRICEANDDISTANCEBOTHSPECIFIED for value: STOP_LOSS_ORDER_PRICE_AND_DISTANCE_BOTH_SPECIFIED
+            /// Enum STOP_LOSS_ORDER_PRICE_AND_DISTANCE_BOTH_SPECIFIED for value: STOP_LOSS_ORDER_PRICE_AND_DISTANCE_BOTH_SPECIFIED
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ORDER_PRICE_AND_DISTANCE_BOTH_SPECIFIED")]
-            STOPLOSSORDERPRICEANDDISTANCEBOTHSPECIFIED = 81,
+            STOP_LOSS_ORDER_PRICE_AND_DISTANCE_BOTH_SPECIFIED = 81,
 
             /// <summary>
-            /// Enum STOPLOSSORDERPRICEANDDISTANCEBOTHMISSING for value: STOP_LOSS_ORDER_PRICE_AND_DISTANCE_BOTH_MISSING
+            /// Enum STOP_LOSS_ORDER_PRICE_AND_DISTANCE_BOTH_MISSING for value: STOP_LOSS_ORDER_PRICE_AND_DISTANCE_BOTH_MISSING
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ORDER_PRICE_AND_DISTANCE_BOTH_MISSING")]
-            STOPLOSSORDERPRICEANDDISTANCEBOTHMISSING = 82,
+            STOP_LOSS_ORDER_PRICE_AND_DISTANCE_BOTH_MISSING = 82,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLREQUIREDFORPENDINGORDER for value: STOP_LOSS_ON_FILL_REQUIRED_FOR_PENDING_ORDER
+            /// Enum STOP_LOSS_ON_FILL_REQUIRED_FOR_PENDING_ORDER for value: STOP_LOSS_ON_FILL_REQUIRED_FOR_PENDING_ORDER
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_REQUIRED_FOR_PENDING_ORDER")]
-            STOPLOSSONFILLREQUIREDFORPENDINGORDER = 83,
+            STOP_LOSS_ON_FILL_REQUIRED_FOR_PENDING_ORDER = 83,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLGUARANTEEDNOTALLOWED for value: STOP_LOSS_ON_FILL_GUARANTEED_NOT_ALLOWED
+            /// Enum STOP_LOSS_ON_FILL_GUARANTEED_NOT_ALLOWED for value: STOP_LOSS_ON_FILL_GUARANTEED_NOT_ALLOWED
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_GUARANTEED_NOT_ALLOWED")]
-            STOPLOSSONFILLGUARANTEEDNOTALLOWED = 84,
+            STOP_LOSS_ON_FILL_GUARANTEED_NOT_ALLOWED = 84,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLGUARANTEEDREQUIRED for value: STOP_LOSS_ON_FILL_GUARANTEED_REQUIRED
+            /// Enum STOP_LOSS_ON_FILL_GUARANTEED_REQUIRED for value: STOP_LOSS_ON_FILL_GUARANTEED_REQUIRED
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_GUARANTEED_REQUIRED")]
-            STOPLOSSONFILLGUARANTEEDREQUIRED = 85,
+            STOP_LOSS_ON_FILL_GUARANTEED_REQUIRED = 85,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLPRICEMISSING for value: STOP_LOSS_ON_FILL_PRICE_MISSING
+            /// Enum STOP_LOSS_ON_FILL_PRICE_MISSING for value: STOP_LOSS_ON_FILL_PRICE_MISSING
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_PRICE_MISSING")]
-            STOPLOSSONFILLPRICEMISSING = 86,
+            STOP_LOSS_ON_FILL_PRICE_MISSING = 86,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLPRICEINVALID for value: STOP_LOSS_ON_FILL_PRICE_INVALID
+            /// Enum STOP_LOSS_ON_FILL_PRICE_INVALID for value: STOP_LOSS_ON_FILL_PRICE_INVALID
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_PRICE_INVALID")]
-            STOPLOSSONFILLPRICEINVALID = 87,
+            STOP_LOSS_ON_FILL_PRICE_INVALID = 87,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLPRICEPRECISIONEXCEEDED for value: STOP_LOSS_ON_FILL_PRICE_PRECISION_EXCEEDED
+            /// Enum STOP_LOSS_ON_FILL_PRICE_PRECISION_EXCEEDED for value: STOP_LOSS_ON_FILL_PRICE_PRECISION_EXCEEDED
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_PRICE_PRECISION_EXCEEDED")]
-            STOPLOSSONFILLPRICEPRECISIONEXCEEDED = 88,
+            STOP_LOSS_ON_FILL_PRICE_PRECISION_EXCEEDED = 88,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLGUARANTEEDMINIMUMDISTANCENOTMET for value: STOP_LOSS_ON_FILL_GUARANTEED_MINIMUM_DISTANCE_NOT_MET
+            /// Enum STOP_LOSS_ON_FILL_GUARANTEED_MINIMUM_DISTANCE_NOT_MET for value: STOP_LOSS_ON_FILL_GUARANTEED_MINIMUM_DISTANCE_NOT_MET
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_GUARANTEED_MINIMUM_DISTANCE_NOT_MET")]
-            STOPLOSSONFILLGUARANTEEDMINIMUMDISTANCENOTMET = 89,
+            STOP_LOSS_ON_FILL_GUARANTEED_MINIMUM_DISTANCE_NOT_MET = 89,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLGUARANTEEDLEVELRESTRICTIONEXCEEDED for value: STOP_LOSS_ON_FILL_GUARANTEED_LEVEL_RESTRICTION_EXCEEDED
+            /// Enum STOP_LOSS_ON_FILL_GUARANTEED_LEVEL_RESTRICTION_EXCEEDED for value: STOP_LOSS_ON_FILL_GUARANTEED_LEVEL_RESTRICTION_EXCEEDED
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_GUARANTEED_LEVEL_RESTRICTION_EXCEEDED")]
-            STOPLOSSONFILLGUARANTEEDLEVELRESTRICTIONEXCEEDED = 90,
+            STOP_LOSS_ON_FILL_GUARANTEED_LEVEL_RESTRICTION_EXCEEDED = 90,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLDISTANCEINVALID for value: STOP_LOSS_ON_FILL_DISTANCE_INVALID
+            /// Enum STOP_LOSS_ON_FILL_DISTANCE_INVALID for value: STOP_LOSS_ON_FILL_DISTANCE_INVALID
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_DISTANCE_INVALID")]
-            STOPLOSSONFILLDISTANCEINVALID = 91,
+            STOP_LOSS_ON_FILL_DISTANCE_INVALID = 91,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLPRICEDISTANCEMAXIMUMEXCEEDED for value: STOP_LOSS_ON_FILL_PRICE_DISTANCE_MAXIMUM_EXCEEDED
+            /// Enum STOP_LOSS_ON_FILL_PRICE_DISTANCE_MAXIMUM_EXCEEDED for value: STOP_LOSS_ON_FILL_PRICE_DISTANCE_MAXIMUM_EXCEEDED
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_PRICE_DISTANCE_MAXIMUM_EXCEEDED")]
-            STOPLOSSONFILLPRICEDISTANCEMAXIMUMEXCEEDED = 92,
+            STOP_LOSS_ON_FILL_PRICE_DISTANCE_MAXIMUM_EXCEEDED = 92,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLDISTANCEPRECISIONEXCEEDED for value: STOP_LOSS_ON_FILL_DISTANCE_PRECISION_EXCEEDED
+            /// Enum STOP_LOSS_ON_FILL_DISTANCE_PRECISION_EXCEEDED for value: STOP_LOSS_ON_FILL_DISTANCE_PRECISION_EXCEEDED
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_DISTANCE_PRECISION_EXCEEDED")]
-            STOPLOSSONFILLDISTANCEPRECISIONEXCEEDED = 93,
+            STOP_LOSS_ON_FILL_DISTANCE_PRECISION_EXCEEDED = 93,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLPRICEANDDISTANCEBOTHSPECIFIED for value: STOP_LOSS_ON_FILL_PRICE_AND_DISTANCE_BOTH_SPECIFIED
+            /// Enum STOP_LOSS_ON_FILL_PRICE_AND_DISTANCE_BOTH_SPECIFIED for value: STOP_LOSS_ON_FILL_PRICE_AND_DISTANCE_BOTH_SPECIFIED
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_PRICE_AND_DISTANCE_BOTH_SPECIFIED")]
-            STOPLOSSONFILLPRICEANDDISTANCEBOTHSPECIFIED = 94,
+            STOP_LOSS_ON_FILL_PRICE_AND_DISTANCE_BOTH_SPECIFIED = 94,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLPRICEANDDISTANCEBOTHMISSING for value: STOP_LOSS_ON_FILL_PRICE_AND_DISTANCE_BOTH_MISSING
+            /// Enum STOP_LOSS_ON_FILL_PRICE_AND_DISTANCE_BOTH_MISSING for value: STOP_LOSS_ON_FILL_PRICE_AND_DISTANCE_BOTH_MISSING
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_PRICE_AND_DISTANCE_BOTH_MISSING")]
-            STOPLOSSONFILLPRICEANDDISTANCEBOTHMISSING = 95,
+            STOP_LOSS_ON_FILL_PRICE_AND_DISTANCE_BOTH_MISSING = 95,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLTIMEINFORCEMISSING for value: STOP_LOSS_ON_FILL_TIME_IN_FORCE_MISSING
+            /// Enum STOP_LOSS_ON_FILL_TIME_IN_FORCE_MISSING for value: STOP_LOSS_ON_FILL_TIME_IN_FORCE_MISSING
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_TIME_IN_FORCE_MISSING")]
-            STOPLOSSONFILLTIMEINFORCEMISSING = 96,
+            STOP_LOSS_ON_FILL_TIME_IN_FORCE_MISSING = 96,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLTIMEINFORCEINVALID for value: STOP_LOSS_ON_FILL_TIME_IN_FORCE_INVALID
+            /// Enum STOP_LOSS_ON_FILL_TIME_IN_FORCE_INVALID for value: STOP_LOSS_ON_FILL_TIME_IN_FORCE_INVALID
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_TIME_IN_FORCE_INVALID")]
-            STOPLOSSONFILLTIMEINFORCEINVALID = 97,
+            STOP_LOSS_ON_FILL_TIME_IN_FORCE_INVALID = 97,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLGTDTIMESTAMPMISSING for value: STOP_LOSS_ON_FILL_GTD_TIMESTAMP_MISSING
+            /// Enum STOP_LOSS_ON_FILL_GTD_TIMESTAMP_MISSING for value: STOP_LOSS_ON_FILL_GTD_TIMESTAMP_MISSING
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_GTD_TIMESTAMP_MISSING")]
-            STOPLOSSONFILLGTDTIMESTAMPMISSING = 98,
+            STOP_LOSS_ON_FILL_GTD_TIMESTAMP_MISSING = 98,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLGTDTIMESTAMPINPAST for value: STOP_LOSS_ON_FILL_GTD_TIMESTAMP_IN_PAST
+            /// Enum STOP_LOSS_ON_FILL_GTD_TIMESTAMP_IN_PAST for value: STOP_LOSS_ON_FILL_GTD_TIMESTAMP_IN_PAST
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_GTD_TIMESTAMP_IN_PAST")]
-            STOPLOSSONFILLGTDTIMESTAMPINPAST = 99,
+            STOP_LOSS_ON_FILL_GTD_TIMESTAMP_IN_PAST = 99,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLCLIENTORDERIDINVALID for value: STOP_LOSS_ON_FILL_CLIENT_ORDER_ID_INVALID
+            /// Enum STOP_LOSS_ON_FILL_CLIENT_ORDER_ID_INVALID for value: STOP_LOSS_ON_FILL_CLIENT_ORDER_ID_INVALID
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_CLIENT_ORDER_ID_INVALID")]
-            STOPLOSSONFILLCLIENTORDERIDINVALID = 100,
+            STOP_LOSS_ON_FILL_CLIENT_ORDER_ID_INVALID = 100,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLCLIENTORDERTAGINVALID for value: STOP_LOSS_ON_FILL_CLIENT_ORDER_TAG_INVALID
+            /// Enum STOP_LOSS_ON_FILL_CLIENT_ORDER_TAG_INVALID for value: STOP_LOSS_ON_FILL_CLIENT_ORDER_TAG_INVALID
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_CLIENT_ORDER_TAG_INVALID")]
-            STOPLOSSONFILLCLIENTORDERTAGINVALID = 101,
+            STOP_LOSS_ON_FILL_CLIENT_ORDER_TAG_INVALID = 101,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLCLIENTORDERCOMMENTINVALID for value: STOP_LOSS_ON_FILL_CLIENT_ORDER_COMMENT_INVALID
+            /// Enum STOP_LOSS_ON_FILL_CLIENT_ORDER_COMMENT_INVALID for value: STOP_LOSS_ON_FILL_CLIENT_ORDER_COMMENT_INVALID
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_CLIENT_ORDER_COMMENT_INVALID")]
-            STOPLOSSONFILLCLIENTORDERCOMMENTINVALID = 102,
+            STOP_LOSS_ON_FILL_CLIENT_ORDER_COMMENT_INVALID = 102,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLTRIGGERCONDITIONMISSING for value: STOP_LOSS_ON_FILL_TRIGGER_CONDITION_MISSING
+            /// Enum STOP_LOSS_ON_FILL_TRIGGER_CONDITION_MISSING for value: STOP_LOSS_ON_FILL_TRIGGER_CONDITION_MISSING
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_TRIGGER_CONDITION_MISSING")]
-            STOPLOSSONFILLTRIGGERCONDITIONMISSING = 103,
+            STOP_LOSS_ON_FILL_TRIGGER_CONDITION_MISSING = 103,
 
             /// <summary>
-            /// Enum STOPLOSSONFILLTRIGGERCONDITIONINVALID for value: STOP_LOSS_ON_FILL_TRIGGER_CONDITION_INVALID
+            /// Enum STOP_LOSS_ON_FILL_TRIGGER_CONDITION_INVALID for value: STOP_LOSS_ON_FILL_TRIGGER_CONDITION_INVALID
             /// </summary>
             [EnumMember(Value = "STOP_LOSS_ON_FILL_TRIGGER_CONDITION_INVALID")]
-            STOPLOSSONFILLTRIGGERCONDITIONINVALID = 104,
+            STOP_LOSS_ON_FILL_TRIGGER_CONDITION_INVALID = 104,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSORDERALREADYEXISTS for value: TRAILING_STOP_LOSS_ORDER_ALREADY_EXISTS
+            /// Enum TRAILING_STOP_LOSS_ORDER_ALREADY_EXISTS for value: TRAILING_STOP_LOSS_ORDER_ALREADY_EXISTS
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ORDER_ALREADY_EXISTS")]
-            TRAILINGSTOPLOSSORDERALREADYEXISTS = 105,
+            TRAILING_STOP_LOSS_ORDER_ALREADY_EXISTS = 105,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLPRICEDISTANCEMISSING for value: TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MISSING
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MISSING for value: TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MISSING
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MISSING")]
-            TRAILINGSTOPLOSSONFILLPRICEDISTANCEMISSING = 106,
+            TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MISSING = 106,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLPRICEDISTANCEINVALID for value: TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_INVALID
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_INVALID for value: TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_INVALID
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_INVALID")]
-            TRAILINGSTOPLOSSONFILLPRICEDISTANCEINVALID = 107,
+            TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_INVALID = 107,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLPRICEDISTANCEPRECISIONEXCEEDED for value: TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_PRECISION_EXCEEDED
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_PRECISION_EXCEEDED for value: TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_PRECISION_EXCEEDED
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_PRECISION_EXCEEDED")]
-            TRAILINGSTOPLOSSONFILLPRICEDISTANCEPRECISIONEXCEEDED = 108,
+            TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_PRECISION_EXCEEDED = 108,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLPRICEDISTANCEMAXIMUMEXCEEDED for value: TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MAXIMUM_EXCEEDED
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MAXIMUM_EXCEEDED for value: TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MAXIMUM_EXCEEDED
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MAXIMUM_EXCEEDED")]
-            TRAILINGSTOPLOSSONFILLPRICEDISTANCEMAXIMUMEXCEEDED = 109,
+            TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MAXIMUM_EXCEEDED = 109,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLPRICEDISTANCEMINIMUMNOTMET for value: TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MINIMUM_NOT_MET
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MINIMUM_NOT_MET for value: TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MINIMUM_NOT_MET
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MINIMUM_NOT_MET")]
-            TRAILINGSTOPLOSSONFILLPRICEDISTANCEMINIMUMNOTMET = 110,
+            TRAILING_STOP_LOSS_ON_FILL_PRICE_DISTANCE_MINIMUM_NOT_MET = 110,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLTIMEINFORCEMISSING for value: TRAILING_STOP_LOSS_ON_FILL_TIME_IN_FORCE_MISSING
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_TIME_IN_FORCE_MISSING for value: TRAILING_STOP_LOSS_ON_FILL_TIME_IN_FORCE_MISSING
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_TIME_IN_FORCE_MISSING")]
-            TRAILINGSTOPLOSSONFILLTIMEINFORCEMISSING = 111,
+            TRAILING_STOP_LOSS_ON_FILL_TIME_IN_FORCE_MISSING = 111,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLTIMEINFORCEINVALID for value: TRAILING_STOP_LOSS_ON_FILL_TIME_IN_FORCE_INVALID
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_TIME_IN_FORCE_INVALID for value: TRAILING_STOP_LOSS_ON_FILL_TIME_IN_FORCE_INVALID
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_TIME_IN_FORCE_INVALID")]
-            TRAILINGSTOPLOSSONFILLTIMEINFORCEINVALID = 112,
+            TRAILING_STOP_LOSS_ON_FILL_TIME_IN_FORCE_INVALID = 112,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLGTDTIMESTAMPMISSING for value: TRAILING_STOP_LOSS_ON_FILL_GTD_TIMESTAMP_MISSING
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_GTD_TIMESTAMP_MISSING for value: TRAILING_STOP_LOSS_ON_FILL_GTD_TIMESTAMP_MISSING
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_GTD_TIMESTAMP_MISSING")]
-            TRAILINGSTOPLOSSONFILLGTDTIMESTAMPMISSING = 113,
+            TRAILING_STOP_LOSS_ON_FILL_GTD_TIMESTAMP_MISSING = 113,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLGTDTIMESTAMPINPAST for value: TRAILING_STOP_LOSS_ON_FILL_GTD_TIMESTAMP_IN_PAST
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_GTD_TIMESTAMP_IN_PAST for value: TRAILING_STOP_LOSS_ON_FILL_GTD_TIMESTAMP_IN_PAST
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_GTD_TIMESTAMP_IN_PAST")]
-            TRAILINGSTOPLOSSONFILLGTDTIMESTAMPINPAST = 114,
+            TRAILING_STOP_LOSS_ON_FILL_GTD_TIMESTAMP_IN_PAST = 114,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLCLIENTORDERIDINVALID for value: TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_ID_INVALID
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_ID_INVALID for value: TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_ID_INVALID
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_ID_INVALID")]
-            TRAILINGSTOPLOSSONFILLCLIENTORDERIDINVALID = 115,
+            TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_ID_INVALID = 115,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLCLIENTORDERTAGINVALID for value: TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_TAG_INVALID
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_TAG_INVALID for value: TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_TAG_INVALID
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_TAG_INVALID")]
-            TRAILINGSTOPLOSSONFILLCLIENTORDERTAGINVALID = 116,
+            TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_TAG_INVALID = 116,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLCLIENTORDERCOMMENTINVALID for value: TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_COMMENT_INVALID
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_COMMENT_INVALID for value: TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_COMMENT_INVALID
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_COMMENT_INVALID")]
-            TRAILINGSTOPLOSSONFILLCLIENTORDERCOMMENTINVALID = 117,
+            TRAILING_STOP_LOSS_ON_FILL_CLIENT_ORDER_COMMENT_INVALID = 117,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSORDERSNOTSUPPORTED for value: TRAILING_STOP_LOSS_ORDERS_NOT_SUPPORTED
+            /// Enum TRAILING_STOP_LOSS_ORDERS_NOT_SUPPORTED for value: TRAILING_STOP_LOSS_ORDERS_NOT_SUPPORTED
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ORDERS_NOT_SUPPORTED")]
-            TRAILINGSTOPLOSSORDERSNOTSUPPORTED = 118,
+            TRAILING_STOP_LOSS_ORDERS_NOT_SUPPORTED = 118,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLTRIGGERCONDITIONMISSING for value: TRAILING_STOP_LOSS_ON_FILL_TRIGGER_CONDITION_MISSING
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_TRIGGER_CONDITION_MISSING for value: TRAILING_STOP_LOSS_ON_FILL_TRIGGER_CONDITION_MISSING
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_TRIGGER_CONDITION_MISSING")]
-            TRAILINGSTOPLOSSONFILLTRIGGERCONDITIONMISSING = 119,
+            TRAILING_STOP_LOSS_ON_FILL_TRIGGER_CONDITION_MISSING = 119,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSSONFILLTRIGGERCONDITIONINVALID for value: TRAILING_STOP_LOSS_ON_FILL_TRIGGER_CONDITION_INVALID
+            /// Enum TRAILING_STOP_LOSS_ON_FILL_TRIGGER_CONDITION_INVALID for value: TRAILING_STOP_LOSS_ON_FILL_TRIGGER_CONDITION_INVALID
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS_ON_FILL_TRIGGER_CONDITION_INVALID")]
-            TRAILINGSTOPLOSSONFILLTRIGGERCONDITIONINVALID = 120,
+            TRAILING_STOP_LOSS_ON_FILL_TRIGGER_CONDITION_INVALID = 120,
 
             /// <summary>
-            /// Enum CLOSETRADETYPEMISSING for value: CLOSE_TRADE_TYPE_MISSING
+            /// Enum CLOSE_TRADE_TYPE_MISSING for value: CLOSE_TRADE_TYPE_MISSING
             /// </summary>
             [EnumMember(Value = "CLOSE_TRADE_TYPE_MISSING")]
-            CLOSETRADETYPEMISSING = 121,
+            CLOSE_TRADE_TYPE_MISSING = 121,
 
             /// <summary>
-            /// Enum CLOSETRADEPARTIALUNITSMISSING for value: CLOSE_TRADE_PARTIAL_UNITS_MISSING
+            /// Enum CLOSE_TRADE_PARTIAL_UNITS_MISSING for value: CLOSE_TRADE_PARTIAL_UNITS_MISSING
             /// </summary>
             [EnumMember(Value = "CLOSE_TRADE_PARTIAL_UNITS_MISSING")]
-            CLOSETRADEPARTIALUNITSMISSING = 122,
+            CLOSE_TRADE_PARTIAL_UNITS_MISSING = 122,
 
             /// <summary>
-            /// Enum CLOSETRADEUNITSEXCEEDTRADESIZE for value: CLOSE_TRADE_UNITS_EXCEED_TRADE_SIZE
+            /// Enum CLOSE_TRADE_UNITS_EXCEED_TRADE_SIZE for value: CLOSE_TRADE_UNITS_EXCEED_TRADE_SIZE
             /// </summary>
             [EnumMember(Value = "CLOSE_TRADE_UNITS_EXCEED_TRADE_SIZE")]
-            CLOSETRADEUNITSEXCEEDTRADESIZE = 123,
+            CLOSE_TRADE_UNITS_EXCEED_TRADE_SIZE = 123,
 
             /// <summary>
-            /// Enum CLOSEOUTPOSITIONDOESNTEXIST for value: CLOSEOUT_POSITION_DOESNT_EXIST
+            /// Enum CLOSEOUT_POSITION_DOESNT_EXIST for value: CLOSEOUT_POSITION_DOESNT_EXIST
             /// </summary>
             [EnumMember(Value = "CLOSEOUT_POSITION_DOESNT_EXIST")]
-            CLOSEOUTPOSITIONDOESNTEXIST = 124,
+            CLOSEOUT_POSITION_DOESNT_EXIST = 124,
 
             /// <summary>
-            /// Enum CLOSEOUTPOSITIONINCOMPLETESPECIFICATION for value: CLOSEOUT_POSITION_INCOMPLETE_SPECIFICATION
+            /// Enum CLOSEOUT_POSITION_INCOMPLETE_SPECIFICATION for value: CLOSEOUT_POSITION_INCOMPLETE_SPECIFICATION
             /// </summary>
             [EnumMember(Value = "CLOSEOUT_POSITION_INCOMPLETE_SPECIFICATION")]
-            CLOSEOUTPOSITIONINCOMPLETESPECIFICATION = 125,
+            CLOSEOUT_POSITION_INCOMPLETE_SPECIFICATION = 125,
 
             /// <summary>
-            /// Enum CLOSEOUTPOSITIONUNITSEXCEEDPOSITIONSIZE for value: CLOSEOUT_POSITION_UNITS_EXCEED_POSITION_SIZE
+            /// Enum CLOSEOUT_POSITION_UNITS_EXCEED_POSITION_SIZE for value: CLOSEOUT_POSITION_UNITS_EXCEED_POSITION_SIZE
             /// </summary>
             [EnumMember(Value = "CLOSEOUT_POSITION_UNITS_EXCEED_POSITION_SIZE")]
-            CLOSEOUTPOSITIONUNITSEXCEEDPOSITIONSIZE = 126,
+            CLOSEOUT_POSITION_UNITS_EXCEED_POSITION_SIZE = 126,
 
             /// <summary>
-            /// Enum CLOSEOUTPOSITIONREJECT for value: CLOSEOUT_POSITION_REJECT
+            /// Enum CLOSEOUT_POSITION_REJECT for value: CLOSEOUT_POSITION_REJECT
             /// </summary>
             [EnumMember(Value = "CLOSEOUT_POSITION_REJECT")]
-            CLOSEOUTPOSITIONREJECT = 127,
+            CLOSEOUT_POSITION_REJECT = 127,
 
             /// <summary>
-            /// Enum CLOSEOUTPOSITIONPARTIALUNITSMISSING for value: CLOSEOUT_POSITION_PARTIAL_UNITS_MISSING
+            /// Enum CLOSEOUT_POSITION_PARTIAL_UNITS_MISSING for value: CLOSEOUT_POSITION_PARTIAL_UNITS_MISSING
             /// </summary>
             [EnumMember(Value = "CLOSEOUT_POSITION_PARTIAL_UNITS_MISSING")]
-            CLOSEOUTPOSITIONPARTIALUNITSMISSING = 128,
+            CLOSEOUT_POSITION_PARTIAL_UNITS_MISSING = 128,
 
             /// <summary>
-            /// Enum MARKUPGROUPIDINVALID for value: MARKUP_GROUP_ID_INVALID
+            /// Enum MARKUP_GROUP_ID_INVALID for value: MARKUP_GROUP_ID_INVALID
             /// </summary>
             [EnumMember(Value = "MARKUP_GROUP_ID_INVALID")]
-            MARKUPGROUPIDINVALID = 129,
+            MARKUP_GROUP_ID_INVALID = 129,
 
             /// <summary>
-            /// Enum POSITIONAGGREGATIONMODEINVALID for value: POSITION_AGGREGATION_MODE_INVALID
+            /// Enum POSITION_AGGREGATION_MODE_INVALID for value: POSITION_AGGREGATION_MODE_INVALID
             /// </summary>
             [EnumMember(Value = "POSITION_AGGREGATION_MODE_INVALID")]
-            POSITIONAGGREGATIONMODEINVALID = 130,
+            POSITION_AGGREGATION_MODE_INVALID = 130,
 
             /// <summary>
-            /// Enum ADMINCONFIGUREDATAMISSING for value: ADMIN_CONFIGURE_DATA_MISSING
+            /// Enum ADMIN_CONFIGURE_DATA_MISSING for value: ADMIN_CONFIGURE_DATA_MISSING
             /// </summary>
             [EnumMember(Value = "ADMIN_CONFIGURE_DATA_MISSING")]
-            ADMINCONFIGUREDATAMISSING = 131,
+            ADMIN_CONFIGURE_DATA_MISSING = 131,
 
             /// <summary>
-            /// Enum MARGINRATEINVALID for value: MARGIN_RATE_INVALID
+            /// Enum MARGIN_RATE_INVALID for value: MARGIN_RATE_INVALID
             /// </summary>
             [EnumMember(Value = "MARGIN_RATE_INVALID")]
-            MARGINRATEINVALID = 132,
+            MARGIN_RATE_INVALID = 132,
 
             /// <summary>
-            /// Enum MARGINRATEWOULDTRIGGERCLOSEOUT for value: MARGIN_RATE_WOULD_TRIGGER_CLOSEOUT
+            /// Enum MARGIN_RATE_WOULD_TRIGGER_CLOSEOUT for value: MARGIN_RATE_WOULD_TRIGGER_CLOSEOUT
             /// </summary>
             [EnumMember(Value = "MARGIN_RATE_WOULD_TRIGGER_CLOSEOUT")]
-            MARGINRATEWOULDTRIGGERCLOSEOUT = 133,
+            MARGIN_RATE_WOULD_TRIGGER_CLOSEOUT = 133,
 
             /// <summary>
-            /// Enum ALIASINVALID for value: ALIAS_INVALID
+            /// Enum ALIAS_INVALID for value: ALIAS_INVALID
             /// </summary>
             [EnumMember(Value = "ALIAS_INVALID")]
-            ALIASINVALID = 134,
+            ALIAS_INVALID = 134,
 
             /// <summary>
-            /// Enum CLIENTCONFIGUREDATAMISSING for value: CLIENT_CONFIGURE_DATA_MISSING
+            /// Enum CLIENT_CONFIGURE_DATA_MISSING for value: CLIENT_CONFIGURE_DATA_MISSING
             /// </summary>
             [EnumMember(Value = "CLIENT_CONFIGURE_DATA_MISSING")]
-            CLIENTCONFIGUREDATAMISSING = 135,
+            CLIENT_CONFIGURE_DATA_MISSING = 135,
 
             /// <summary>
-            /// Enum MARGINRATEWOULDTRIGGERMARGINCALL for value: MARGIN_RATE_WOULD_TRIGGER_MARGIN_CALL
+            /// Enum MARGIN_RATE_WOULD_TRIGGER_MARGIN_CALL for value: MARGIN_RATE_WOULD_TRIGGER_MARGIN_CALL
             /// </summary>
             [EnumMember(Value = "MARGIN_RATE_WOULD_TRIGGER_MARGIN_CALL")]
-            MARGINRATEWOULDTRIGGERMARGINCALL = 136,
+            MARGIN_RATE_WOULD_TRIGGER_MARGIN_CALL = 136,
 
             /// <summary>
-            /// Enum AMOUNTINVALID for value: AMOUNT_INVALID
+            /// Enum AMOUNT_INVALID for value: AMOUNT_INVALID
             /// </summary>
             [EnumMember(Value = "AMOUNT_INVALID")]
-            AMOUNTINVALID = 137,
+            AMOUNT_INVALID = 137,
 
             /// <summary>
-            /// Enum INSUFFICIENTFUNDS for value: INSUFFICIENT_FUNDS
+            /// Enum INSUFFICIENT_FUNDS for value: INSUFFICIENT_FUNDS
             /// </summary>
             [EnumMember(Value = "INSUFFICIENT_FUNDS")]
-            INSUFFICIENTFUNDS = 138,
+            INSUFFICIENT_FUNDS = 138,
 
             /// <summary>
-            /// Enum AMOUNTMISSING for value: AMOUNT_MISSING
+            /// Enum AMOUNT_MISSING for value: AMOUNT_MISSING
             /// </summary>
             [EnumMember(Value = "AMOUNT_MISSING")]
-            AMOUNTMISSING = 139,
+            AMOUNT_MISSING = 139,
 
             /// <summary>
-            /// Enum FUNDINGREASONMISSING for value: FUNDING_REASON_MISSING
+            /// Enum FUNDING_REASON_MISSING for value: FUNDING_REASON_MISSING
             /// </summary>
             [EnumMember(Value = "FUNDING_REASON_MISSING")]
-            FUNDINGREASONMISSING = 140,
+            FUNDING_REASON_MISSING = 140,
 
             /// <summary>
-            /// Enum CLIENTEXTENSIONSDATAMISSING for value: CLIENT_EXTENSIONS_DATA_MISSING
+            /// Enum CLIENT_EXTENSIONS_DATA_MISSING for value: CLIENT_EXTENSIONS_DATA_MISSING
             /// </summary>
             [EnumMember(Value = "CLIENT_EXTENSIONS_DATA_MISSING")]
-            CLIENTEXTENSIONSDATAMISSING = 141,
+            CLIENT_EXTENSIONS_DATA_MISSING = 141,
 
             /// <summary>
-            /// Enum REPLACINGORDERINVALID for value: REPLACING_ORDER_INVALID
+            /// Enum REPLACING_ORDER_INVALID for value: REPLACING_ORDER_INVALID
             /// </summary>
             [EnumMember(Value = "REPLACING_ORDER_INVALID")]
-            REPLACINGORDERINVALID = 142,
+            REPLACING_ORDER_INVALID = 142,
 
             /// <summary>
-            /// Enum REPLACINGTRADEIDINVALID for value: REPLACING_TRADE_ID_INVALID
+            /// Enum REPLACING_TRADE_ID_INVALID for value: REPLACING_TRADE_ID_INVALID
             /// </summary>
             [EnumMember(Value = "REPLACING_TRADE_ID_INVALID")]
-            REPLACINGTRADEIDINVALID = 143
+            REPLACING_TRADE_ID_INVALID = 143
 
         }
 

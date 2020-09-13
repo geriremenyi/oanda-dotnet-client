@@ -432,7 +432,7 @@ Name | Type | Description  | Notes
 
 <a name="getpendingorders"></a>
 # **GetPendingOrders**
-> InlineResponse2003 GetPendingOrders (string accountID, DateTimeFormat? acceptDatetimeFormat = null)
+> PendingOrdersResponse GetPendingOrders (string accountID, DateTimeFormat? acceptDatetimeFormat = null)
 
 Pending Orders
 
@@ -464,7 +464,7 @@ namespace Example
             try
             {
                 // Pending Orders
-                InlineResponse2003 result = apiInstance.GetPendingOrders(accountID, acceptDatetimeFormat);
+                PendingOrdersResponse result = apiInstance.GetPendingOrders(accountID, acceptDatetimeFormat);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -487,7 +487,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**PendingOrdersResponse**](PendingOrdersResponse.md)
 
 ### Authorization
 

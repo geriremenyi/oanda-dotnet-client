@@ -175,8 +175,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>InlineResponse2003</returns>
-        InlineResponse2003 GetPendingOrders (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
+        /// <returns>PendingOrdersResponse</returns>
+        PendingOrdersResponse GetPendingOrders (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
 
         /// <summary>
         /// Pending Orders
@@ -187,8 +187,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2003</returns>
-        ApiResponse<InlineResponse2003> GetPendingOrdersWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
+        /// <returns>ApiResponse of PendingOrdersResponse</returns>
+        ApiResponse<PendingOrdersResponse> GetPendingOrdersWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
         /// <summary>
         /// Set Order Extensions
         /// </summary>
@@ -373,8 +373,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>Task of InlineResponse2003</returns>
-        System.Threading.Tasks.Task<InlineResponse2003> GetPendingOrdersAsync (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
+        /// <returns>Task of PendingOrdersResponse</returns>
+        System.Threading.Tasks.Task<PendingOrdersResponse> GetPendingOrdersAsync (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
 
         /// <summary>
         /// Pending Orders
@@ -385,8 +385,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>Task of ApiResponse (InlineResponse2003)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2003>> GetPendingOrdersAsyncWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
+        /// <returns>Task of ApiResponse (PendingOrdersResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<PendingOrdersResponse>> GetPendingOrdersAsyncWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
         /// <summary>
         /// Set Order Extensions
         /// </summary>
@@ -1383,10 +1383,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>InlineResponse2003</returns>
-        public InlineResponse2003 GetPendingOrders (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
+        /// <returns>PendingOrdersResponse</returns>
+        public PendingOrdersResponse GetPendingOrders (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
         {
-             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<InlineResponse2003> localVarResponse = GetPendingOrdersWithHttpInfo(accountID, acceptDatetimeFormat);
+             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<PendingOrdersResponse> localVarResponse = GetPendingOrdersWithHttpInfo(accountID, acceptDatetimeFormat);
              return localVarResponse.Data;
         }
 
@@ -1396,8 +1396,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2003</returns>
-        public GeriRemenyi.Oanda.V20.Client.Client.ApiResponse< InlineResponse2003 > GetPendingOrdersWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
+        /// <returns>ApiResponse of PendingOrdersResponse</returns>
+        public GeriRemenyi.Oanda.V20.Client.Client.ApiResponse< PendingOrdersResponse > GetPendingOrdersWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
         {
             // verify the required parameter 'accountID' is set
             if (accountID == null)
@@ -1433,7 +1433,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< InlineResponse2003 >("/accounts/{accountID}/pendingOrders", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get< PendingOrdersResponse >("/accounts/{accountID}/pendingOrders", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1450,10 +1450,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>Task of InlineResponse2003</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2003> GetPendingOrdersAsync (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
+        /// <returns>Task of PendingOrdersResponse</returns>
+        public async System.Threading.Tasks.Task<PendingOrdersResponse> GetPendingOrdersAsync (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
         {
-             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<InlineResponse2003> localVarResponse = await GetPendingOrdersAsyncWithHttpInfo(accountID, acceptDatetimeFormat);
+             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<PendingOrdersResponse> localVarResponse = await GetPendingOrdersAsyncWithHttpInfo(accountID, acceptDatetimeFormat);
              return localVarResponse.Data;
 
         }
@@ -1464,8 +1464,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>Task of ApiResponse (InlineResponse2003)</returns>
-        public async System.Threading.Tasks.Task<GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<InlineResponse2003>> GetPendingOrdersAsyncWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
+        /// <returns>Task of ApiResponse (PendingOrdersResponse)</returns>
+        public async System.Threading.Tasks.Task<GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<PendingOrdersResponse>> GetPendingOrdersAsyncWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
         {
             // verify the required parameter 'accountID' is set
             if (accountID == null)
@@ -1503,7 +1503,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<InlineResponse2003>("/accounts/{accountID}/pendingOrders", localVarRequestOptions, this.Configuration);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<PendingOrdersResponse>("/accounts/{accountID}/pendingOrders", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {

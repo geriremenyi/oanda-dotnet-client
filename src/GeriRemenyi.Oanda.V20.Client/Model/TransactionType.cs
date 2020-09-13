@@ -53,196 +53,196 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         REOPEN = 3,
 
         /// <summary>
-        /// Enum CLIENTCONFIGURE for value: CLIENT_CONFIGURE
+        /// Enum CLIENT_CONFIGURE for value: CLIENT_CONFIGURE
         /// </summary>
         [EnumMember(Value = "CLIENT_CONFIGURE")]
-        CLIENTCONFIGURE = 4,
+        CLIENT_CONFIGURE = 4,
 
         /// <summary>
-        /// Enum CLIENTCONFIGUREREJECT for value: CLIENT_CONFIGURE_REJECT
+        /// Enum CLIENT_CONFIGURE_REJECT for value: CLIENT_CONFIGURE_REJECT
         /// </summary>
         [EnumMember(Value = "CLIENT_CONFIGURE_REJECT")]
-        CLIENTCONFIGUREREJECT = 5,
+        CLIENT_CONFIGURE_REJECT = 5,
 
         /// <summary>
-        /// Enum TRANSFERFUNDS for value: TRANSFER_FUNDS
+        /// Enum TRANSFER_FUNDS for value: TRANSFER_FUNDS
         /// </summary>
         [EnumMember(Value = "TRANSFER_FUNDS")]
-        TRANSFERFUNDS = 6,
+        TRANSFER_FUNDS = 6,
 
         /// <summary>
-        /// Enum TRANSFERFUNDSREJECT for value: TRANSFER_FUNDS_REJECT
+        /// Enum TRANSFER_FUNDS_REJECT for value: TRANSFER_FUNDS_REJECT
         /// </summary>
         [EnumMember(Value = "TRANSFER_FUNDS_REJECT")]
-        TRANSFERFUNDSREJECT = 7,
+        TRANSFER_FUNDS_REJECT = 7,
 
         /// <summary>
-        /// Enum MARKETORDER for value: MARKET_ORDER
+        /// Enum MARKET_ORDER for value: MARKET_ORDER
         /// </summary>
         [EnumMember(Value = "MARKET_ORDER")]
-        MARKETORDER = 8,
+        MARKET_ORDER = 8,
 
         /// <summary>
-        /// Enum MARKETORDERREJECT for value: MARKET_ORDER_REJECT
+        /// Enum MARKET_ORDER_REJECT for value: MARKET_ORDER_REJECT
         /// </summary>
         [EnumMember(Value = "MARKET_ORDER_REJECT")]
-        MARKETORDERREJECT = 9,
+        MARKET_ORDER_REJECT = 9,
 
         /// <summary>
-        /// Enum FIXEDPRICEORDER for value: FIXED_PRICE_ORDER
+        /// Enum FIXED_PRICE_ORDER for value: FIXED_PRICE_ORDER
         /// </summary>
         [EnumMember(Value = "FIXED_PRICE_ORDER")]
-        FIXEDPRICEORDER = 10,
+        FIXED_PRICE_ORDER = 10,
 
         /// <summary>
-        /// Enum LIMITORDER for value: LIMIT_ORDER
+        /// Enum LIMIT_ORDER for value: LIMIT_ORDER
         /// </summary>
         [EnumMember(Value = "LIMIT_ORDER")]
-        LIMITORDER = 11,
+        LIMIT_ORDER = 11,
 
         /// <summary>
-        /// Enum LIMITORDERREJECT for value: LIMIT_ORDER_REJECT
+        /// Enum LIMIT_ORDER_REJECT for value: LIMIT_ORDER_REJECT
         /// </summary>
         [EnumMember(Value = "LIMIT_ORDER_REJECT")]
-        LIMITORDERREJECT = 12,
+        LIMIT_ORDER_REJECT = 12,
 
         /// <summary>
-        /// Enum STOPORDER for value: STOP_ORDER
+        /// Enum STOP_ORDER for value: STOP_ORDER
         /// </summary>
         [EnumMember(Value = "STOP_ORDER")]
-        STOPORDER = 13,
+        STOP_ORDER = 13,
 
         /// <summary>
-        /// Enum STOPORDERREJECT for value: STOP_ORDER_REJECT
+        /// Enum STOP_ORDER_REJECT for value: STOP_ORDER_REJECT
         /// </summary>
         [EnumMember(Value = "STOP_ORDER_REJECT")]
-        STOPORDERREJECT = 14,
+        STOP_ORDER_REJECT = 14,
 
         /// <summary>
-        /// Enum MARKETIFTOUCHEDORDER for value: MARKET_IF_TOUCHED_ORDER
+        /// Enum MARKET_IF_TOUCHED_ORDER for value: MARKET_IF_TOUCHED_ORDER
         /// </summary>
         [EnumMember(Value = "MARKET_IF_TOUCHED_ORDER")]
-        MARKETIFTOUCHEDORDER = 15,
+        MARKET_IF_TOUCHED_ORDER = 15,
 
         /// <summary>
-        /// Enum MARKETIFTOUCHEDORDERREJECT for value: MARKET_IF_TOUCHED_ORDER_REJECT
+        /// Enum MARKET_IF_TOUCHED_ORDER_REJECT for value: MARKET_IF_TOUCHED_ORDER_REJECT
         /// </summary>
         [EnumMember(Value = "MARKET_IF_TOUCHED_ORDER_REJECT")]
-        MARKETIFTOUCHEDORDERREJECT = 16,
+        MARKET_IF_TOUCHED_ORDER_REJECT = 16,
 
         /// <summary>
-        /// Enum TAKEPROFITORDER for value: TAKE_PROFIT_ORDER
+        /// Enum TAKE_PROFIT_ORDER for value: TAKE_PROFIT_ORDER
         /// </summary>
         [EnumMember(Value = "TAKE_PROFIT_ORDER")]
-        TAKEPROFITORDER = 17,
+        TAKE_PROFIT_ORDER = 17,
 
         /// <summary>
-        /// Enum TAKEPROFITORDERREJECT for value: TAKE_PROFIT_ORDER_REJECT
+        /// Enum TAKE_PROFIT_ORDER_REJECT for value: TAKE_PROFIT_ORDER_REJECT
         /// </summary>
         [EnumMember(Value = "TAKE_PROFIT_ORDER_REJECT")]
-        TAKEPROFITORDERREJECT = 18,
+        TAKE_PROFIT_ORDER_REJECT = 18,
 
         /// <summary>
-        /// Enum STOPLOSSORDER for value: STOP_LOSS_ORDER
+        /// Enum STOP_LOSS_ORDER for value: STOP_LOSS_ORDER
         /// </summary>
         [EnumMember(Value = "STOP_LOSS_ORDER")]
-        STOPLOSSORDER = 19,
+        STOP_LOSS_ORDER = 19,
 
         /// <summary>
-        /// Enum STOPLOSSORDERREJECT for value: STOP_LOSS_ORDER_REJECT
+        /// Enum STOP_LOSS_ORDER_REJECT for value: STOP_LOSS_ORDER_REJECT
         /// </summary>
         [EnumMember(Value = "STOP_LOSS_ORDER_REJECT")]
-        STOPLOSSORDERREJECT = 20,
+        STOP_LOSS_ORDER_REJECT = 20,
 
         /// <summary>
-        /// Enum TRAILINGSTOPLOSSORDER for value: TRAILING_STOP_LOSS_ORDER
+        /// Enum TRAILING_STOP_LOSS_ORDER for value: TRAILING_STOP_LOSS_ORDER
         /// </summary>
         [EnumMember(Value = "TRAILING_STOP_LOSS_ORDER")]
-        TRAILINGSTOPLOSSORDER = 21,
+        TRAILING_STOP_LOSS_ORDER = 21,
 
         /// <summary>
-        /// Enum TRAILINGSTOPLOSSORDERREJECT for value: TRAILING_STOP_LOSS_ORDER_REJECT
+        /// Enum TRAILING_STOP_LOSS_ORDER_REJECT for value: TRAILING_STOP_LOSS_ORDER_REJECT
         /// </summary>
         [EnumMember(Value = "TRAILING_STOP_LOSS_ORDER_REJECT")]
-        TRAILINGSTOPLOSSORDERREJECT = 22,
+        TRAILING_STOP_LOSS_ORDER_REJECT = 22,
 
         /// <summary>
-        /// Enum ORDERFILL for value: ORDER_FILL
+        /// Enum ORDER_FILL for value: ORDER_FILL
         /// </summary>
         [EnumMember(Value = "ORDER_FILL")]
-        ORDERFILL = 23,
+        ORDER_FILL = 23,
 
         /// <summary>
-        /// Enum ORDERCANCEL for value: ORDER_CANCEL
+        /// Enum ORDER_CANCEL for value: ORDER_CANCEL
         /// </summary>
         [EnumMember(Value = "ORDER_CANCEL")]
-        ORDERCANCEL = 24,
+        ORDER_CANCEL = 24,
 
         /// <summary>
-        /// Enum ORDERCANCELREJECT for value: ORDER_CANCEL_REJECT
+        /// Enum ORDER_CANCEL_REJECT for value: ORDER_CANCEL_REJECT
         /// </summary>
         [EnumMember(Value = "ORDER_CANCEL_REJECT")]
-        ORDERCANCELREJECT = 25,
+        ORDER_CANCEL_REJECT = 25,
 
         /// <summary>
-        /// Enum ORDERCLIENTEXTENSIONSMODIFY for value: ORDER_CLIENT_EXTENSIONS_MODIFY
+        /// Enum ORDER_CLIENT_EXTENSIONS_MODIFY for value: ORDER_CLIENT_EXTENSIONS_MODIFY
         /// </summary>
         [EnumMember(Value = "ORDER_CLIENT_EXTENSIONS_MODIFY")]
-        ORDERCLIENTEXTENSIONSMODIFY = 26,
+        ORDER_CLIENT_EXTENSIONS_MODIFY = 26,
 
         /// <summary>
-        /// Enum ORDERCLIENTEXTENSIONSMODIFYREJECT for value: ORDER_CLIENT_EXTENSIONS_MODIFY_REJECT
+        /// Enum ORDER_CLIENT_EXTENSIONS_MODIFY_REJECT for value: ORDER_CLIENT_EXTENSIONS_MODIFY_REJECT
         /// </summary>
         [EnumMember(Value = "ORDER_CLIENT_EXTENSIONS_MODIFY_REJECT")]
-        ORDERCLIENTEXTENSIONSMODIFYREJECT = 27,
+        ORDER_CLIENT_EXTENSIONS_MODIFY_REJECT = 27,
 
         /// <summary>
-        /// Enum TRADECLIENTEXTENSIONSMODIFY for value: TRADE_CLIENT_EXTENSIONS_MODIFY
+        /// Enum TRADE_CLIENT_EXTENSIONS_MODIFY for value: TRADE_CLIENT_EXTENSIONS_MODIFY
         /// </summary>
         [EnumMember(Value = "TRADE_CLIENT_EXTENSIONS_MODIFY")]
-        TRADECLIENTEXTENSIONSMODIFY = 28,
+        TRADE_CLIENT_EXTENSIONS_MODIFY = 28,
 
         /// <summary>
-        /// Enum TRADECLIENTEXTENSIONSMODIFYREJECT for value: TRADE_CLIENT_EXTENSIONS_MODIFY_REJECT
+        /// Enum TRADE_CLIENT_EXTENSIONS_MODIFY_REJECT for value: TRADE_CLIENT_EXTENSIONS_MODIFY_REJECT
         /// </summary>
         [EnumMember(Value = "TRADE_CLIENT_EXTENSIONS_MODIFY_REJECT")]
-        TRADECLIENTEXTENSIONSMODIFYREJECT = 29,
+        TRADE_CLIENT_EXTENSIONS_MODIFY_REJECT = 29,
 
         /// <summary>
-        /// Enum MARGINCALLENTER for value: MARGIN_CALL_ENTER
+        /// Enum MARGIN_CALL_ENTER for value: MARGIN_CALL_ENTER
         /// </summary>
         [EnumMember(Value = "MARGIN_CALL_ENTER")]
-        MARGINCALLENTER = 30,
+        MARGIN_CALL_ENTER = 30,
 
         /// <summary>
-        /// Enum MARGINCALLEXTEND for value: MARGIN_CALL_EXTEND
+        /// Enum MARGIN_CALL_EXTEND for value: MARGIN_CALL_EXTEND
         /// </summary>
         [EnumMember(Value = "MARGIN_CALL_EXTEND")]
-        MARGINCALLEXTEND = 31,
+        MARGIN_CALL_EXTEND = 31,
 
         /// <summary>
-        /// Enum MARGINCALLEXIT for value: MARGIN_CALL_EXIT
+        /// Enum MARGIN_CALL_EXIT for value: MARGIN_CALL_EXIT
         /// </summary>
         [EnumMember(Value = "MARGIN_CALL_EXIT")]
-        MARGINCALLEXIT = 32,
+        MARGIN_CALL_EXIT = 32,
 
         /// <summary>
-        /// Enum DELAYEDTRADECLOSURE for value: DELAYED_TRADE_CLOSURE
+        /// Enum DELAYED_TRADE_CLOSURE for value: DELAYED_TRADE_CLOSURE
         /// </summary>
         [EnumMember(Value = "DELAYED_TRADE_CLOSURE")]
-        DELAYEDTRADECLOSURE = 33,
+        DELAYED_TRADE_CLOSURE = 33,
 
         /// <summary>
-        /// Enum DAILYFINANCING for value: DAILY_FINANCING
+        /// Enum DAILY_FINANCING for value: DAILY_FINANCING
         /// </summary>
         [EnumMember(Value = "DAILY_FINANCING")]
-        DAILYFINANCING = 34,
+        DAILY_FINANCING = 34,
 
         /// <summary>
-        /// Enum RESETRESETTABLEPL for value: RESET_RESETTABLE_PL
+        /// Enum RESET_RESETTABLE_PL for value: RESET_RESETTABLE_PL
         /// </summary>
         [EnumMember(Value = "RESET_RESETTABLE_PL")]
-        RESETRESETTABLEPL = 35
+        RESET_RESETTABLE_PL = 35
 
     }
 

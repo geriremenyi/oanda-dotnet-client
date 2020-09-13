@@ -26,34 +26,26 @@ using OpenAPIDateConverter = GeriRemenyi.Oanda.V20.Client.Client.OpenAPIDateConv
 namespace GeriRemenyi.Oanda.V20.Client.Model
 {
     /// <summary>
-    /// InlineResponse2001
+    /// AccountsResponse
     /// </summary>
     [DataContract]
-    public partial class InlineResponse2001 :  IEquatable<InlineResponse2001>, IValidatableObject
+    public partial class AccountsResponse :  IEquatable<AccountsResponse>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="InlineResponse2001" /> class.
+        /// Initializes a new instance of the <see cref="AccountsResponse" /> class.
         /// </summary>
-        /// <param name="account">account.</param>
-        /// <param name="lastTransactionID">The ID of the most recent Transaction created for the Account..</param>
-        public InlineResponse2001(AccountSummary account = default(AccountSummary), int lastTransactionID = default(int))
+        /// <param name="accounts">The list of Accounts the client is authorized to access and their associated properties..</param>
+        public AccountsResponse(List<AccountProperties> accounts = default(List<AccountProperties>))
         {
-            this.Account = account;
-            this.LastTransactionID = lastTransactionID;
+            this.Accounts = accounts;
         }
         
         /// <summary>
-        /// Gets or Sets Account
+        /// The list of Accounts the client is authorized to access and their associated properties.
         /// </summary>
-        [DataMember(Name="account", EmitDefaultValue=false)]
-        public AccountSummary Account { get; set; }
-
-        /// <summary>
-        /// The ID of the most recent Transaction created for the Account.
-        /// </summary>
-        /// <value>The ID of the most recent Transaction created for the Account.</value>
-        [DataMember(Name="lastTransactionID", EmitDefaultValue=false)]
-        public int LastTransactionID { get; set; }
+        /// <value>The list of Accounts the client is authorized to access and their associated properties.</value>
+        [DataMember(Name="accounts", EmitDefaultValue=false)]
+        public List<AccountProperties> Accounts { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -62,9 +54,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class InlineResponse2001 {\n");
-            sb.Append("  Account: ").Append(Account).Append("\n");
-            sb.Append("  LastTransactionID: ").Append(LastTransactionID).Append("\n");
+            sb.Append("class AccountsResponse {\n");
+            sb.Append("  Accounts: ").Append(Accounts).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -85,28 +76,25 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as InlineResponse2001);
+            return this.Equals(input as AccountsResponse);
         }
 
         /// <summary>
-        /// Returns true if InlineResponse2001 instances are equal
+        /// Returns true if AccountsResponse instances are equal
         /// </summary>
-        /// <param name="input">Instance of InlineResponse2001 to be compared</param>
+        /// <param name="input">Instance of AccountsResponse to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(InlineResponse2001 input)
+        public bool Equals(AccountsResponse input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.Account == input.Account ||
-                    (this.Account != null &&
-                    this.Account.Equals(input.Account))
-                ) && 
-                (
-                    this.LastTransactionID == input.LastTransactionID ||
-                    this.LastTransactionID.Equals(input.LastTransactionID)
+                    this.Accounts == input.Accounts ||
+                    this.Accounts != null &&
+                    input.Accounts != null &&
+                    this.Accounts.SequenceEqual(input.Accounts)
                 );
         }
 
@@ -119,9 +107,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Account != null)
-                    hashCode = hashCode * 59 + this.Account.GetHashCode();
-                hashCode = hashCode * 59 + this.LastTransactionID.GetHashCode();
+                if (this.Accounts != null)
+                    hashCode = hashCode * 59 + this.Accounts.GetHashCode();
                 return hashCode;
             }
         }

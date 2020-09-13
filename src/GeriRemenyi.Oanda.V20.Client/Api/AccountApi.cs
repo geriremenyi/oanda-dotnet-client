@@ -109,8 +109,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="instruments">List of instruments to query specifically. (optional)</param>
-        /// <returns>InlineResponse2002</returns>
-        InlineResponse2002 GetAccountInstruments (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>));
+        /// <returns>AccountInstrumentsResponse</returns>
+        AccountInstrumentsResponse GetAccountInstruments (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>));
 
         /// <summary>
         /// Account Instruments
@@ -121,8 +121,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="instruments">List of instruments to query specifically. (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        ApiResponse<InlineResponse2002> GetAccountInstrumentsWithHttpInfo (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>));
+        /// <returns>ApiResponse of AccountInstrumentsResponse</returns>
+        ApiResponse<AccountInstrumentsResponse> GetAccountInstrumentsWithHttpInfo (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>));
         /// <summary>
         /// Account Summary
         /// </summary>
@@ -132,8 +132,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        InlineResponse2001 GetAccountSummary (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
+        /// <returns>AccountSummaryResponse</returns>
+        AccountSummaryResponse GetAccountSummary (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
 
         /// <summary>
         /// Account Summary
@@ -144,8 +144,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        ApiResponse<InlineResponse2001> GetAccountSummaryWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
+        /// <returns>ApiResponse of AccountSummaryResponse</returns>
+        ApiResponse<AccountSummaryResponse> GetAccountSummaryWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
         /// <summary>
         /// List Accounts
         /// </summary>
@@ -153,8 +153,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// Get a list of all Accounts authorized for the provided token.
         /// </remarks>
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>InlineResponse200</returns>
-        InlineResponse200 GetAccounts ();
+        /// <returns>AccountsResponse</returns>
+        AccountsResponse GetAccounts ();
 
         /// <summary>
         /// List Accounts
@@ -163,8 +163,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// Get a list of all Accounts authorized for the provided token.
         /// </remarks>
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        ApiResponse<InlineResponse200> GetAccountsWithHttpInfo ();
+        /// <returns>ApiResponse of AccountsResponse</returns>
+        ApiResponse<AccountsResponse> GetAccountsWithHttpInfo ();
         #endregion Synchronous Operations
     }
 
@@ -256,8 +256,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="instruments">List of instruments to query specifically. (optional)</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        System.Threading.Tasks.Task<InlineResponse2002> GetAccountInstrumentsAsync (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>));
+        /// <returns>Task of AccountInstrumentsResponse</returns>
+        System.Threading.Tasks.Task<AccountInstrumentsResponse> GetAccountInstrumentsAsync (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>));
 
         /// <summary>
         /// Account Instruments
@@ -268,8 +268,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="instruments">List of instruments to query specifically. (optional)</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2002>> GetAccountInstrumentsAsyncWithHttpInfo (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>));
+        /// <returns>Task of ApiResponse (AccountInstrumentsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AccountInstrumentsResponse>> GetAccountInstrumentsAsyncWithHttpInfo (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>));
         /// <summary>
         /// Account Summary
         /// </summary>
@@ -279,8 +279,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>Task of InlineResponse2001</returns>
-        System.Threading.Tasks.Task<InlineResponse2001> GetAccountSummaryAsync (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
+        /// <returns>Task of AccountSummaryResponse</returns>
+        System.Threading.Tasks.Task<AccountSummaryResponse> GetAccountSummaryAsync (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
 
         /// <summary>
         /// Account Summary
@@ -291,8 +291,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2001>> GetAccountSummaryAsyncWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
+        /// <returns>Task of ApiResponse (AccountSummaryResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AccountSummaryResponse>> GetAccountSummaryAsyncWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?));
         /// <summary>
         /// List Accounts
         /// </summary>
@@ -300,8 +300,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// Get a list of all Accounts authorized for the provided token.
         /// </remarks>
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of InlineResponse200</returns>
-        System.Threading.Tasks.Task<InlineResponse200> GetAccountsAsync ();
+        /// <returns>Task of AccountsResponse</returns>
+        System.Threading.Tasks.Task<AccountsResponse> GetAccountsAsync ();
 
         /// <summary>
         /// List Accounts
@@ -310,8 +310,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// Get a list of all Accounts authorized for the provided token.
         /// </remarks>
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse200>> GetAccountsAsyncWithHttpInfo ();
+        /// <returns>Task of ApiResponse (AccountsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<AccountsResponse>> GetAccountsAsyncWithHttpInfo ();
         #endregion Asynchronous Operations
     }
 
@@ -869,10 +869,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="instruments">List of instruments to query specifically. (optional)</param>
-        /// <returns>InlineResponse2002</returns>
-        public InlineResponse2002 GetAccountInstruments (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>))
+        /// <returns>AccountInstrumentsResponse</returns>
+        public AccountInstrumentsResponse GetAccountInstruments (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>))
         {
-             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<InlineResponse2002> localVarResponse = GetAccountInstrumentsWithHttpInfo(accountID, instruments);
+             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<AccountInstrumentsResponse> localVarResponse = GetAccountInstrumentsWithHttpInfo(accountID, instruments);
              return localVarResponse.Data;
         }
 
@@ -882,8 +882,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="instruments">List of instruments to query specifically. (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2002</returns>
-        public GeriRemenyi.Oanda.V20.Client.Client.ApiResponse< InlineResponse2002 > GetAccountInstrumentsWithHttpInfo (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>))
+        /// <returns>ApiResponse of AccountInstrumentsResponse</returns>
+        public GeriRemenyi.Oanda.V20.Client.Client.ApiResponse< AccountInstrumentsResponse > GetAccountInstrumentsWithHttpInfo (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>))
         {
             // verify the required parameter 'accountID' is set
             if (accountID == null)
@@ -919,7 +919,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< InlineResponse2002 >("/accounts/{accountID}/instruments", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get< AccountInstrumentsResponse >("/accounts/{accountID}/instruments", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -936,10 +936,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="instruments">List of instruments to query specifically. (optional)</param>
-        /// <returns>Task of InlineResponse2002</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2002> GetAccountInstrumentsAsync (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>))
+        /// <returns>Task of AccountInstrumentsResponse</returns>
+        public async System.Threading.Tasks.Task<AccountInstrumentsResponse> GetAccountInstrumentsAsync (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>))
         {
-             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<InlineResponse2002> localVarResponse = await GetAccountInstrumentsAsyncWithHttpInfo(accountID, instruments);
+             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<AccountInstrumentsResponse> localVarResponse = await GetAccountInstrumentsAsyncWithHttpInfo(accountID, instruments);
              return localVarResponse.Data;
 
         }
@@ -950,8 +950,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="instruments">List of instruments to query specifically. (optional)</param>
-        /// <returns>Task of ApiResponse (InlineResponse2002)</returns>
-        public async System.Threading.Tasks.Task<GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<InlineResponse2002>> GetAccountInstrumentsAsyncWithHttpInfo (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>))
+        /// <returns>Task of ApiResponse (AccountInstrumentsResponse)</returns>
+        public async System.Threading.Tasks.Task<GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<AccountInstrumentsResponse>> GetAccountInstrumentsAsyncWithHttpInfo (string accountID, List<InstrumentName> instruments = default(List<InstrumentName>))
         {
             // verify the required parameter 'accountID' is set
             if (accountID == null)
@@ -989,7 +989,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<InlineResponse2002>("/accounts/{accountID}/instruments", localVarRequestOptions, this.Configuration);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<AccountInstrumentsResponse>("/accounts/{accountID}/instruments", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1006,10 +1006,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>InlineResponse2001</returns>
-        public InlineResponse2001 GetAccountSummary (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
+        /// <returns>AccountSummaryResponse</returns>
+        public AccountSummaryResponse GetAccountSummary (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
         {
-             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<InlineResponse2001> localVarResponse = GetAccountSummaryWithHttpInfo(accountID, acceptDatetimeFormat);
+             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<AccountSummaryResponse> localVarResponse = GetAccountSummaryWithHttpInfo(accountID, acceptDatetimeFormat);
              return localVarResponse.Data;
         }
 
@@ -1019,8 +1019,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>ApiResponse of InlineResponse2001</returns>
-        public GeriRemenyi.Oanda.V20.Client.Client.ApiResponse< InlineResponse2001 > GetAccountSummaryWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
+        /// <returns>ApiResponse of AccountSummaryResponse</returns>
+        public GeriRemenyi.Oanda.V20.Client.Client.ApiResponse< AccountSummaryResponse > GetAccountSummaryWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
         {
             // verify the required parameter 'accountID' is set
             if (accountID == null)
@@ -1056,7 +1056,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< InlineResponse2001 >("/accounts/{accountID}/summary", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get< AccountSummaryResponse >("/accounts/{accountID}/summary", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1073,10 +1073,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>Task of InlineResponse2001</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2001> GetAccountSummaryAsync (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
+        /// <returns>Task of AccountSummaryResponse</returns>
+        public async System.Threading.Tasks.Task<AccountSummaryResponse> GetAccountSummaryAsync (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
         {
-             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<InlineResponse2001> localVarResponse = await GetAccountSummaryAsyncWithHttpInfo(accountID, acceptDatetimeFormat);
+             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<AccountSummaryResponse> localVarResponse = await GetAccountSummaryAsyncWithHttpInfo(accountID, acceptDatetimeFormat);
              return localVarResponse.Data;
 
         }
@@ -1087,8 +1087,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="accountID">Account identifier</param>
         /// <param name="acceptDatetimeFormat">Format of DateTime fields in the request and response. (optional)</param>
-        /// <returns>Task of ApiResponse (InlineResponse2001)</returns>
-        public async System.Threading.Tasks.Task<GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<InlineResponse2001>> GetAccountSummaryAsyncWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
+        /// <returns>Task of ApiResponse (AccountSummaryResponse)</returns>
+        public async System.Threading.Tasks.Task<GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<AccountSummaryResponse>> GetAccountSummaryAsyncWithHttpInfo (string accountID, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?))
         {
             // verify the required parameter 'accountID' is set
             if (accountID == null)
@@ -1126,7 +1126,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<InlineResponse2001>("/accounts/{accountID}/summary", localVarRequestOptions, this.Configuration);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<AccountSummaryResponse>("/accounts/{accountID}/summary", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1141,10 +1141,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// List Accounts Get a list of all Accounts authorized for the provided token.
         /// </summary>
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>InlineResponse200</returns>
-        public InlineResponse200 GetAccounts ()
+        /// <returns>AccountsResponse</returns>
+        public AccountsResponse GetAccounts ()
         {
-             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<InlineResponse200> localVarResponse = GetAccountsWithHttpInfo();
+             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<AccountsResponse> localVarResponse = GetAccountsWithHttpInfo();
              return localVarResponse.Data;
         }
 
@@ -1152,8 +1152,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// List Accounts Get a list of all Accounts authorized for the provided token.
         /// </summary>
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of InlineResponse200</returns>
-        public GeriRemenyi.Oanda.V20.Client.Client.ApiResponse< InlineResponse200 > GetAccountsWithHttpInfo ()
+        /// <returns>ApiResponse of AccountsResponse</returns>
+        public GeriRemenyi.Oanda.V20.Client.Client.ApiResponse< AccountsResponse > GetAccountsWithHttpInfo ()
         {
             GeriRemenyi.Oanda.V20.Client.Client.RequestOptions localVarRequestOptions = new GeriRemenyi.Oanda.V20.Client.Client.RequestOptions();
 
@@ -1180,7 +1180,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< InlineResponse200 >("/accounts", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get< AccountsResponse >("/accounts", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1195,10 +1195,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// List Accounts Get a list of all Accounts authorized for the provided token.
         /// </summary>
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of InlineResponse200</returns>
-        public async System.Threading.Tasks.Task<InlineResponse200> GetAccountsAsync ()
+        /// <returns>Task of AccountsResponse</returns>
+        public async System.Threading.Tasks.Task<AccountsResponse> GetAccountsAsync ()
         {
-             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<InlineResponse200> localVarResponse = await GetAccountsAsyncWithHttpInfo();
+             GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<AccountsResponse> localVarResponse = await GetAccountsAsyncWithHttpInfo();
              return localVarResponse.Data;
 
         }
@@ -1207,8 +1207,8 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// List Accounts Get a list of all Accounts authorized for the provided token.
         /// </summary>
         /// <exception cref="GeriRemenyi.Oanda.V20.Client.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (InlineResponse200)</returns>
-        public async System.Threading.Tasks.Task<GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<InlineResponse200>> GetAccountsAsyncWithHttpInfo ()
+        /// <returns>Task of ApiResponse (AccountsResponse)</returns>
+        public async System.Threading.Tasks.Task<GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<AccountsResponse>> GetAccountsAsyncWithHttpInfo ()
         {
 
             GeriRemenyi.Oanda.V20.Client.Client.RequestOptions localVarRequestOptions = new GeriRemenyi.Oanda.V20.Client.Client.RequestOptions();
@@ -1237,7 +1237,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<InlineResponse200>("/accounts", localVarRequestOptions, this.Configuration);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<AccountsResponse>("/accounts", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {

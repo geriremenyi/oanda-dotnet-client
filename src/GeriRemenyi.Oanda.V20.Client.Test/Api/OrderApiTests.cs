@@ -142,7 +142,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Test
             //string accountID = null;
             //DateTimeFormat? acceptDatetimeFormat = null;
             //var response = instance.GetPendingOrders(accountID, acceptDatetimeFormat);
-            //Assert.IsType<InlineResponse2003> (response, "response is InlineResponse2003");
+            //Assert.IsType<PendingOrdersResponse> (response, "response is PendingOrdersResponse");
         }
         
         /// <summary>

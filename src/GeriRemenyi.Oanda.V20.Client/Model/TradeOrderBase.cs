@@ -44,22 +44,22 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         public enum TypeEnum
         {
             /// <summary>
-            /// Enum TAKEPROFIT for value: TAKE_PROFIT
+            /// Enum TAKE_PROFIT for value: TAKE_PROFIT
             /// </summary>
             [EnumMember(Value = "TAKE_PROFIT")]
-            TAKEPROFIT = 1,
+            TAKE_PROFIT = 1,
 
             /// <summary>
-            /// Enum STOPLOSS for value: STOP_LOSS
+            /// Enum STOP_LOSS for value: STOP_LOSS
             /// </summary>
             [EnumMember(Value = "STOP_LOSS")]
-            STOPLOSS = 2,
+            STOP_LOSS = 2,
 
             /// <summary>
-            /// Enum TRAILINGSTOPLOSS for value: TRAILING_STOP_LOSS
+            /// Enum TRAILING_STOP_LOSS for value: TRAILING_STOP_LOSS
             /// </summary>
             [EnumMember(Value = "TRAILING_STOP_LOSS")]
-            TRAILINGSTOPLOSS = 3
+            TRAILING_STOP_LOSS = 3
 
         }
 

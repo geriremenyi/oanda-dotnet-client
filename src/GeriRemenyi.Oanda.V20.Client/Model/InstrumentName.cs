@@ -35,424 +35,424 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
     public enum InstrumentName
     {
         /// <summary>
-        /// Enum AUDCAD for value: AUD_CAD
+        /// Enum AUD_CAD for value: AUD_CAD
         /// </summary>
         [EnumMember(Value = "AUD_CAD")]
-        AUDCAD = 1,
+        AUD_CAD = 1,
 
         /// <summary>
-        /// Enum AUDCHF for value: AUD_CHF
+        /// Enum AUD_CHF for value: AUD_CHF
         /// </summary>
         [EnumMember(Value = "AUD_CHF")]
-        AUDCHF = 2,
+        AUD_CHF = 2,
 
         /// <summary>
-        /// Enum AUDHKD for value: AUD_HKD
+        /// Enum AUD_HKD for value: AUD_HKD
         /// </summary>
         [EnumMember(Value = "AUD_HKD")]
-        AUDHKD = 3,
+        AUD_HKD = 3,
 
         /// <summary>
-        /// Enum AUDJPY for value: AUD_JPY
+        /// Enum AUD_JPY for value: AUD_JPY
         /// </summary>
         [EnumMember(Value = "AUD_JPY")]
-        AUDJPY = 4,
+        AUD_JPY = 4,
 
         /// <summary>
-        /// Enum AUDNZD for value: AUD_NZD
+        /// Enum AUD_NZD for value: AUD_NZD
         /// </summary>
         [EnumMember(Value = "AUD_NZD")]
-        AUDNZD = 5,
+        AUD_NZD = 5,
 
         /// <summary>
-        /// Enum AUDSGD for value: AUD_SGD
+        /// Enum AUD_SGD for value: AUD_SGD
         /// </summary>
         [EnumMember(Value = "AUD_SGD")]
-        AUDSGD = 6,
+        AUD_SGD = 6,
 
         /// <summary>
-        /// Enum AUDUSD for value: AUD_USD
+        /// Enum AUD_USD for value: AUD_USD
         /// </summary>
         [EnumMember(Value = "AUD_USD")]
-        AUDUSD = 7,
+        AUD_USD = 7,
 
         /// <summary>
-        /// Enum CADCHF for value: CAD_CHF
+        /// Enum CAD_CHF for value: CAD_CHF
         /// </summary>
         [EnumMember(Value = "CAD_CHF")]
-        CADCHF = 8,
+        CAD_CHF = 8,
 
         /// <summary>
-        /// Enum CADHKD for value: CAD_HKD
+        /// Enum CAD_HKD for value: CAD_HKD
         /// </summary>
         [EnumMember(Value = "CAD_HKD")]
-        CADHKD = 9,
+        CAD_HKD = 9,
 
         /// <summary>
-        /// Enum CADJPY for value: CAD_JPY
+        /// Enum CAD_JPY for value: CAD_JPY
         /// </summary>
         [EnumMember(Value = "CAD_JPY")]
-        CADJPY = 10,
+        CAD_JPY = 10,
 
         /// <summary>
-        /// Enum CADSGD for value: CAD_SGD
+        /// Enum CAD_SGD for value: CAD_SGD
         /// </summary>
         [EnumMember(Value = "CAD_SGD")]
-        CADSGD = 11,
+        CAD_SGD = 11,
 
         /// <summary>
-        /// Enum CHFHKD for value: CHF_HKD
+        /// Enum CHF_HKD for value: CHF_HKD
         /// </summary>
         [EnumMember(Value = "CHF_HKD")]
-        CHFHKD = 12,
+        CHF_HKD = 12,
 
         /// <summary>
-        /// Enum CHFJPY for value: CHF_JPY
+        /// Enum CHF_JPY for value: CHF_JPY
         /// </summary>
         [EnumMember(Value = "CHF_JPY")]
-        CHFJPY = 13,
+        CHF_JPY = 13,
 
         /// <summary>
-        /// Enum CHFZAR for value: CHF_ZAR
+        /// Enum CHF_ZAR for value: CHF_ZAR
         /// </summary>
         [EnumMember(Value = "CHF_ZAR")]
-        CHFZAR = 14,
+        CHF_ZAR = 14,
 
         /// <summary>
-        /// Enum EURAUD for value: EUR_AUD
+        /// Enum EUR_AUD for value: EUR_AUD
         /// </summary>
         [EnumMember(Value = "EUR_AUD")]
-        EURAUD = 15,
+        EUR_AUD = 15,
 
         /// <summary>
-        /// Enum EURCAD for value: EUR_CAD
+        /// Enum EUR_CAD for value: EUR_CAD
         /// </summary>
         [EnumMember(Value = "EUR_CAD")]
-        EURCAD = 16,
+        EUR_CAD = 16,
 
         /// <summary>
-        /// Enum EURCHF for value: EUR_CHF
+        /// Enum EUR_CHF for value: EUR_CHF
         /// </summary>
         [EnumMember(Value = "EUR_CHF")]
-        EURCHF = 17,
+        EUR_CHF = 17,
 
         /// <summary>
-        /// Enum EURCZK for value: EUR_CZK
+        /// Enum EUR_CZK for value: EUR_CZK
         /// </summary>
         [EnumMember(Value = "EUR_CZK")]
-        EURCZK = 18,
+        EUR_CZK = 18,
 
         /// <summary>
-        /// Enum EURDKK for value: EUR_DKK
+        /// Enum EUR_DKK for value: EUR_DKK
         /// </summary>
         [EnumMember(Value = "EUR_DKK")]
-        EURDKK = 19,
+        EUR_DKK = 19,
 
         /// <summary>
-        /// Enum EURGBP for value: EUR_GBP
+        /// Enum EUR_GBP for value: EUR_GBP
         /// </summary>
         [EnumMember(Value = "EUR_GBP")]
-        EURGBP = 20,
+        EUR_GBP = 20,
 
         /// <summary>
-        /// Enum EURHKD for value: EUR_HKD
+        /// Enum EUR_HKD for value: EUR_HKD
         /// </summary>
         [EnumMember(Value = "EUR_HKD")]
-        EURHKD = 21,
+        EUR_HKD = 21,
 
         /// <summary>
-        /// Enum EURHUF for value: EUR_HUF
+        /// Enum EUR_HUF for value: EUR_HUF
         /// </summary>
         [EnumMember(Value = "EUR_HUF")]
-        EURHUF = 22,
+        EUR_HUF = 22,
 
         /// <summary>
-        /// Enum EURJPY for value: EUR_JPY
+        /// Enum EUR_JPY for value: EUR_JPY
         /// </summary>
         [EnumMember(Value = "EUR_JPY")]
-        EURJPY = 23,
+        EUR_JPY = 23,
 
         /// <summary>
-        /// Enum EURNOK for value: EUR_NOK
+        /// Enum EUR_NOK for value: EUR_NOK
         /// </summary>
         [EnumMember(Value = "EUR_NOK")]
-        EURNOK = 24,
+        EUR_NOK = 24,
 
         /// <summary>
-        /// Enum EURNZD for value: EUR_NZD
+        /// Enum EUR_NZD for value: EUR_NZD
         /// </summary>
         [EnumMember(Value = "EUR_NZD")]
-        EURNZD = 25,
+        EUR_NZD = 25,
 
         /// <summary>
-        /// Enum EURPLN for value: EUR_PLN
+        /// Enum EUR_PLN for value: EUR_PLN
         /// </summary>
         [EnumMember(Value = "EUR_PLN")]
-        EURPLN = 26,
+        EUR_PLN = 26,
 
         /// <summary>
-        /// Enum EURSEK for value: EUR_SEK
+        /// Enum EUR_SEK for value: EUR_SEK
         /// </summary>
         [EnumMember(Value = "EUR_SEK")]
-        EURSEK = 27,
+        EUR_SEK = 27,
 
         /// <summary>
-        /// Enum EURSGD for value: EUR_SGD
+        /// Enum EUR_SGD for value: EUR_SGD
         /// </summary>
         [EnumMember(Value = "EUR_SGD")]
-        EURSGD = 28,
+        EUR_SGD = 28,
 
         /// <summary>
-        /// Enum EURTRY for value: EUR_TRY
+        /// Enum EUR_TRY for value: EUR_TRY
         /// </summary>
         [EnumMember(Value = "EUR_TRY")]
-        EURTRY = 29,
+        EUR_TRY = 29,
 
         /// <summary>
-        /// Enum EURUSD for value: EUR_USD
+        /// Enum EUR_USD for value: EUR_USD
         /// </summary>
         [EnumMember(Value = "EUR_USD")]
-        EURUSD = 30,
+        EUR_USD = 30,
 
         /// <summary>
-        /// Enum EURZAR for value: EUR_ZAR
+        /// Enum EUR_ZAR for value: EUR_ZAR
         /// </summary>
         [EnumMember(Value = "EUR_ZAR")]
-        EURZAR = 31,
+        EUR_ZAR = 31,
 
         /// <summary>
-        /// Enum GBPAUD for value: GBP_AUD
+        /// Enum GBP_AUD for value: GBP_AUD
         /// </summary>
         [EnumMember(Value = "GBP_AUD")]
-        GBPAUD = 32,
+        GBP_AUD = 32,
 
         /// <summary>
-        /// Enum GBPCAD for value: GBP_CAD
+        /// Enum GBP_CAD for value: GBP_CAD
         /// </summary>
         [EnumMember(Value = "GBP_CAD")]
-        GBPCAD = 33,
+        GBP_CAD = 33,
 
         /// <summary>
-        /// Enum GBPCHF for value: GBP_CHF
+        /// Enum GBP_CHF for value: GBP_CHF
         /// </summary>
         [EnumMember(Value = "GBP_CHF")]
-        GBPCHF = 34,
+        GBP_CHF = 34,
 
         /// <summary>
-        /// Enum GBPHKD for value: GBP_HKD
+        /// Enum GBP_HKD for value: GBP_HKD
         /// </summary>
         [EnumMember(Value = "GBP_HKD")]
-        GBPHKD = 35,
+        GBP_HKD = 35,
 
         /// <summary>
-        /// Enum GBPJPY for value: GBP_JPY
+        /// Enum GBP_JPY for value: GBP_JPY
         /// </summary>
         [EnumMember(Value = "GBP_JPY")]
-        GBPJPY = 36,
+        GBP_JPY = 36,
 
         /// <summary>
-        /// Enum GBPNZD for value: GBP_NZD
+        /// Enum GBP_NZD for value: GBP_NZD
         /// </summary>
         [EnumMember(Value = "GBP_NZD")]
-        GBPNZD = 37,
+        GBP_NZD = 37,
 
         /// <summary>
-        /// Enum GBPPLN for value: GBP_PLN
+        /// Enum GBP_PLN for value: GBP_PLN
         /// </summary>
         [EnumMember(Value = "GBP_PLN")]
-        GBPPLN = 38,
+        GBP_PLN = 38,
 
         /// <summary>
-        /// Enum GBPSGD for value: GBP_SGD
+        /// Enum GBP_SGD for value: GBP_SGD
         /// </summary>
         [EnumMember(Value = "GBP_SGD")]
-        GBPSGD = 39,
+        GBP_SGD = 39,
 
         /// <summary>
-        /// Enum GBPUSD for value: GBP_USD
+        /// Enum GBP_USD for value: GBP_USD
         /// </summary>
         [EnumMember(Value = "GBP_USD")]
-        GBPUSD = 40,
+        GBP_USD = 40,
 
         /// <summary>
-        /// Enum GBPZAR for value: GBP_ZAR
+        /// Enum GBP_ZAR for value: GBP_ZAR
         /// </summary>
         [EnumMember(Value = "GBP_ZAR")]
-        GBPZAR = 41,
+        GBP_ZAR = 41,
 
         /// <summary>
-        /// Enum HKDJPY for value: HKD_JPY
+        /// Enum HKD_JPY for value: HKD_JPY
         /// </summary>
         [EnumMember(Value = "HKD_JPY")]
-        HKDJPY = 42,
+        HKD_JPY = 42,
 
         /// <summary>
-        /// Enum NZDCAD for value: NZD_CAD
+        /// Enum NZD_CAD for value: NZD_CAD
         /// </summary>
         [EnumMember(Value = "NZD_CAD")]
-        NZDCAD = 43,
+        NZD_CAD = 43,
 
         /// <summary>
-        /// Enum NZDCHF for value: NZD_CHF
+        /// Enum NZD_CHF for value: NZD_CHF
         /// </summary>
         [EnumMember(Value = "NZD_CHF")]
-        NZDCHF = 44,
+        NZD_CHF = 44,
 
         /// <summary>
-        /// Enum NZDHKD for value: NZD_HKD
+        /// Enum NZD_HKD for value: NZD_HKD
         /// </summary>
         [EnumMember(Value = "NZD_HKD")]
-        NZDHKD = 45,
+        NZD_HKD = 45,
 
         /// <summary>
-        /// Enum NZDJPY for value: NZD_JPY
+        /// Enum NZD_JPY for value: NZD_JPY
         /// </summary>
         [EnumMember(Value = "NZD_JPY")]
-        NZDJPY = 46,
+        NZD_JPY = 46,
 
         /// <summary>
-        /// Enum NZDSGD for value: NZD_SGD
+        /// Enum NZD_SGD for value: NZD_SGD
         /// </summary>
         [EnumMember(Value = "NZD_SGD")]
-        NZDSGD = 47,
+        NZD_SGD = 47,
 
         /// <summary>
-        /// Enum NZDUSD for value: NZD_USD
+        /// Enum NZD_USD for value: NZD_USD
         /// </summary>
         [EnumMember(Value = "NZD_USD")]
-        NZDUSD = 48,
+        NZD_USD = 48,
 
         /// <summary>
-        /// Enum SGDCHF for value: SGD_CHF
+        /// Enum SGD_CHF for value: SGD_CHF
         /// </summary>
         [EnumMember(Value = "SGD_CHF")]
-        SGDCHF = 49,
+        SGD_CHF = 49,
 
         /// <summary>
-        /// Enum SGDHKD for value: SGD_HKD
+        /// Enum SGD_HKD for value: SGD_HKD
         /// </summary>
         [EnumMember(Value = "SGD_HKD")]
-        SGDHKD = 50,
+        SGD_HKD = 50,
 
         /// <summary>
-        /// Enum SGDJPY for value: SGD_JPY
+        /// Enum SGD_JPY for value: SGD_JPY
         /// </summary>
         [EnumMember(Value = "SGD_JPY")]
-        SGDJPY = 51,
+        SGD_JPY = 51,
 
         /// <summary>
-        /// Enum TRYJPY for value: TRY_JPY
+        /// Enum TRY_JPY for value: TRY_JPY
         /// </summary>
         [EnumMember(Value = "TRY_JPY")]
-        TRYJPY = 52,
+        TRY_JPY = 52,
 
         /// <summary>
-        /// Enum USDCAD for value: USD_CAD
+        /// Enum USD_CAD for value: USD_CAD
         /// </summary>
         [EnumMember(Value = "USD_CAD")]
-        USDCAD = 53,
+        USD_CAD = 53,
 
         /// <summary>
-        /// Enum USDCHF for value: USD_CHF
+        /// Enum USD_CHF for value: USD_CHF
         /// </summary>
         [EnumMember(Value = "USD_CHF")]
-        USDCHF = 54,
+        USD_CHF = 54,
 
         /// <summary>
-        /// Enum USDCNH for value: USD_CNH
+        /// Enum USD_CNH for value: USD_CNH
         /// </summary>
         [EnumMember(Value = "USD_CNH")]
-        USDCNH = 55,
+        USD_CNH = 55,
 
         /// <summary>
-        /// Enum USDCZK for value: USD_CZK
+        /// Enum USD_CZK for value: USD_CZK
         /// </summary>
         [EnumMember(Value = "USD_CZK")]
-        USDCZK = 56,
+        USD_CZK = 56,
 
         /// <summary>
-        /// Enum USDDKK for value: USD_DKK
+        /// Enum USD_DKK for value: USD_DKK
         /// </summary>
         [EnumMember(Value = "USD_DKK")]
-        USDDKK = 57,
+        USD_DKK = 57,
 
         /// <summary>
-        /// Enum USDHKD for value: USD_HKD
+        /// Enum USD_HKD for value: USD_HKD
         /// </summary>
         [EnumMember(Value = "USD_HKD")]
-        USDHKD = 58,
+        USD_HKD = 58,
 
         /// <summary>
-        /// Enum USDHUF for value: USD_HUF
+        /// Enum USD_HUF for value: USD_HUF
         /// </summary>
         [EnumMember(Value = "USD_HUF")]
-        USDHUF = 59,
+        USD_HUF = 59,
 
         /// <summary>
-        /// Enum USDJPY for value: USD_JPY
+        /// Enum USD_JPY for value: USD_JPY
         /// </summary>
         [EnumMember(Value = "USD_JPY")]
-        USDJPY = 60,
+        USD_JPY = 60,
 
         /// <summary>
-        /// Enum USDMXN for value: USD_MXN
+        /// Enum USD_MXN for value: USD_MXN
         /// </summary>
         [EnumMember(Value = "USD_MXN")]
-        USDMXN = 61,
+        USD_MXN = 61,
 
         /// <summary>
-        /// Enum USDNOK for value: USD_NOK
+        /// Enum USD_NOK for value: USD_NOK
         /// </summary>
         [EnumMember(Value = "USD_NOK")]
-        USDNOK = 62,
+        USD_NOK = 62,
 
         /// <summary>
-        /// Enum USDPLN for value: USD_PLN
+        /// Enum USD_PLN for value: USD_PLN
         /// </summary>
         [EnumMember(Value = "USD_PLN")]
-        USDPLN = 63,
+        USD_PLN = 63,
 
         /// <summary>
-        /// Enum USDSAR for value: USD_SAR
+        /// Enum USD_SAR for value: USD_SAR
         /// </summary>
         [EnumMember(Value = "USD_SAR")]
-        USDSAR = 64,
+        USD_SAR = 64,
 
         /// <summary>
-        /// Enum USDSEK for value: USD_SEK
+        /// Enum USD_SEK for value: USD_SEK
         /// </summary>
         [EnumMember(Value = "USD_SEK")]
-        USDSEK = 65,
+        USD_SEK = 65,
 
         /// <summary>
-        /// Enum USDSGD for value: USD_SGD
+        /// Enum USD_SGD for value: USD_SGD
         /// </summary>
         [EnumMember(Value = "USD_SGD")]
-        USDSGD = 66,
+        USD_SGD = 66,
 
         /// <summary>
-        /// Enum USDTHB for value: USD_THB
+        /// Enum USD_THB for value: USD_THB
         /// </summary>
         [EnumMember(Value = "USD_THB")]
-        USDTHB = 67,
+        USD_THB = 67,
 
         /// <summary>
-        /// Enum USDTRY for value: USD_TRY
+        /// Enum USD_TRY for value: USD_TRY
         /// </summary>
         [EnumMember(Value = "USD_TRY")]
-        USDTRY = 68,
+        USD_TRY = 68,
 
         /// <summary>
-        /// Enum USDZAR for value: USD_ZAR
+        /// Enum USD_ZAR for value: USD_ZAR
         /// </summary>
         [EnumMember(Value = "USD_ZAR")]
-        USDZAR = 69,
+        USD_ZAR = 69,
 
         /// <summary>
-        /// Enum ZARJPY for value: ZAR_JPY
+        /// Enum ZAR_JPY for value: ZAR_JPY
         /// </summary>
         [EnumMember(Value = "ZAR_JPY")]
-        ZARJPY = 70
+        ZAR_JPY = 70
 
     }
 

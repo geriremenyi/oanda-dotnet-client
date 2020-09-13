@@ -26,17 +26,17 @@ using OpenAPIDateConverter = GeriRemenyi.Oanda.V20.Client.Client.OpenAPIDateConv
 namespace GeriRemenyi.Oanda.V20.Client.Model
 {
     /// <summary>
-    /// InlineResponse2002
+    /// AccountInstrumentsResponse
     /// </summary>
     [DataContract]
-    public partial class InlineResponse2002 :  IEquatable<InlineResponse2002>, IValidatableObject
+    public partial class AccountInstrumentsResponse :  IEquatable<AccountInstrumentsResponse>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="InlineResponse2002" /> class.
+        /// Initializes a new instance of the <see cref="AccountInstrumentsResponse" /> class.
         /// </summary>
         /// <param name="instruments">The requested list of instruments..</param>
         /// <param name="lastTransactionID">The ID of the most recent Transaction created for the Account..</param>
-        public InlineResponse2002(List<Instrument> instruments = default(List<Instrument>), int lastTransactionID = default(int))
+        public AccountInstrumentsResponse(List<Instrument> instruments = default(List<Instrument>), int lastTransactionID = default(int))
         {
             this.Instruments = instruments;
             this.LastTransactionID = lastTransactionID;
@@ -63,7 +63,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class InlineResponse2002 {\n");
+            sb.Append("class AccountInstrumentsResponse {\n");
             sb.Append("  Instruments: ").Append(Instruments).Append("\n");
             sb.Append("  LastTransactionID: ").Append(LastTransactionID).Append("\n");
             sb.Append("}\n");
@@ -86,15 +86,15 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as InlineResponse2002);
+            return this.Equals(input as AccountInstrumentsResponse);
         }
 
         /// <summary>
-        /// Returns true if InlineResponse2002 instances are equal
+        /// Returns true if AccountInstrumentsResponse instances are equal
         /// </summary>
-        /// <param name="input">Instance of InlineResponse2002 to be compared</param>
+        /// <param name="input">Instance of AccountInstrumentsResponse to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(InlineResponse2002 input)
+        public bool Equals(AccountInstrumentsResponse input)
         {
             if (input == null)
                 return false;

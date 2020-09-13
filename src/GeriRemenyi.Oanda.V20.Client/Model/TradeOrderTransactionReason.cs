@@ -35,10 +35,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
     public enum TradeOrderTransactionReason
     {
         /// <summary>
-        /// Enum CLIENTORDER for value: CLIENT_ORDER
+        /// Enum CLIENT_ORDER for value: CLIENT_ORDER
         /// </summary>
         [EnumMember(Value = "CLIENT_ORDER")]
-        CLIENTORDER = 1,
+        CLIENT_ORDER = 1,
 
         /// <summary>
         /// Enum REPLACEMENT for value: REPLACEMENT
@@ -47,10 +47,10 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
         REPLACEMENT = 2,
 
         /// <summary>
-        /// Enum ONFILL for value: ON_FILL
+        /// Enum ON_FILL for value: ON_FILL
         /// </summary>
         [EnumMember(Value = "ON_FILL")]
-        ONFILL = 3
+        ON_FILL = 3
 
     }
 

@@ -35,22 +35,22 @@ namespace GeriRemenyi.Oanda.V20.Client.Model
     public enum MarketOrderPositionFill
     {
         /// <summary>
-        /// Enum OPENONLY for value: OPEN_ONLY
+        /// Enum OPEN_ONLY for value: OPEN_ONLY
         /// </summary>
         [EnumMember(Value = "OPEN_ONLY")]
-        OPENONLY = 1,
+        OPEN_ONLY = 1,
 
         /// <summary>
-        /// Enum REDUCEFIRST for value: REDUCE_FIRST
+        /// Enum REDUCE_FIRST for value: REDUCE_FIRST
         /// </summary>
         [EnumMember(Value = "REDUCE_FIRST")]
-        REDUCEFIRST = 2,
+        REDUCE_FIRST = 2,
 
         /// <summary>
-        /// Enum REDUCEONLY for value: REDUCE_ONLY
+        /// Enum REDUCE_ONLY for value: REDUCE_ONLY
         /// </summary>
         [EnumMember(Value = "REDUCE_ONLY")]
-        REDUCEONLY = 3,
+        REDUCE_ONLY = 3,
 
         /// <summary>
         /// Enum DEFAULT for value: DEFAULT
