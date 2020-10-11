@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="getinstrumentcandles"></a>
 # **GetInstrumentCandles**
-> CandlesResponse GetInstrumentCandles (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = null, string price = null, string granularity = null, int? count = null, string from = null, string to = null, bool? smooth = null, bool? includeFirst = null, int? dailyAlignment = null, string alignmentTimezone = null, string weeklyAlignment = null)
+> CandlesResponse GetInstrumentCandles (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = null, string price = null, CandlestickGranularity? granularity = null, int? count = null, string from = null, string to = null, bool? smooth = null, bool? includeFirst = null, int? dailyAlignment = null, string alignmentTimezone = null, string weeklyAlignment = null)
 
 Get Candlesticks
 
@@ -40,7 +40,7 @@ namespace Example
             var instrument = ;  // InstrumentName | Instrument name
             var acceptDatetimeFormat = ;  // DateTimeFormat? | Format of DateTime fields in the request and response. (optional) 
             var price = price_example;  // string | The Price component(s) to get candlestick data for. Can contain any combination of the characters \"M\" (midpoint candles) \"B\" (bid candles) and \"A\" (ask candles). (optional) 
-            var granularity = granularity_example;  // string | The granularity of the candlesticks to fetch (optional) 
+            var granularity = ;  // CandlestickGranularity? | The granularity of the candlesticks to fetch (optional) 
             var count = 56;  // int? | The number of candlesticks to return in the reponse. Count should not be specified if both the start and end parameters are provided, as the time range combined with the graularity will determine the number of candlesticks to return. (optional) 
             var from = from_example;  // string | The start of the time range to fetch candlesticks for. (optional) 
             var to = to_example;  // string | The end of the time range to fetch candlesticks for. (optional) 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
  **instrument** | **InstrumentName**| Instrument name | 
  **acceptDatetimeFormat** | **DateTimeFormat?**| Format of DateTime fields in the request and response. | [optional] 
  **price** | **string**| The Price component(s) to get candlestick data for. Can contain any combination of the characters \&quot;M\&quot; (midpoint candles) \&quot;B\&quot; (bid candles) and \&quot;A\&quot; (ask candles). | [optional] 
- **granularity** | **string**| The granularity of the candlesticks to fetch | [optional] 
+ **granularity** | **CandlestickGranularity?**| The granularity of the candlesticks to fetch | [optional] 
  **count** | **int?**| The number of candlesticks to return in the reponse. Count should not be specified if both the start and end parameters are provided, as the time range combined with the graularity will determine the number of candlesticks to return. | [optional] 
  **from** | **string**| The start of the time range to fetch candlesticks for. | [optional] 
  **to** | **string**| The end of the time range to fetch candlesticks for. | [optional] 

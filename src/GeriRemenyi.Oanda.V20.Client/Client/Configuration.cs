@@ -31,7 +31,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "0.0.2";
+        public const string Version = "0.0.3";
 
         /// <summary>
         /// Identifier for ISO 8601 DateTime Format
@@ -100,7 +100,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Client
         [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "VirtualMemberCallInConstructor")]
         public Configuration()
         {
-            UserAgent = "OpenAPI-Generator/0.0.2/csharp";
+            UserAgent = "OpenAPI-Generator/0.0.3/csharp";
             BasePath = "https://api-fxpractice.oanda.com/v3";
             DefaultHeaders = new ConcurrentDictionary<string, string>();
             ApiKey = new ConcurrentDictionary<string, string>();
@@ -356,7 +356,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Client
             report += "    OS: " + System.Environment.OSVersion + "\n";
             report += "    .NET Framework Version: " + System.Environment.Version  + "\n";
             report += "    Version of the API: 3.0.25\n";
-            report += "    SDK Package Version: 0.0.2\n";
+            report += "    SDK Package Version: 0.0.3\n";
 
             return report;
         }

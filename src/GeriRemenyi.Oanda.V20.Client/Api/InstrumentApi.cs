@@ -47,7 +47,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <param name="alignmentTimezone">The timezone to use for the dailyAlignment parameter. Candlesticks with daily alignment will be aligned to the dailyAlignment hour within the alignmentTimezone.  Note that the returned times will still be represented in UTC. (optional)</param>
         /// <param name="weeklyAlignment">The day of the week used for granularities that have weekly alignment. (optional)</param>
         /// <returns>CandlesResponse</returns>
-        CandlesResponse GetInstrumentCandles (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), string granularity = default(string), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string));
+        CandlesResponse GetInstrumentCandles (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), CandlestickGranularity? granularity = default(CandlestickGranularity?), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string));
 
         /// <summary>
         /// Get Candlesticks
@@ -69,7 +69,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <param name="alignmentTimezone">The timezone to use for the dailyAlignment parameter. Candlesticks with daily alignment will be aligned to the dailyAlignment hour within the alignmentTimezone.  Note that the returned times will still be represented in UTC. (optional)</param>
         /// <param name="weeklyAlignment">The day of the week used for granularities that have weekly alignment. (optional)</param>
         /// <returns>ApiResponse of CandlesResponse</returns>
-        ApiResponse<CandlesResponse> GetInstrumentCandlesWithHttpInfo (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), string granularity = default(string), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string));
+        ApiResponse<CandlesResponse> GetInstrumentCandlesWithHttpInfo (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), CandlestickGranularity? granularity = default(CandlestickGranularity?), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string));
         /// <summary>
         /// Get Order Book
         /// </summary>
@@ -149,7 +149,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <param name="alignmentTimezone">The timezone to use for the dailyAlignment parameter. Candlesticks with daily alignment will be aligned to the dailyAlignment hour within the alignmentTimezone.  Note that the returned times will still be represented in UTC. (optional)</param>
         /// <param name="weeklyAlignment">The day of the week used for granularities that have weekly alignment. (optional)</param>
         /// <returns>Task of CandlesResponse</returns>
-        System.Threading.Tasks.Task<CandlesResponse> GetInstrumentCandlesAsync (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), string granularity = default(string), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string));
+        System.Threading.Tasks.Task<CandlesResponse> GetInstrumentCandlesAsync (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), CandlestickGranularity? granularity = default(CandlestickGranularity?), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string));
 
         /// <summary>
         /// Get Candlesticks
@@ -171,7 +171,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <param name="alignmentTimezone">The timezone to use for the dailyAlignment parameter. Candlesticks with daily alignment will be aligned to the dailyAlignment hour within the alignmentTimezone.  Note that the returned times will still be represented in UTC. (optional)</param>
         /// <param name="weeklyAlignment">The day of the week used for granularities that have weekly alignment. (optional)</param>
         /// <returns>Task of ApiResponse (CandlesResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<CandlesResponse>> GetInstrumentCandlesAsyncWithHttpInfo (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), string granularity = default(string), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string));
+        System.Threading.Tasks.Task<ApiResponse<CandlesResponse>> GetInstrumentCandlesAsyncWithHttpInfo (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), CandlestickGranularity? granularity = default(CandlestickGranularity?), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string));
         /// <summary>
         /// Get Order Book
         /// </summary>
@@ -359,7 +359,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <param name="alignmentTimezone">The timezone to use for the dailyAlignment parameter. Candlesticks with daily alignment will be aligned to the dailyAlignment hour within the alignmentTimezone.  Note that the returned times will still be represented in UTC. (optional)</param>
         /// <param name="weeklyAlignment">The day of the week used for granularities that have weekly alignment. (optional)</param>
         /// <returns>CandlesResponse</returns>
-        public CandlesResponse GetInstrumentCandles (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), string granularity = default(string), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string))
+        public CandlesResponse GetInstrumentCandles (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), CandlestickGranularity? granularity = default(CandlestickGranularity?), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string))
         {
              GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<CandlesResponse> localVarResponse = GetInstrumentCandlesWithHttpInfo(instrument, acceptDatetimeFormat, price, granularity, count, from, to, smooth, includeFirst, dailyAlignment, alignmentTimezone, weeklyAlignment);
              return localVarResponse.Data;
@@ -382,7 +382,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <param name="alignmentTimezone">The timezone to use for the dailyAlignment parameter. Candlesticks with daily alignment will be aligned to the dailyAlignment hour within the alignmentTimezone.  Note that the returned times will still be represented in UTC. (optional)</param>
         /// <param name="weeklyAlignment">The day of the week used for granularities that have weekly alignment. (optional)</param>
         /// <returns>ApiResponse of CandlesResponse</returns>
-        public GeriRemenyi.Oanda.V20.Client.Client.ApiResponse< CandlesResponse > GetInstrumentCandlesWithHttpInfo (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), string granularity = default(string), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string))
+        public GeriRemenyi.Oanda.V20.Client.Client.ApiResponse< CandlesResponse > GetInstrumentCandlesWithHttpInfo (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), CandlestickGranularity? granularity = default(CandlestickGranularity?), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string))
         {
             GeriRemenyi.Oanda.V20.Client.Client.RequestOptions localVarRequestOptions = new GeriRemenyi.Oanda.V20.Client.Client.RequestOptions();
 
@@ -482,7 +482,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <param name="alignmentTimezone">The timezone to use for the dailyAlignment parameter. Candlesticks with daily alignment will be aligned to the dailyAlignment hour within the alignmentTimezone.  Note that the returned times will still be represented in UTC. (optional)</param>
         /// <param name="weeklyAlignment">The day of the week used for granularities that have weekly alignment. (optional)</param>
         /// <returns>Task of CandlesResponse</returns>
-        public async System.Threading.Tasks.Task<CandlesResponse> GetInstrumentCandlesAsync (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), string granularity = default(string), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string))
+        public async System.Threading.Tasks.Task<CandlesResponse> GetInstrumentCandlesAsync (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), CandlestickGranularity? granularity = default(CandlestickGranularity?), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string))
         {
              GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<CandlesResponse> localVarResponse = await GetInstrumentCandlesAsyncWithHttpInfo(instrument, acceptDatetimeFormat, price, granularity, count, from, to, smooth, includeFirst, dailyAlignment, alignmentTimezone, weeklyAlignment);
              return localVarResponse.Data;
@@ -506,7 +506,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Api
         /// <param name="alignmentTimezone">The timezone to use for the dailyAlignment parameter. Candlesticks with daily alignment will be aligned to the dailyAlignment hour within the alignmentTimezone.  Note that the returned times will still be represented in UTC. (optional)</param>
         /// <param name="weeklyAlignment">The day of the week used for granularities that have weekly alignment. (optional)</param>
         /// <returns>Task of ApiResponse (CandlesResponse)</returns>
-        public async System.Threading.Tasks.Task<GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<CandlesResponse>> GetInstrumentCandlesAsyncWithHttpInfo (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), string granularity = default(string), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string))
+        public async System.Threading.Tasks.Task<GeriRemenyi.Oanda.V20.Client.Client.ApiResponse<CandlesResponse>> GetInstrumentCandlesAsyncWithHttpInfo (InstrumentName instrument, DateTimeFormat? acceptDatetimeFormat = default(DateTimeFormat?), string price = default(string), CandlestickGranularity? granularity = default(CandlestickGranularity?), int? count = default(int?), string from = default(string), string to = default(string), bool? smooth = default(bool?), bool? includeFirst = default(bool?), int? dailyAlignment = default(int?), string alignmentTimezone = default(string), string weeklyAlignment = default(string))
         {
 
             GeriRemenyi.Oanda.V20.Client.Client.RequestOptions localVarRequestOptions = new GeriRemenyi.Oanda.V20.Client.Client.RequestOptions();

@@ -65,7 +65,7 @@ namespace GeriRemenyi.Oanda.V20.Client.Test
             //InstrumentName instrument = null;
             //DateTimeFormat? acceptDatetimeFormat = null;
             //string price = null;
-            //string granularity = null;
+            //CandlestickGranularity? granularity = null;
             //int? count = null;
             //string from = null;
             //string to = null;
